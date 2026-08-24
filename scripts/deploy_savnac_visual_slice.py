@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,6 +25,24 @@ TITLE = "Computing Commons — Visual Prototype (Week 2)"
 
 def page(title: str, body: str, slug: str) -> DesiredObject:
     return DesiredObject(kind="page", title=title, body_markdown=body, source_ref=slug)
+
+
+def canvas_links(body: str, course_id: int) -> str:
+    """Translate repository preview filenames into stable Canvas page URLs."""
+    root = f"/courses/{course_id}/pages/"
+    mapping = {
+        "start-here.html": root + "success-foundations-slash-semester-kickoff",
+        "kickoff.html": root + "success-foundations-slash-semester-kickoff",
+        "week2-local-ai.html": root + "week-2-build-and-verify-your-local-ai-lab",
+        "week2-tools.html": root + "week-2-verify-the-tools",
+        "week2-recovery.html": root + "week-2-recovery-with-evidence",
+        "recovery.md": root + "week-2-recovery-with-evidence",
+        "../recitation.md": root + "recitation-slash-get-help",
+        "recitation.html": root + "recitation-slash-get-help",
+    }
+    for old, new in mapping.items():
+        body = body.replace(old, new)
+    return body
 
 
 def main() -> int:
@@ -47,10 +66,10 @@ def main() -> int:
     tools = f"{base}week-2-verify-tools"
     recovery = f"{base}week-2-recovery"
     recitation = f"{base}recitation-get-help"
-    kickoff_html = (ROOT / "previews/kickoff.html").read_text()
-    week2_html = (ROOT / "previews/week2-local-ai.html").read_text()
-    tools_md = (ROOT / "curriculum/week2/tools.md").read_text()
-    recovery_md = (ROOT / "curriculum/week2/recovery.md").read_text()
+    kickoff_html = canvas_links((ROOT / "previews/kickoff.html").read_text(), course_id)
+    week2_html = canvas_links((ROOT / "previews/week2-local-ai.html").read_text(), course_id)
+    tools_md = canvas_links((ROOT / "curriculum/week2/tools.md").read_text(), course_id)
+    recovery_md = canvas_links((ROOT / "curriculum/week2/recovery.md").read_text(), course_id)
     recitation_md = (ROOT / "curriculum/recitation.md").read_text()
     plan = DesiredCourse(course_label=TITLE, course_id=course_id, modules=[
         DesiredModule(title="00 — Start Here + Kickoff", position=1, objects=[page("Success Foundations / Semester Kickoff", kickoff_html, "previews/kickoff.html")]),
