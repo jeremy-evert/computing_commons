@@ -36,7 +36,19 @@ $targets = @(
     [pscustomobject]@{ Name = '02-recitation-get-help'; Url = "$base/pages/recitation-slash-get-help" },
     [pscustomobject]@{ Name = '03-week2-local-ai-lab'; Url = "$base/pages/week-2-build-and-verify-your-local-ai-lab" },
     [pscustomobject]@{ Name = '04-week2-verify-tools'; Url = "$base/pages/week-2-verify-the-tools" },
-    [pscustomobject]@{ Name = '05-week2-recovery'; Url = "$base/pages/week-2-recovery-with-evidence" }
+    [pscustomobject]@{ Name = '05-week2-inventory'; Url = "$base/pages/week-2-inventory-what-you-already-have" },
+    [pscustomobject]@{ Name = '06-week2-windows-foundation'; Url = "$base/pages/week-2-verify-the-windows-foundation" },
+    [pscustomobject]@{ Name = '07-week2-confirm-ollama'; Url = "$base/pages/week-2-confirm-ollama" },
+    [pscustomobject]@{ Name = '08-week2-approved-model'; Url = "$base/pages/week-2-confirm-the-approved-model" },
+    [pscustomobject]@{ Name = '09-week2-hello-ollama'; Url = "$base/pages/week-2-say-hello-directly-to-ollama" },
+    [pscustomobject]@{ Name = '10-week2-confirm-aider'; Url = "$base/pages/week-2-get-or-confirm-aider" },
+    [pscustomobject]@{ Name = '11-week2-git-worktree'; Url = "$base/pages/week-2-prepare-the-tiny-git-worktree" },
+    [pscustomobject]@{ Name = '12-week2-hello-aider'; Url = "$base/pages/week-2-say-hello-with-aider" },
+    [pscustomobject]@{ Name = '13-week2-three-aider-wins'; Url = "$base/pages/week-2-three-tiny-aider-wins" },
+    [pscustomobject]@{ Name = '14-week2-work-first'; Url = "$base/pages/week-2-bridge-to-work-first" },
+    [pscustomobject]@{ Name = '15-week2-recovery'; Url = "$base/pages/week-2-recovery-with-evidence" },
+    [pscustomobject]@{ Name = '16-week2-show-that-it-works-page'; Url = "$base/pages/week-2-show-that-it-works" },
+    [pscustomobject]@{ Name = '17-week2-show-that-it-works-assignment'; Url = "$base/assignments/507" }
 )
 
 $session = Get-Date -Format 'yyyy-MM-dd_HHmmss'
