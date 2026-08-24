@@ -1,0 +1,164 @@
+[
+  {
+    "name": "00-modules",
+    "requested_url": "http://localhost:3002/courses/18/modules",
+    "rendered_title": "Course Modules: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/modules",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/00-modules.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "01-success-foundations-semester-kickoff",
+    "requested_url": "http://localhost:3002/courses/18/pages/success-foundations-slash-semester-kickoff",
+    "rendered_title": "Success Foundations / Semester Kickoff: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/success-foundations-slash-semester-kickoff",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/01-success-foundations-semester-kickoff.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "02-recitation-get-help",
+    "requested_url": "http://localhost:3002/courses/18/pages/recitation-slash-get-help",
+    "rendered_title": "Recitation / Get Help: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/recitation-slash-get-help",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/02-recitation-get-help.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "03-week2-local-ai-lab",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+    "rendered_title": "Week 2 — Build and Verify Your Local AI Lab: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/03-week2-local-ai-lab.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "04-week2-verify-tools",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-verify-the-tools",
+    "rendered_title": "Week 2 — Verify the tools: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-verify-the-tools",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/04-week2-verify-tools.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "05-week2-inventory",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-inventory-what-you-already-have",
+    "rendered_title": "Week 2 — Inventory what you already have: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-inventory-what-you-already-have",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/05-week2-inventory.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "06-week2-windows-foundation",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-verify-the-windows-foundation",
+    "rendered_title": "Week 2 — Verify the Windows foundation: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-verify-the-windows-foundation",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/06-week2-windows-foundation.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "07-week2-confirm-ollama",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-confirm-ollama",
+    "rendered_title": "Week 2 — Confirm Ollama: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-confirm-ollama",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/07-week2-confirm-ollama.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "08-week2-approved-model",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-confirm-the-approved-model",
+    "rendered_title": "Week 2 — Confirm the approved model: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-confirm-the-approved-model",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/08-week2-approved-model.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "09-week2-hello-ollama",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-say-hello-directly-to-ollama",
+    "rendered_title": "Week 2 — Say hello directly to Ollama: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-say-hello-directly-to-ollama",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/09-week2-hello-ollama.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "10-week2-confirm-aider",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-get-or-confirm-aider",
+    "rendered_title": "Week 2 — Get or confirm Aider: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-get-or-confirm-aider",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/10-week2-confirm-aider.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "11-week2-git-worktree",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-prepare-the-tiny-git-worktree",
+    "rendered_title": "Week 2 — Prepare the tiny Git worktree: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-prepare-the-tiny-git-worktree",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/11-week2-git-worktree.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "12-week2-hello-aider",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-say-hello-with-aider",
+    "rendered_title": "Week 2 — Say hello with Aider: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-say-hello-with-aider",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/12-week2-hello-aider.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "13-week2-three-aider-wins",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-three-tiny-aider-wins",
+    "rendered_title": "Week 2 — Three tiny Aider wins: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-three-tiny-aider-wins",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/13-week2-three-aider-wins.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "14-week2-work-first",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-bridge-to-work-first",
+    "rendered_title": "Week 2 — Bridge to Work First: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-bridge-to-work-first",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/14-week2-work-first.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "15-week2-recovery",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-recovery-with-evidence",
+    "rendered_title": "Week 2 — Recovery with evidence: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-recovery-with-evidence",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/15-week2-recovery.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "16-week2-show-that-it-works-page",
+    "requested_url": "http://localhost:3002/courses/18/pages/week-2-show-that-it-works",
+    "rendered_title": "Week 2 — Show That It Works: Computing Commons — Visual Prototype (Week 2)",
+    "rendered_url": "http://localhost:3002/courses/18/pages/week-2-show-that-it-works",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/16-week2-show-that-it-works-page.png",
+    "width": 1920,
+    "height": 911
+  },
+  {
+    "name": "17-week2-show-that-it-works-assignment",
+    "requested_url": "http://localhost:3002/courses/18/assignments/507",
+    "rendered_title": "Week 2 — Show That It Works",
+    "rendered_url": "http://localhost:3002/courses/18/assignments/507",
+    "file": "sidecar/visual-review/grace/2026-08-23_221446/17-week2-show-that-it-works-assignment.png",
+    "width": 1920,
+    "height": 911
+  }
+]
