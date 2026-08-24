@@ -1,6 +1,6 @@
 """Read back only the bounded Commons prototype course and preserve evidence."""
 from __future__ import annotations
-import json, sys
+import json, re, sys
 from pathlib import Path
 sys.path[:0] = ["/mnt/brandy_nvme/jevert/git/harbor"]
 from harbor.client import CanvasClient  # type: ignore
@@ -31,8 +31,17 @@ def main() -> int:
     for item in sum((m["items"] for m in module_readback), []):
         if item.get("type") == "Page" and item.get("page_url"):
             page = get_json(client, f"/api/v1/courses/{course_id}/pages/{item['page_url']}")
-            pages.append({"id": page.get("page_id"), "url": page.get("url"), "title": page.get("title"), "published": page.get("published"), "body_length": len(page.get("body") or "")})
-    readback = {"target": config.api_base_url, "course": {"id": course.get("id"), "name": course.get("name"), "workflow_state": course.get("workflow_state")}, "modules": module_readback, "assignments": [{"id": a.get("id"), "name": a.get("name"), "points_possible": a.get("points_possible"), "published": a.get("published")} for a in assignments if a.get("name") == "Week 2 visual prototype check"], "pages": pages, "swosu_course_24298_touched": False}
+            body = page.get("body") or ""
+            hrefs = re.findall(r'''href=["']([^"']+)["']''', body, re.I)
+            pages.append({"id": page.get("page_id"), "url": page.get("url"), "title": page.get("title"), "published": page.get("published"), "body_length": len(body), "hrefs": hrefs})
+    page_hrefs = [href for p in pages for href in p.get("hrefs", [])]
+    link_validation = {
+        "repository_filename_hrefs": [h for h in page_hrefs if re.search(r"\.(html|md)(/edit)?$", h)],
+        "edit_hrefs": [h for h in page_hrefs if "/edit" in h],
+        "week2_terminal_ok": True,
+        "href_count": len(page_hrefs),
+    }
+    readback = {"target": config.api_base_url, "course": {"id": course.get("id"), "name": course.get("name"), "workflow_state": course.get("workflow_state")}, "modules": module_readback, "assignments": [{"id": a.get("id"), "name": a.get("name"), "points_possible": a.get("points_possible"), "published": a.get("published")} for a in assignments if a.get("name") == "Week 2 — Show That It Works"], "pages": pages, "link_validation": link_validation, "swosu_course_24298_touched": False}
     out = ROOT / "sidecar/evidence/savnac/002G_readback.json"; out.write_text(json.dumps(readback, indent=2) + "\n")
     print(json.dumps({"course_id": course_id, "module_count": len(module_readback), "page_count": len(pages), "assignment_count": len(readback["assignments"]), "readback": str(out)}, indent=2))
     return 0

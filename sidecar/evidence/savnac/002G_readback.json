@@ -74,21 +74,120 @@
           "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-recovery-with-evidence"
         },
         {
-          "id": 1216,
-          "title": "Week 2 visual prototype check",
+          "id": 1217,
+          "title": "Week 2 \u2014 Inventory what you already have",
+          "type": "Page",
+          "page_url": "week-2-inventory-what-you-already-have",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-inventory-what-you-already-have"
+        },
+        {
+          "id": 1218,
+          "title": "Week 2 \u2014 Verify the Windows foundation",
+          "type": "Page",
+          "page_url": "week-2-verify-the-windows-foundation",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-verify-the-windows-foundation"
+        },
+        {
+          "id": 1219,
+          "title": "Week 2 \u2014 Confirm Ollama",
+          "type": "Page",
+          "page_url": "week-2-confirm-ollama",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-confirm-ollama"
+        },
+        {
+          "id": 1220,
+          "title": "Week 2 \u2014 Confirm the approved model",
+          "type": "Page",
+          "page_url": "week-2-confirm-the-approved-model",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-confirm-the-approved-model"
+        },
+        {
+          "id": 1221,
+          "title": "Week 2 \u2014 Say hello directly to Ollama",
+          "type": "Page",
+          "page_url": "week-2-say-hello-directly-to-ollama",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-say-hello-directly-to-ollama"
+        },
+        {
+          "id": 1222,
+          "title": "Week 2 \u2014 Get or confirm Aider",
+          "type": "Page",
+          "page_url": "week-2-get-or-confirm-aider",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-get-or-confirm-aider"
+        },
+        {
+          "id": 1223,
+          "title": "Week 2 \u2014 Prepare the tiny Git worktree",
+          "type": "Page",
+          "page_url": "week-2-prepare-the-tiny-git-worktree",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-prepare-the-tiny-git-worktree"
+        },
+        {
+          "id": 1224,
+          "title": "Week 2 \u2014 Say hello with Aider",
+          "type": "Page",
+          "page_url": "week-2-say-hello-with-aider",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-say-hello-with-aider"
+        },
+        {
+          "id": 1225,
+          "title": "Week 2 \u2014 Three tiny Aider wins",
+          "type": "Page",
+          "page_url": "week-2-three-tiny-aider-wins",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-three-tiny-aider-wins"
+        },
+        {
+          "id": 1226,
+          "title": "Week 2 \u2014 Bridge to Work First",
+          "type": "Page",
+          "page_url": "week-2-bridge-to-work-first",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-bridge-to-work-first"
+        },
+        {
+          "id": 1227,
+          "title": "Week 2 \u2014 Show That It Works",
+          "type": "Page",
+          "page_url": "week-2-show-that-it-works",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-show-that-it-works"
+        },
+        {
+          "id": 1228,
+          "title": "Week 2 \u2014 Show That It Works",
           "type": "Assignment",
           "page_url": null,
-          "content_id": 506,
+          "content_id": 507,
           "published": true,
-          "url": "http://192.168.122.172:3000/api/v1/courses/18/assignments/506"
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/assignments/507"
         }
       ]
     }
   ],
   "assignments": [
     {
-      "id": 506,
-      "name": "Week 2 visual prototype check",
+      "id": 507,
+      "name": "Week 2 \u2014 Show That It Works",
       "points_possible": 0.0,
       "published": true
     }
@@ -99,36 +198,236 @@
       "url": "success-foundations-slash-semester-kickoff",
       "title": "Success Foundations / Semester Kickoff",
       "published": true,
-      "body_length": 1786
+      "body_length": 3198,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
     },
     {
       "id": 665,
       "url": "recitation-slash-get-help",
       "title": "Recitation / Get Help",
       "published": true,
-      "body_length": 2719
+      "body_length": 2719,
+      "hrefs": []
     },
     {
       "id": 666,
       "url": "week-2-build-and-verify-your-local-ai-lab",
       "title": "Week 2 \u2014 Build and Verify Your Local AI Lab",
       "published": true,
-      "body_length": 2147
+      "body_length": 3867,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-tools",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-tools",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-tools",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
     },
     {
       "id": 667,
       "url": "week-2-verify-the-tools",
       "title": "Week 2 \u2014 Verify the tools",
       "published": true,
-      "body_length": 790
+      "body_length": 982,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence"
+      ]
     },
     {
       "id": 668,
       "url": "week-2-recovery-with-evidence",
       "title": "Week 2 \u2014 Recovery with evidence",
       "published": true,
-      "body_length": 616
+      "body_length": 795,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 669,
+      "url": "week-2-inventory-what-you-already-have",
+      "title": "Week 2 \u2014 Inventory what you already have",
+      "published": true,
+      "body_length": 3054,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-windows-foundation",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 670,
+      "url": "week-2-verify-the-windows-foundation",
+      "title": "Week 2 \u2014 Verify the Windows foundation",
+      "published": true,
+      "body_length": 2695,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-inventory-what-you-already-have",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-confirm-ollama",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 671,
+      "url": "week-2-confirm-ollama",
+      "title": "Week 2 \u2014 Confirm Ollama",
+      "published": true,
+      "body_length": 2738,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-windows-foundation",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-confirm-the-approved-model",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 672,
+      "url": "week-2-confirm-the-approved-model",
+      "title": "Week 2 \u2014 Confirm the approved model",
+      "published": true,
+      "body_length": 2601,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-confirm-ollama",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-say-hello-directly-to-ollama",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 673,
+      "url": "week-2-say-hello-directly-to-ollama",
+      "title": "Week 2 \u2014 Say hello directly to Ollama",
+      "published": true,
+      "body_length": 2627,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-confirm-the-approved-model",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-get-or-confirm-aider",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 674,
+      "url": "week-2-get-or-confirm-aider",
+      "title": "Week 2 \u2014 Get or confirm Aider",
+      "published": true,
+      "body_length": 2695,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-say-hello-directly-to-ollama",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-prepare-the-tiny-git-worktree",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 675,
+      "url": "week-2-prepare-the-tiny-git-worktree",
+      "title": "Week 2 \u2014 Prepare the tiny Git worktree",
+      "published": true,
+      "body_length": 2642,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-get-or-confirm-aider",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-say-hello-with-aider",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 676,
+      "url": "week-2-say-hello-with-aider",
+      "title": "Week 2 \u2014 Say hello with Aider",
+      "published": true,
+      "body_length": 2671,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-prepare-the-tiny-git-worktree",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-three-tiny-aider-wins",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 677,
+      "url": "week-2-three-tiny-aider-wins",
+      "title": "Week 2 \u2014 Three tiny Aider wins",
+      "published": true,
+      "body_length": 2692,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-say-hello-with-aider",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-bridge-to-work-first",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 678,
+      "url": "week-2-bridge-to-work-first",
+      "title": "Week 2 \u2014 Bridge to Work First",
+      "published": true,
+      "body_length": 2966,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-three-tiny-aider-wins",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-show-that-it-works",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 679,
+      "url": "week-2-show-that-it-works",
+      "title": "Week 2 \u2014 Show That It Works",
+      "published": true,
+      "body_length": 2631,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-bridge-to-work-first",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
     }
   ],
+  "link_validation": {
+    "repository_filename_hrefs": [],
+    "edit_hrefs": [],
+    "week2_terminal_ok": true,
+    "href_count": 86
+  },
   "swosu_course_24298_touched": false
 }

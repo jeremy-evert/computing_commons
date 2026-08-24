@@ -3,7 +3,7 @@ param(
     [int]$DebugPort = 9222,
     [string]$Url,
     [string]$OutputPath,
-    [int]$LoadWaitSeconds = 2
+    [int]$LoadWaitSeconds = 5
 )
 
 $ErrorActionPreference = 'Stop'
