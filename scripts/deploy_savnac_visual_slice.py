@@ -52,6 +52,10 @@ def canvas_links(body: str, course_id: int) -> str:
         "week2-ai-fluency.html": root + "monday-ai-fluency-gather-context",
         "week2-make-it-stick.html": root + "wednesday-make-it-stick-retrieval-practice",
         "week2-mindset.html": root + "friday-mindset-at-work",
+        "week3-shared-rhythm.html": root + "week-3-shared-rhythm",
+        "week3-ai-fluency.html": root + "monday-plan-the-work",
+        "week3-professional-minds-wednesday.html": root + "wednesday-grow-through-mistakes",
+        "week3-professional-minds-friday.html": root + "friday-resilience-and-risk-competence",
         "recovery.md": root + "week-2-recovery-with-evidence",
         "../recitation.md": root + "recitation-slash-get-help",
         "recitation.html": root + "recitation-slash-get-help",
@@ -113,6 +117,24 @@ def main() -> int:
         DesiredObject(kind="file", title="Friday reading — Mindset at Work", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/readings/week_02_fri_mindset_at_work.md", file_folder_path="week_2_shared_rhythm", source_ref="professional_minds/readings/week_02_fri_mindset_at_work.md"),
         DesiredObject(kind="file", title="Friday slides — Mindset at Work", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/presentations/beamer/week_02_fri/week02_fri.pdf", file_folder_path="week_2_shared_rhythm", source_ref="professional_minds/presentations/beamer/week_02_fri/week02_fri.pdf"),
     ])
+    week3_pages = [
+        ("Week 3 — Shared Rhythm", "previews/week3-shared-rhythm.html"),
+        ("Monday — AI Fluency: Plan the Work", "previews/week3-ai-fluency.html"),
+        ("Wednesday — Professional Minds: Grow through mistakes", "previews/week3-professional-minds-wednesday.html"),
+        ("Friday — Professional Minds: Resilience and risk competence", "previews/week3-professional-minds-friday.html"),
+    ]
+    week3_objects = [page(title, canvas_links((ROOT / path).read_text(), course_id), path) for title, path in week3_pages]
+    week3_objects.extend([
+        DesiredObject(kind="file", title="Monday source — Plan the Work", source_path="/mnt/brandy_nvme/jevert/git/ai_fluency/ai_i/monday_moments/week_03_plan_the_work/monday_moment.md", file_folder_path="week_3_shared_rhythm", source_ref="ai_fluency/ai_i/monday_moments/week_03_plan_the_work/monday_moment.md"),
+        DesiredObject(kind="file", title="Monday activity — Plan the Work", source_path="/mnt/brandy_nvme/jevert/git/ai_fluency/ai_i/monday_moments/week_03_plan_the_work/student_activity.md", file_folder_path="week_3_shared_rhythm", source_ref="ai_fluency/ai_i/monday_moments/week_03_plan_the_work/student_activity.md"),
+        DesiredObject(kind="file", title="Monday instructor guide — Plan the Work", source_path="/mnt/brandy_nvme/jevert/git/ai_fluency/ai_i/monday_moments/week_03_plan_the_work/instructor_guide.md", file_folder_path="week_3_shared_rhythm", source_ref="ai_fluency/ai_i/monday_moments/week_03_plan_the_work/instructor_guide.md"),
+        DesiredObject(kind="file", title="Monday rubric — Plan the Work", source_path="/mnt/brandy_nvme/jevert/git/ai_fluency/ai_i/monday_moments/week_03_plan_the_work/assessment_rubric.md", file_folder_path="week_3_shared_rhythm", source_ref="ai_fluency/ai_i/monday_moments/week_03_plan_the_work/assessment_rubric.md"),
+        DesiredObject(kind="file", title="Monday portfolio artifact — Plan-first Workflow", source_path="/mnt/brandy_nvme/jevert/git/ai_fluency/ai_i/monday_moments/week_03_plan_the_work/portfolio_artifact_plan_first_workflow.md", file_folder_path="week_3_shared_rhythm", source_ref="ai_fluency/ai_i/monday_moments/week_03_plan_the_work/portfolio_artifact_plan_first_workflow.md"),
+        DesiredObject(kind="file", title="Wednesday reading — Grow through mistakes", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/readings/week_03_wed_growing_through_mistakes.md", file_folder_path="week_3_shared_rhythm", source_ref="professional_minds/readings/week_03_wed_growing_through_mistakes.md"),
+        DesiredObject(kind="file", title="Wednesday slides — Grow through mistakes", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/presentations/beamer/week_03_wed/week03_wed.pdf", file_folder_path="week_3_shared_rhythm", source_ref="professional_minds/presentations/beamer/week_03_wed/week03_wed.pdf"),
+        DesiredObject(kind="file", title="Friday reading — Resilience and risk competence", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/readings/week_03_fri_resilience_and_risk_competence.md", file_folder_path="week_3_shared_rhythm", source_ref="professional_minds/readings/week_03_fri_resilience_and_risk_competence.md"),
+        DesiredObject(kind="file", title="Friday slides — Resilience and risk competence", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/presentations/beamer/week_03_fri/week03_fri.pdf", file_folder_path="week_3_shared_rhythm", source_ref="professional_minds/presentations/beamer/week_03_fri/week03_fri.pdf"),
+    ])
     plan = DesiredCourse(course_label=TITLE, course_id=course_id, modules=[
         DesiredModule(title="00 — Start Here + Kickoff", position=1, objects=[page("Success Foundations / Semester Kickoff", kickoff_html, "previews/kickoff.html")]),
         DesiredModule(title="01 — Recitation / Get Help", position=2, objects=[page("Recitation / Get Help", recitation_md, "curriculum/recitation.md")]),
@@ -124,6 +146,7 @@ def main() -> int:
             DesiredObject(kind="assignment", title="Week 2 — Show That It Works", body_markdown="Bring a concise evidence receipt: direct Ollama success, bounded Aider change, inspected diff, independent test, and one Work First sentence. This completion object is worth 0 points.", points_possible_override=0, grading_type="not_graded", submission_types=["online_text_entry"], source_ref="prompt-005 bounded completion"),
         ]),
         DesiredModule(title="03 — Week 2: Shared Rhythm", position=4, objects=shared_rhythm_objects),
+        DesiredModule(title="04 — Week 3: Shared Rhythm", position=5, objects=week3_objects),
     ])
     result = push_course(client, plan, sandbox=True, force=True, prune_scope="module")
     update_course(client, course_id, {"course[workflow_state]": "available", "course[default_view]": "modules"})
@@ -131,7 +154,7 @@ def main() -> int:
         if live_module.get("name") in {m.title for m in plan.modules}:
             update_module(client, course_id, int(live_module["id"]), {"module[published]": "true"})
     manifest = {"target": config.api_base_url, "course": {"id": course_id, "title": TITLE}, "source_commit": os.popen(f"git -C {ROOT} rev-parse HEAD").read().strip(), "objects": [e.model_dump() for e in result.log], "result": result.model_dump(), "swosu_course_24298_touched": False}
-    out = ROOT / "sidecar/evidence/savnac/009_deployment_manifest.json"
+    out = ROOT / "sidecar/evidence/savnac/010_deployment_manifest.json"
     out.write_text(json.dumps(manifest, indent=2) + "\n")
     print(json.dumps({"course_id": course_id, "course_title": TITLE, "created": result.created_count, "updated": result.updated_count, "skipped": result.skipped_count, "manifest": str(out)}, indent=2))
     return 0

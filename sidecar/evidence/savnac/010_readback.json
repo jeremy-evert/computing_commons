@@ -1,0 +1,975 @@
+{
+  "target": "http://192.168.122.172:3000",
+  "course": {
+    "id": 18,
+    "name": "Computing Commons \u2014 Visual Prototype (Week 2)",
+    "workflow_state": "available"
+  },
+  "modules": [
+    {
+      "id": 109,
+      "name": "00 \u2014 Start Here + Kickoff",
+      "position": 1,
+      "published": true,
+      "items": [
+        {
+          "id": 1211,
+          "title": "Success Foundations / Semester Kickoff",
+          "type": "Page",
+          "page_url": "success-foundations-slash-semester-kickoff",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/success-foundations-slash-semester-kickoff"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "01 \u2014 Recitation / Get Help",
+      "position": 2,
+      "published": true,
+      "items": [
+        {
+          "id": 1212,
+          "title": "Recitation / Get Help",
+          "type": "Page",
+          "page_url": "recitation-slash-get-help",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/recitation-slash-get-help"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "name": "02 \u2014 Week 2: Build and Verify Local AI",
+      "position": 3,
+      "published": true,
+      "items": [
+        {
+          "id": 1213,
+          "title": "Week 2 \u2014 Build and Verify Your Local AI Lab",
+          "type": "Page",
+          "page_url": "week-2-build-and-verify-your-local-ai-lab",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-build-and-verify-your-local-ai-lab"
+        },
+        {
+          "id": 1214,
+          "title": "Week 2 \u2014 Verify the tools",
+          "type": "Page",
+          "page_url": "week-2-verify-the-tools",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-verify-the-tools"
+        },
+        {
+          "id": 1215,
+          "title": "Week 2 \u2014 Recovery with evidence",
+          "type": "Page",
+          "page_url": "week-2-recovery-with-evidence",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-recovery-with-evidence"
+        },
+        {
+          "id": 1217,
+          "title": "Week 2 \u2014 Inventory what you already have",
+          "type": "Page",
+          "page_url": "week-2-inventory-what-you-already-have",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-inventory-what-you-already-have"
+        },
+        {
+          "id": 1218,
+          "title": "Week 2 \u2014 Verify the Windows foundation",
+          "type": "Page",
+          "page_url": "week-2-verify-the-windows-foundation",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-verify-the-windows-foundation"
+        },
+        {
+          "id": 1219,
+          "title": "Week 2 \u2014 Confirm Ollama",
+          "type": "Page",
+          "page_url": "week-2-confirm-ollama",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-confirm-ollama"
+        },
+        {
+          "id": 1220,
+          "title": "Week 2 \u2014 Confirm the approved model",
+          "type": "Page",
+          "page_url": "week-2-confirm-the-approved-model",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-confirm-the-approved-model"
+        },
+        {
+          "id": 1221,
+          "title": "Week 2 \u2014 Say hello directly to Ollama",
+          "type": "Page",
+          "page_url": "week-2-say-hello-directly-to-ollama",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-say-hello-directly-to-ollama"
+        },
+        {
+          "id": 1222,
+          "title": "Week 2 \u2014 Get or confirm Aider",
+          "type": "Page",
+          "page_url": "week-2-get-or-confirm-aider",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-get-or-confirm-aider"
+        },
+        {
+          "id": 1223,
+          "title": "Week 2 \u2014 Prepare the tiny Git worktree",
+          "type": "Page",
+          "page_url": "week-2-prepare-the-tiny-git-worktree",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-prepare-the-tiny-git-worktree"
+        },
+        {
+          "id": 1224,
+          "title": "Week 2 \u2014 Say hello with Aider",
+          "type": "Page",
+          "page_url": "week-2-say-hello-with-aider",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-say-hello-with-aider"
+        },
+        {
+          "id": 1225,
+          "title": "Week 2 \u2014 Three tiny Aider wins",
+          "type": "Page",
+          "page_url": "week-2-three-tiny-aider-wins",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-three-tiny-aider-wins"
+        },
+        {
+          "id": 1226,
+          "title": "Week 2 \u2014 Bridge to Work First",
+          "type": "Page",
+          "page_url": "week-2-bridge-to-work-first",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-bridge-to-work-first"
+        },
+        {
+          "id": 1227,
+          "title": "Week 2 \u2014 Show That It Works",
+          "type": "Page",
+          "page_url": "week-2-show-that-it-works",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-show-that-it-works"
+        },
+        {
+          "id": 1228,
+          "title": "Week 2 \u2014 Show That It Works",
+          "type": "Assignment",
+          "page_url": null,
+          "content_id": 507,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/assignments/507"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "name": "03 \u2014 Week 2: Shared Rhythm",
+      "position": 4,
+      "published": true,
+      "items": [
+        {
+          "id": 1230,
+          "title": "Week 2 \u2014 Shared Rhythm",
+          "type": "Page",
+          "page_url": "week-2-shared-rhythm",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-shared-rhythm"
+        },
+        {
+          "id": 1231,
+          "title": "Monday \u2014 AI Fluency: Gather Context",
+          "type": "Page",
+          "page_url": "monday-ai-fluency-gather-context",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/monday-ai-fluency-gather-context"
+        },
+        {
+          "id": 1232,
+          "title": "Wednesday \u2014 Make It Stick: Retrieval Practice",
+          "type": "Page",
+          "page_url": "wednesday-make-it-stick-retrieval-practice",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/wednesday-make-it-stick-retrieval-practice"
+        },
+        {
+          "id": 1233,
+          "title": "Friday \u2014 Mindset at Work",
+          "type": "Page",
+          "page_url": "friday-mindset-at-work",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/friday-mindset-at-work"
+        },
+        {
+          "id": 1234,
+          "title": "Wednesday reading \u2014 Make It Stick",
+          "type": "File",
+          "page_url": null,
+          "content_id": 119,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/119"
+        },
+        {
+          "id": 1235,
+          "title": "Wednesday slides \u2014 Make It Stick",
+          "type": "File",
+          "page_url": null,
+          "content_id": 120,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/120"
+        },
+        {
+          "id": 1236,
+          "title": "Friday reading \u2014 Mindset at Work",
+          "type": "File",
+          "page_url": null,
+          "content_id": 121,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/121"
+        },
+        {
+          "id": 1237,
+          "title": "Friday slides \u2014 Mindset at Work",
+          "type": "File",
+          "page_url": null,
+          "content_id": 122,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/122"
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "name": "04 \u2014 Week 3: Shared Rhythm",
+      "position": 5,
+      "published": true,
+      "items": [
+        {
+          "id": 1238,
+          "title": "Week 3 \u2014 Shared Rhythm",
+          "type": "Page",
+          "page_url": "week-3-shared-rhythm",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-3-shared-rhythm"
+        },
+        {
+          "id": 1239,
+          "title": "Monday \u2014 AI Fluency: Plan the Work",
+          "type": "Page",
+          "page_url": "monday-ai-fluency-plan-the-work",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/monday-ai-fluency-plan-the-work"
+        },
+        {
+          "id": 1240,
+          "title": "Wednesday \u2014 Professional Minds: Grow through mistakes",
+          "type": "Page",
+          "page_url": "wednesday-professional-minds-grow-through-mistakes",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/wednesday-professional-minds-grow-through-mistakes"
+        },
+        {
+          "id": 1241,
+          "title": "Friday \u2014 Professional Minds: Resilience and risk competence",
+          "type": "Page",
+          "page_url": "friday-professional-minds-resilience-and-risk-competence",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/friday-professional-minds-resilience-and-risk-competence"
+        },
+        {
+          "id": 1242,
+          "title": "Monday source \u2014 Plan the Work",
+          "type": "File",
+          "page_url": null,
+          "content_id": 123,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/123"
+        },
+        {
+          "id": 1243,
+          "title": "Monday activity \u2014 Plan the Work",
+          "type": "File",
+          "page_url": null,
+          "content_id": 124,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/124"
+        },
+        {
+          "id": 1244,
+          "title": "Monday instructor guide \u2014 Plan the Work",
+          "type": "File",
+          "page_url": null,
+          "content_id": 125,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/125"
+        },
+        {
+          "id": 1245,
+          "title": "Monday rubric \u2014 Plan the Work",
+          "type": "File",
+          "page_url": null,
+          "content_id": 126,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/126"
+        },
+        {
+          "id": 1246,
+          "title": "Monday portfolio artifact \u2014 Plan-first Workflow",
+          "type": "File",
+          "page_url": null,
+          "content_id": 127,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/127"
+        },
+        {
+          "id": 1247,
+          "title": "Wednesday reading \u2014 Grow through mistakes",
+          "type": "File",
+          "page_url": null,
+          "content_id": 128,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/128"
+        },
+        {
+          "id": 1248,
+          "title": "Wednesday slides \u2014 Grow through mistakes",
+          "type": "File",
+          "page_url": null,
+          "content_id": 129,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/129"
+        },
+        {
+          "id": 1249,
+          "title": "Friday reading \u2014 Resilience and risk competence",
+          "type": "File",
+          "page_url": null,
+          "content_id": 130,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/130"
+        },
+        {
+          "id": 1250,
+          "title": "Friday slides \u2014 Resilience and risk competence",
+          "type": "File",
+          "page_url": null,
+          "content_id": 131,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/files/131"
+        }
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "id": 507,
+      "name": "Week 2 \u2014 Show That It Works",
+      "points_possible": 0.0,
+      "published": true
+    }
+  ],
+  "pages": [
+    {
+      "id": 664,
+      "url": "success-foundations-slash-semester-kickoff",
+      "title": "Success Foundations / Semester Kickoff",
+      "published": true,
+      "body_length": 3198,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 665,
+      "url": "recitation-slash-get-help",
+      "title": "Recitation / Get Help",
+      "published": true,
+      "body_length": 2719,
+      "hrefs": []
+    },
+    {
+      "id": 666,
+      "url": "week-2-build-and-verify-your-local-ai-lab",
+      "title": "Week 2 \u2014 Build and Verify Your Local AI Lab",
+      "published": true,
+      "body_length": 3867,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-tools",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-tools",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-tools",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 667,
+      "url": "week-2-verify-the-tools",
+      "title": "Week 2 \u2014 Verify the tools",
+      "published": true,
+      "body_length": 982,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence"
+      ]
+    },
+    {
+      "id": 668,
+      "url": "week-2-recovery-with-evidence",
+      "title": "Week 2 \u2014 Recovery with evidence",
+      "published": true,
+      "body_length": 795,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 669,
+      "url": "week-2-inventory-what-you-already-have",
+      "title": "Week 2 \u2014 Inventory what you already have",
+      "published": true,
+      "body_length": 3054,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-windows-foundation",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 670,
+      "url": "week-2-verify-the-windows-foundation",
+      "title": "Week 2 \u2014 Verify the Windows foundation",
+      "published": true,
+      "body_length": 2695,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-inventory-what-you-already-have",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-confirm-ollama",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 671,
+      "url": "week-2-confirm-ollama",
+      "title": "Week 2 \u2014 Confirm Ollama",
+      "published": true,
+      "body_length": 2738,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-verify-the-windows-foundation",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-confirm-the-approved-model",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 672,
+      "url": "week-2-confirm-the-approved-model",
+      "title": "Week 2 \u2014 Confirm the approved model",
+      "published": true,
+      "body_length": 2601,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-confirm-ollama",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-say-hello-directly-to-ollama",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 673,
+      "url": "week-2-say-hello-directly-to-ollama",
+      "title": "Week 2 \u2014 Say hello directly to Ollama",
+      "published": true,
+      "body_length": 2627,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-confirm-the-approved-model",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-get-or-confirm-aider",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 674,
+      "url": "week-2-get-or-confirm-aider",
+      "title": "Week 2 \u2014 Get or confirm Aider",
+      "published": true,
+      "body_length": 2695,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-say-hello-directly-to-ollama",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-prepare-the-tiny-git-worktree",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 675,
+      "url": "week-2-prepare-the-tiny-git-worktree",
+      "title": "Week 2 \u2014 Prepare the tiny Git worktree",
+      "published": true,
+      "body_length": 2642,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-get-or-confirm-aider",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-say-hello-with-aider",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 676,
+      "url": "week-2-say-hello-with-aider",
+      "title": "Week 2 \u2014 Say hello with Aider",
+      "published": true,
+      "body_length": 2671,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-prepare-the-tiny-git-worktree",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-three-tiny-aider-wins",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 677,
+      "url": "week-2-three-tiny-aider-wins",
+      "title": "Week 2 \u2014 Three tiny Aider wins",
+      "published": true,
+      "body_length": 2692,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-say-hello-with-aider",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-bridge-to-work-first",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 678,
+      "url": "week-2-bridge-to-work-first",
+      "title": "Week 2 \u2014 Bridge to Work First",
+      "published": true,
+      "body_length": 2966,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-three-tiny-aider-wins",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-show-that-it-works",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 679,
+      "url": "week-2-show-that-it-works",
+      "title": "Week 2 \u2014 Show That It Works",
+      "published": true,
+      "body_length": 2631,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-bridge-to-work-first",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-recovery-with-evidence",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 681,
+      "url": "week-2-shared-rhythm",
+      "title": "Week 2 \u2014 Shared Rhythm",
+      "published": true,
+      "body_length": 4224,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/success-foundations-slash-semester-kickoff",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/monday-ai-fluency-gather-context",
+        "http://192.168.122.172:3000/courses/18/pages/monday-ai-fluency-gather-context",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-make-it-stick-retrieval-practice",
+        "http://192.168.122.172:3000/courses/18/pages/friday-mindset-at-work",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/monday-ai-fluency-gather-context",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-make-it-stick-retrieval-practice",
+        "http://192.168.122.172:3000/courses/18/pages/friday-mindset-at-work",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 682,
+      "url": "monday-ai-fluency-gather-context",
+      "title": "Monday \u2014 AI Fluency: Gather Context",
+      "published": true,
+      "body_length": 3504,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-build-and-verify-your-local-ai-lab",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-make-it-stick-retrieval-practice",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-make-it-stick-retrieval-practice"
+      ]
+    },
+    {
+      "id": 683,
+      "url": "wednesday-make-it-stick-retrieval-practice",
+      "title": "Wednesday \u2014 Make It Stick: Retrieval Practice",
+      "published": true,
+      "body_length": 3487,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/monday-ai-fluency-gather-context",
+        "http://192.168.122.172:3000/courses/18/pages/friday-mindset-at-work",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/monday-ai-fluency-gather-context",
+        "http://192.168.122.172:3000/courses/18/pages/friday-mindset-at-work"
+      ]
+    },
+    {
+      "id": 684,
+      "url": "friday-mindset-at-work",
+      "title": "Friday \u2014 Mindset at Work",
+      "published": true,
+      "body_length": 3742,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-make-it-stick-retrieval-practice",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-make-it-stick-retrieval-practice",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 685,
+      "url": "week-3-shared-rhythm",
+      "title": "Week 3 \u2014 Shared Rhythm",
+      "published": true,
+      "body_length": 3866,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-2-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/monday-plan-the-work",
+        "http://192.168.122.172:3000/courses/18/pages/monday-plan-the-work",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-grow-through-mistakes",
+        "http://192.168.122.172:3000/courses/18/pages/friday-resilience-and-risk-competence",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-2-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/monday-plan-the-work",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-grow-through-mistakes",
+        "http://192.168.122.172:3000/courses/18/pages/friday-resilience-and-risk-competence",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    },
+    {
+      "id": 686,
+      "url": "monday-ai-fluency-plan-the-work",
+      "title": "Monday \u2014 AI Fluency: Plan the Work",
+      "published": true,
+      "body_length": 3744,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-3-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/monday-ai-fluency-gather-context",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-grow-through-mistakes",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-3-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-grow-through-mistakes"
+      ]
+    },
+    {
+      "id": 687,
+      "url": "wednesday-professional-minds-grow-through-mistakes",
+      "title": "Wednesday \u2014 Professional Minds: Grow through mistakes",
+      "published": true,
+      "body_length": 3470,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-3-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/monday-plan-the-work",
+        "http://192.168.122.172:3000/courses/18/pages/friday-resilience-and-risk-competence",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/monday-plan-the-work",
+        "http://192.168.122.172:3000/courses/18/pages/friday-resilience-and-risk-competence"
+      ]
+    },
+    {
+      "id": 688,
+      "url": "friday-professional-minds-resilience-and-risk-competence",
+      "title": "Friday \u2014 Professional Minds: Resilience and risk competence",
+      "published": true,
+      "body_length": 3924,
+      "hrefs": [
+        "http://192.168.122.172:3000/courses/18/pages/week-3-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-grow-through-mistakes",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help",
+        "http://192.168.122.172:3000/courses/18/pages/week-3-shared-rhythm",
+        "http://192.168.122.172:3000/courses/18/pages/wednesday-grow-through-mistakes",
+        "http://192.168.122.172:3000/courses/18/pages/recitation-slash-get-help"
+      ]
+    }
+  ],
+  "shared_rhythm_file_items": [
+    {
+      "id": 1234,
+      "title": "Wednesday reading \u2014 Make It Stick",
+      "type": "File",
+      "page_url": null,
+      "content_id": 119,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/119"
+    },
+    {
+      "id": 1235,
+      "title": "Wednesday slides \u2014 Make It Stick",
+      "type": "File",
+      "page_url": null,
+      "content_id": 120,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/120"
+    },
+    {
+      "id": 1236,
+      "title": "Friday reading \u2014 Mindset at Work",
+      "type": "File",
+      "page_url": null,
+      "content_id": 121,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/121"
+    },
+    {
+      "id": 1237,
+      "title": "Friday slides \u2014 Mindset at Work",
+      "type": "File",
+      "page_url": null,
+      "content_id": 122,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/122"
+    }
+  ],
+  "shared_rhythm_files": [
+    {
+      "id": 121,
+      "display_name": "week_02_fri_mindset_at_work.md",
+      "url": "http://192.168.122.172:3000/files/121/download?download_frd=1",
+      "size": 9289
+    },
+    {
+      "id": 119,
+      "display_name": "week_02_wed_retrieval_practice.md",
+      "url": "http://192.168.122.172:3000/files/119/download?download_frd=1",
+      "size": 7230
+    },
+    {
+      "id": 122,
+      "display_name": "week02_fri.pdf",
+      "url": "http://192.168.122.172:3000/files/122/download?download_frd=1",
+      "size": 70568
+    },
+    {
+      "id": 120,
+      "display_name": "week02_wed.pdf",
+      "url": "http://192.168.122.172:3000/files/120/download?download_frd=1",
+      "size": 61245
+    }
+  ],
+  "week3_file_items": [
+    {
+      "id": 1242,
+      "title": "Monday source \u2014 Plan the Work",
+      "type": "File",
+      "page_url": null,
+      "content_id": 123,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/123"
+    },
+    {
+      "id": 1243,
+      "title": "Monday activity \u2014 Plan the Work",
+      "type": "File",
+      "page_url": null,
+      "content_id": 124,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/124"
+    },
+    {
+      "id": 1244,
+      "title": "Monday instructor guide \u2014 Plan the Work",
+      "type": "File",
+      "page_url": null,
+      "content_id": 125,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/125"
+    },
+    {
+      "id": 1245,
+      "title": "Monday rubric \u2014 Plan the Work",
+      "type": "File",
+      "page_url": null,
+      "content_id": 126,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/126"
+    },
+    {
+      "id": 1246,
+      "title": "Monday portfolio artifact \u2014 Plan-first Workflow",
+      "type": "File",
+      "page_url": null,
+      "content_id": 127,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/127"
+    },
+    {
+      "id": 1247,
+      "title": "Wednesday reading \u2014 Grow through mistakes",
+      "type": "File",
+      "page_url": null,
+      "content_id": 128,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/128"
+    },
+    {
+      "id": 1248,
+      "title": "Wednesday slides \u2014 Grow through mistakes",
+      "type": "File",
+      "page_url": null,
+      "content_id": 129,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/129"
+    },
+    {
+      "id": 1249,
+      "title": "Friday reading \u2014 Resilience and risk competence",
+      "type": "File",
+      "page_url": null,
+      "content_id": 130,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/130"
+    },
+    {
+      "id": 1250,
+      "title": "Friday slides \u2014 Resilience and risk competence",
+      "type": "File",
+      "page_url": null,
+      "content_id": 131,
+      "published": true,
+      "url": "http://192.168.122.172:3000/api/v1/courses/18/files/131"
+    }
+  ],
+  "week3_files": [
+    {
+      "id": 126,
+      "display_name": "assessment_rubric.md",
+      "url": "http://192.168.122.172:3000/files/126/download?download_frd=1",
+      "size": 4754
+    },
+    {
+      "id": 125,
+      "display_name": "instructor_guide.md",
+      "url": "http://192.168.122.172:3000/files/125/download?download_frd=1",
+      "size": 8270
+    },
+    {
+      "id": 123,
+      "display_name": "monday_moment.md",
+      "url": "http://192.168.122.172:3000/files/123/download?download_frd=1",
+      "size": 12351
+    },
+    {
+      "id": 127,
+      "display_name": "portfolio_artifact_plan_first_workflow.md",
+      "url": "http://192.168.122.172:3000/files/127/download?download_frd=1",
+      "size": 2379
+    },
+    {
+      "id": 124,
+      "display_name": "student_activity.md",
+      "url": "http://192.168.122.172:3000/files/124/download?download_frd=1",
+      "size": 5400
+    },
+    {
+      "id": 130,
+      "display_name": "week_03_fri_resilience_and_risk_competence.md",
+      "url": "http://192.168.122.172:3000/files/130/download?download_frd=1",
+      "size": 9176
+    },
+    {
+      "id": 128,
+      "display_name": "week_03_wed_growing_through_mistakes.md",
+      "url": "http://192.168.122.172:3000/files/128/download?download_frd=1",
+      "size": 8375
+    },
+    {
+      "id": 131,
+      "display_name": "week03_fri.pdf",
+      "url": "http://192.168.122.172:3000/files/131/download?download_frd=1",
+      "size": 75630
+    },
+    {
+      "id": 129,
+      "display_name": "week03_wed.pdf",
+      "url": "http://192.168.122.172:3000/files/129/download?download_frd=1",
+      "size": 63351
+    }
+  ],
+  "link_validation": {
+    "repository_filename_hrefs": [],
+    "edit_hrefs": [],
+    "week2_terminal_ok": true,
+    "week3_terminal_ok": true,
+    "href_count": 147
+  },
+  "swosu_course_24298_touched": false
+}
