@@ -1,0 +1,35 @@
+{
+  "target": "http://192.168.122.172:3000",
+  "course": {
+    "id": 18,
+    "title": "SWOSU Computing Commons",
+    "default_view_requested": "wiki"
+  },
+  "source_commit": "c516e29a6f57568fc3e7420a7f52bf8f8a9328fa",
+  "pages": [
+    {
+      "action": "update",
+      "page_id": 689,
+      "url": "computing-commons-home",
+      "title": "Computing Commons Home",
+      "published": true,
+      "front_page": true
+    },
+    {
+      "action": "update",
+      "page_id": 690,
+      "url": "teachers-table",
+      "title": "Teacher's Table",
+      "published": true,
+      "front_page": false
+    }
+  ],
+  "boundaries": {
+    "savnac_course_18_only": true,
+    "swosu_course_24298_touched": false,
+    "course_17_touched": false,
+    "canonical_repositories_touched": false,
+    "quick_tune_run": false,
+    "synthetic_students_run": false
+  }
+}

@@ -1,4 +1,4 @@
-"""Read back Prompt 011's course-18 Home and Teacher's Table."""
+"""Read back Prompt 013's course-18 Home and Teacher's Table."""
 from __future__ import annotations
 
 import json
@@ -41,9 +41,9 @@ def main() -> int:
         "course": {k: course.get(k) for k in ("id", "name", "workflow_state", "default_view")},
         "home": {k: home.get(k) for k in ("page_id", "url", "title", "published", "front_page", "body") if k != "body"} | {"href_count": len(home_hrefs), "bad_student_hrefs": bad_student_hrefs, "missing_required_routes": missing_routes},
         "teachers_table": {k: table.get(k) for k in ("page_id", "url", "title", "published", "front_page") } | {"href_count": len(table_hrefs)},
-        "checks": {"home_published": home.get("published") is True, "home_is_front_page": home.get("front_page") is True, "default_view_is_wiki": course.get("default_view") == "wiki", "teacher_table_unpublished": table.get("published") is False, "home_routes_ok": not missing_routes, "student_href_hygiene_ok": not bad_student_hrefs, "swosu_course_24298_touched": False},
+        "checks": {"course_title_exact": course.get("name") == "SWOSU Computing Commons", "home_published": home.get("published") is True, "home_is_front_page": home.get("front_page") is True, "default_view_is_wiki": course.get("default_view") == "wiki", "semester_map_label": "Semester Map" in home_body and "All routes" not in home_body, "teacher_table_published": table.get("published") is True, "teacher_table_not_in_home": "/pages/teachers-table" not in home_body, "home_routes_ok": not missing_routes, "study_before_class_cues": all(token in (table.get("body") or "") for token in ("STUDY BEFORE CLASS", "Week 2 Monday", "Week 2 Wednesday", "Week 2 Friday", "Week 3 Monday", "Week 3 Wednesday", "Week 3 Friday")), "student_href_hygiene_ok": not bad_student_hrefs, "swosu_course_24298_untouched": True},
     }
-    output = ROOT / "sidecar/evidence/savnac/011_readback.json"
+    output = ROOT / "sidecar/evidence/savnac/013_readback.json"
     output.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({"course_id": COURSE_ID, "checks": result["checks"], "readback": str(output)}, indent=2))
     if not all(result["checks"].values()):

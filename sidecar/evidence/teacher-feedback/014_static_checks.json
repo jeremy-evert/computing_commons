@@ -1,0 +1,17 @@
+{
+  "schema": "computing-commons.teacher-feedback.v1",
+  "checks": {
+    "service_compiles": true,
+    "health_endpoint": true,
+    "valid_course_18_receipt": true,
+    "wrong_course_refused": true,
+    "html_feedback_escaped_in_markdown": true,
+    "main_checkout_untouched_by_receipt_test": true,
+    "first_tab_fallback": false,
+    "student_canvas_html_injection": false,
+    "production_canvas_mutation": false,
+    "quick_tune_or_synthetic_students": false
+  },
+  "test_sink": "/tmp/cc-feedback-test",
+  "owner_gate": "Grace dogfood remains required; this is not live owner acceptance."
+}

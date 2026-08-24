@@ -1,4 +1,4 @@
-"""Deploy Prompt 011's Home and unpublished Teacher's Table to Savnac course 18."""
+"""Deploy Prompt 013's Home and published Teacher's Table to Savnac course 18."""
 from __future__ import annotations
 
 import json
@@ -13,7 +13,7 @@ from harbor.config import load_env, read_canvas_config  # type: ignore
 
 ROOT = Path(__file__).resolve().parents[1]
 COURSE_ID = 18
-COURSE_TITLE = "Computing Commons — Visual Prototype (Week 2)"
+COURSE_TITLE = "SWOSU Computing Commons"
 
 
 def ensure_page(client: CanvasClient, title: str, slug: str, body: str, published: bool, front_page: bool = False) -> dict:
@@ -57,12 +57,12 @@ def main() -> int:
     course_response = client.get(f"/api/v1/courses/{COURSE_ID}")
     course_response.raise_for_status()
     course = course_response.json()
-    if int(course.get("id", -1)) != COURSE_ID or course.get("name") != COURSE_TITLE:
+    if int(course.get("id", -1)) != COURSE_ID or course.get("name") not in {COURSE_TITLE, "Computing Commons — Visual Prototype (Week 2)"}:
         raise SystemExit("refusing: course 18 is not the expected bounded Savnac prototype")
 
     home = ensure_page(client, "Computing Commons Home", "home", (ROOT / "previews/home.html").read_text(), True, True)
-    table = ensure_page(client, "Teacher's Table", "teachers-table", (ROOT / "previews/teacher-table.html").read_text(), False, False)
-    update_course(client, COURSE_ID, {"course[workflow_state]": "available", "course[default_view]": "wiki"})
+    table = ensure_page(client, "Teacher's Table", "teachers-table", (ROOT / "previews/teacher-table.html").read_text(), True, False)
+    update_course(client, COURSE_ID, {"course[name]": COURSE_TITLE, "course[workflow_state]": "available", "course[default_view]": "wiki"})
 
     manifest = {
         "target": config.api_base_url,
@@ -71,7 +71,7 @@ def main() -> int:
         "pages": [home, table],
         "boundaries": {"savnac_course_18_only": True, "swosu_course_24298_touched": False, "course_17_touched": False, "canonical_repositories_touched": False, "quick_tune_run": False, "synthetic_students_run": False},
     }
-    output = ROOT / "sidecar/evidence/savnac/011_deployment_manifest.json"
+    output = ROOT / "sidecar/evidence/savnac/013_deployment_manifest.json"
     output.write_text(json.dumps(manifest, indent=2) + "\n")
     print(json.dumps({"course_id": COURSE_ID, "pages": manifest["pages"], "manifest": str(output)}, indent=2))
     return 0

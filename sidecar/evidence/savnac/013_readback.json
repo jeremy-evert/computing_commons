@@ -1,0 +1,40 @@
+{
+  "target": "http://192.168.122.172:3000",
+  "course": {
+    "id": 18,
+    "name": "SWOSU Computing Commons",
+    "workflow_state": "available",
+    "default_view": "wiki"
+  },
+  "home": {
+    "page_id": 689,
+    "url": "computing-commons-home",
+    "title": "Computing Commons Home",
+    "published": true,
+    "front_page": true,
+    "href_count": 12,
+    "bad_student_hrefs": [],
+    "missing_required_routes": []
+  },
+  "teachers_table": {
+    "page_id": 690,
+    "url": "teachers-table",
+    "title": "Teacher's Table",
+    "published": true,
+    "front_page": false,
+    "href_count": 22
+  },
+  "checks": {
+    "course_title_exact": true,
+    "home_published": true,
+    "home_is_front_page": true,
+    "default_view_is_wiki": true,
+    "semester_map_label": true,
+    "teacher_table_published": true,
+    "teacher_table_not_in_home": true,
+    "home_routes_ok": true,
+    "study_before_class_cues": true,
+    "student_href_hygiene_ok": true,
+    "swosu_course_24298_untouched": true
+  }
+}
