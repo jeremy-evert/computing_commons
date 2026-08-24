@@ -1,0 +1,35 @@
+{
+  "target": "http://192.168.122.172:3000",
+  "course": {
+    "id": 18,
+    "title": "Computing Commons \u2014 Visual Prototype (Week 2)",
+    "default_view_requested": "wiki"
+  },
+  "source_commit": "d6c5bd3effb8a9d26939b9609de1f46089c24283",
+  "pages": [
+    {
+      "action": "create",
+      "page_id": 689,
+      "url": "home",
+      "title": "Computing Commons Home",
+      "published": true,
+      "front_page": true
+    },
+    {
+      "action": "create",
+      "page_id": 690,
+      "url": "teachers-table",
+      "title": "Teacher's Table",
+      "published": false,
+      "front_page": false
+    }
+  ],
+  "boundaries": {
+    "savnac_course_18_only": true,
+    "swosu_course_24298_touched": false,
+    "course_17_touched": false,
+    "canonical_repositories_touched": false,
+    "quick_tune_run": false,
+    "synthetic_students_run": false
+  }
+}
