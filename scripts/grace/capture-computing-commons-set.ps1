@@ -31,12 +31,12 @@ if ($Publish) {
 
 $base = "http://localhost:3002/courses/$CourseId"
 $targets = @(
-    @{ Name = '00-modules'; Url = "$base/modules" },
-    @{ Name = '01-success-foundations-semester-kickoff'; Url = "$base/pages/success-foundations-slash-semester-kickoff" },
-    @{ Name = '02-recitation-get-help'; Url = "$base/pages/recitation-slash-get-help" },
-    @{ Name = '03-week2-local-ai-lab'; Url = "$base/pages/week-2-build-and-verify-your-local-ai-lab" },
-    @{ Name = '04-week2-verify-tools'; Url = "$base/pages/week-2-verify-the-tools" },
-    @{ Name = '05-week2-recovery'; Url = "$base/pages/week-2-recovery-with-evidence" }
+    [pscustomobject]@{ Name = '00-modules'; Url = "$base/modules" },
+    [pscustomobject]@{ Name = '01-success-foundations-semester-kickoff'; Url = "$base/pages/success-foundations-slash-semester-kickoff" },
+    [pscustomobject]@{ Name = '02-recitation-get-help'; Url = "$base/pages/recitation-slash-get-help" },
+    [pscustomobject]@{ Name = '03-week2-local-ai-lab'; Url = "$base/pages/week-2-build-and-verify-your-local-ai-lab" },
+    [pscustomobject]@{ Name = '04-week2-verify-tools'; Url = "$base/pages/week-2-verify-the-tools" },
+    [pscustomobject]@{ Name = '05-week2-recovery'; Url = "$base/pages/week-2-recovery-with-evidence" }
 )
 
 $session = Get-Date -Format 'yyyy-MM-dd_HHmmss'
@@ -46,12 +46,18 @@ New-Item -ItemType Directory -Force -Path $outputDir | Out-Null
 
 $manifest = @()
 foreach ($target in $targets) {
-    Write-Host "Capturing $($target.Name)..."
-    $png = Join-Path $outputDir ($target.Name + '.png')
-    $capture = & $captureScript -DebugPort $DebugPort -Url $target.Url -OutputPath $png
+    $name = [string]$target.Name
+    $requestedUrl = [string]$target.Url
+    if ([string]::IsNullOrWhiteSpace($requestedUrl)) {
+        throw "Target '$name' has no usable URL."
+    }
+
+    Write-Host "Capturing $name..."
+    $png = Join-Path $outputDir ($name + '.png')
+    $capture = & $captureScript -DebugPort $DebugPort -Url $requestedUrl -OutputPath $png
     $manifest += [pscustomobject]@{
-        name = $target.Name
-        requested_url = $target.Url
+        name = $name
+        requested_url = $requestedUrl
         rendered_title = $capture.Title
         rendered_url = $capture.Url
         file = [System.IO.Path]::GetRelativePath($repoRoot, $capture.Path).Replace('\','/')
