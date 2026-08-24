@@ -68,6 +68,12 @@ try {
     throw "No capture browser found on port $DebugPort. Run scripts/grace/start-savnac-capture-browser.ps1 first."
 }
 
+# Normalize a nested top-level array if Invoke-RestMethod returns one as a
+# single pipeline object on this PowerShell build.
+if ($targets.Count -eq 1 -and $targets[0] -is [System.Array]) {
+    $targets = @($targets[0])
+}
+
 $target = $targets |
     Where-Object { $_.type -eq 'page' -and $_.webSocketDebuggerUrl -and $_.url -notlike 'devtools://*' } |
     Where-Object { $_.url -like 'http://localhost:3002/*' -or $_.url -like 'http://127.0.0.1:3002/*' } |
@@ -83,9 +89,15 @@ if (-not $target) {
     throw 'No capturable browser tab was found.'
 }
 
+$webSocketDebuggerUrl = @($target.webSocketDebuggerUrl) | Select-Object -First 1
+$webSocketDebuggerUrl = [string]$webSocketDebuggerUrl
+if ([string]::IsNullOrWhiteSpace($webSocketDebuggerUrl)) {
+    throw 'The selected browser tab has no usable DevTools websocket URL.'
+}
+
 $socket = [System.Net.WebSockets.ClientWebSocket]::new()
 $socket.ConnectAsync(
-    [Uri]$target.webSocketDebuggerUrl,
+    [System.Uri]::new($webSocketDebuggerUrl),
     [System.Threading.CancellationToken]::None
 ).GetAwaiter().GetResult()
 
