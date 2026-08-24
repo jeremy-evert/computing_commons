@@ -1,0 +1,134 @@
+{
+  "target": "http://192.168.122.172:3000",
+  "course": {
+    "id": 18,
+    "name": "Computing Commons \u2014 Visual Prototype (Week 2)",
+    "workflow_state": "available"
+  },
+  "modules": [
+    {
+      "id": 109,
+      "name": "00 \u2014 Start Here + Kickoff",
+      "position": 1,
+      "published": true,
+      "items": [
+        {
+          "id": 1211,
+          "title": "Success Foundations / Semester Kickoff",
+          "type": "Page",
+          "page_url": "success-foundations-slash-semester-kickoff",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/success-foundations-slash-semester-kickoff"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "01 \u2014 Recitation / Get Help",
+      "position": 2,
+      "published": true,
+      "items": [
+        {
+          "id": 1212,
+          "title": "Recitation / Get Help",
+          "type": "Page",
+          "page_url": "recitation-slash-get-help",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/recitation-slash-get-help"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "name": "02 \u2014 Week 2: Build and Verify Local AI",
+      "position": 3,
+      "published": true,
+      "items": [
+        {
+          "id": 1213,
+          "title": "Week 2 \u2014 Build and Verify Your Local AI Lab",
+          "type": "Page",
+          "page_url": "week-2-build-and-verify-your-local-ai-lab",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-build-and-verify-your-local-ai-lab"
+        },
+        {
+          "id": 1214,
+          "title": "Week 2 \u2014 Verify the tools",
+          "type": "Page",
+          "page_url": "week-2-verify-the-tools",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-verify-the-tools"
+        },
+        {
+          "id": 1215,
+          "title": "Week 2 \u2014 Recovery with evidence",
+          "type": "Page",
+          "page_url": "week-2-recovery-with-evidence",
+          "content_id": null,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/pages/week-2-recovery-with-evidence"
+        },
+        {
+          "id": 1216,
+          "title": "Week 2 visual prototype check",
+          "type": "Assignment",
+          "page_url": null,
+          "content_id": 506,
+          "published": true,
+          "url": "http://192.168.122.172:3000/api/v1/courses/18/assignments/506"
+        }
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "id": 506,
+      "name": "Week 2 visual prototype check",
+      "points_possible": 0.0,
+      "published": true
+    }
+  ],
+  "pages": [
+    {
+      "id": 664,
+      "url": "success-foundations-slash-semester-kickoff",
+      "title": "Success Foundations / Semester Kickoff",
+      "published": true,
+      "body_length": 1786
+    },
+    {
+      "id": 665,
+      "url": "recitation-slash-get-help",
+      "title": "Recitation / Get Help",
+      "published": true,
+      "body_length": 2719
+    },
+    {
+      "id": 666,
+      "url": "week-2-build-and-verify-your-local-ai-lab",
+      "title": "Week 2 \u2014 Build and Verify Your Local AI Lab",
+      "published": true,
+      "body_length": 2147
+    },
+    {
+      "id": 667,
+      "url": "week-2-verify-the-tools",
+      "title": "Week 2 \u2014 Verify the tools",
+      "published": true,
+      "body_length": 790
+    },
+    {
+      "id": 668,
+      "url": "week-2-recovery-with-evidence",
+      "title": "Week 2 \u2014 Recovery with evidence",
+      "published": true,
+      "body_length": 616
+    }
+  ],
+  "swosu_course_24298_touched": false
+}

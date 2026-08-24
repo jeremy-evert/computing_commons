@@ -1,0 +1,170 @@
+{
+  "target": "http://192.168.122.172:3000",
+  "course": {
+    "id": 18,
+    "title": "Computing Commons \u2014 Visual Prototype (Week 2)"
+  },
+  "source_commit": "d50403c0f39c94b368b9a5fe0b834622ba6c2fa6",
+  "objects": [
+    {
+      "module_title": "00 \u2014 Start Here + Kickoff",
+      "object_title": "",
+      "kind": "module",
+      "action": "create",
+      "reason": "",
+      "source_ref": ""
+    },
+    {
+      "module_title": "00 \u2014 Start Here + Kickoff",
+      "object_title": "Success Foundations / Semester Kickoff",
+      "kind": "page",
+      "action": "create",
+      "reason": "",
+      "source_ref": "previews/kickoff.html"
+    },
+    {
+      "module_title": "01 \u2014 Recitation / Get Help",
+      "object_title": "",
+      "kind": "module",
+      "action": "create",
+      "reason": "",
+      "source_ref": ""
+    },
+    {
+      "module_title": "01 \u2014 Recitation / Get Help",
+      "object_title": "Recitation / Get Help",
+      "kind": "page",
+      "action": "create",
+      "reason": "",
+      "source_ref": "curriculum/recitation.md"
+    },
+    {
+      "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+      "object_title": "",
+      "kind": "module",
+      "action": "create",
+      "reason": "",
+      "source_ref": ""
+    },
+    {
+      "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+      "object_title": "Week 2 \u2014 Build and Verify Your Local AI Lab",
+      "kind": "page",
+      "action": "create",
+      "reason": "",
+      "source_ref": "previews/week2-local-ai.html"
+    },
+    {
+      "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+      "object_title": "Week 2 \u2014 Verify the tools",
+      "kind": "page",
+      "action": "create",
+      "reason": "",
+      "source_ref": "curriculum/week2/tools.md"
+    },
+    {
+      "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+      "object_title": "Week 2 \u2014 Recovery with evidence",
+      "kind": "page",
+      "action": "create",
+      "reason": "",
+      "source_ref": "curriculum/week2/recovery.md"
+    },
+    {
+      "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+      "object_title": "Week 2 visual prototype check",
+      "kind": "assignment",
+      "action": "create",
+      "reason": "",
+      "source_ref": "controller-002 bounded prototype"
+    }
+  ],
+  "result": {
+    "course_id": 18,
+    "succeeded": true,
+    "created_count": 9,
+    "updated_count": 0,
+    "skipped_count": 0,
+    "deleted_count": 0,
+    "aborted": false,
+    "dry_run": false,
+    "forced": true,
+    "prune_scope": "module",
+    "detail": "Reconciled Computing Commons \u2014 Visual Prototype (Week 2): 9 created, 0 updated, 0 unchanged, 0 deleted.",
+    "log": [
+      {
+        "module_title": "00 \u2014 Start Here + Kickoff",
+        "object_title": "",
+        "kind": "module",
+        "action": "create",
+        "reason": "",
+        "source_ref": ""
+      },
+      {
+        "module_title": "00 \u2014 Start Here + Kickoff",
+        "object_title": "Success Foundations / Semester Kickoff",
+        "kind": "page",
+        "action": "create",
+        "reason": "",
+        "source_ref": "previews/kickoff.html"
+      },
+      {
+        "module_title": "01 \u2014 Recitation / Get Help",
+        "object_title": "",
+        "kind": "module",
+        "action": "create",
+        "reason": "",
+        "source_ref": ""
+      },
+      {
+        "module_title": "01 \u2014 Recitation / Get Help",
+        "object_title": "Recitation / Get Help",
+        "kind": "page",
+        "action": "create",
+        "reason": "",
+        "source_ref": "curriculum/recitation.md"
+      },
+      {
+        "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+        "object_title": "",
+        "kind": "module",
+        "action": "create",
+        "reason": "",
+        "source_ref": ""
+      },
+      {
+        "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+        "object_title": "Week 2 \u2014 Build and Verify Your Local AI Lab",
+        "kind": "page",
+        "action": "create",
+        "reason": "",
+        "source_ref": "previews/week2-local-ai.html"
+      },
+      {
+        "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+        "object_title": "Week 2 \u2014 Verify the tools",
+        "kind": "page",
+        "action": "create",
+        "reason": "",
+        "source_ref": "curriculum/week2/tools.md"
+      },
+      {
+        "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+        "object_title": "Week 2 \u2014 Recovery with evidence",
+        "kind": "page",
+        "action": "create",
+        "reason": "",
+        "source_ref": "curriculum/week2/recovery.md"
+      },
+      {
+        "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
+        "object_title": "Week 2 visual prototype check",
+        "kind": "assignment",
+        "action": "create",
+        "reason": "",
+        "source_ref": "controller-002 bounded prototype"
+      }
+    ]
+  },
+  "swosu_course_24298_touched": false
+}

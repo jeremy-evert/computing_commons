@@ -1,0 +1,40 @@
+"""Read back only the bounded Commons prototype course and preserve evidence."""
+from __future__ import annotations
+import json, sys
+from pathlib import Path
+sys.path[:0] = ["/mnt/brandy_nvme/jevert/git/harbor"]
+from harbor.client import CanvasClient  # type: ignore
+from harbor.config import load_env, read_canvas_config  # type: ignore
+
+ROOT = Path(__file__).resolve().parents[1]
+
+def get_json(client: CanvasClient, path: str):
+    response = client.get(path)
+    response.raise_for_status()
+    return response.json()
+
+def main() -> int:
+    load_env(); config = read_canvas_config()
+    if config.api_base_url != "http://192.168.122.172:3000":
+        raise SystemExit("refusing: target is not Savnac")
+    manifest = json.loads((ROOT / "sidecar/evidence/savnac/002F_deployment_manifest.json").read_text())
+    course_id = manifest["course"]["id"]
+    client = CanvasClient(config)
+    course = get_json(client, f"/api/v1/courses/{course_id}")
+    modules = get_json(client, f"/api/v1/courses/{course_id}/modules?per_page=100")
+    module_readback = []
+    for module in sorted(modules, key=lambda x: x.get("position") or 0):
+        items = get_json(client, f"/api/v1/courses/{course_id}/modules/{module['id']}/items?per_page=100")
+        module_readback.append({"id": module["id"], "name": module["name"], "position": module.get("position"), "published": module.get("published"), "items": [{k: item.get(k) for k in ("id", "title", "type", "page_url", "content_id", "published", "url")} for item in items]})
+    assignments = get_json(client, f"/api/v1/courses/{course_id}/assignments?per_page=100")
+    pages = []
+    for item in sum((m["items"] for m in module_readback), []):
+        if item.get("type") == "Page" and item.get("page_url"):
+            page = get_json(client, f"/api/v1/courses/{course_id}/pages/{item['page_url']}")
+            pages.append({"id": page.get("page_id"), "url": page.get("url"), "title": page.get("title"), "published": page.get("published"), "body_length": len(page.get("body") or "")})
+    readback = {"target": config.api_base_url, "course": {"id": course.get("id"), "name": course.get("name"), "workflow_state": course.get("workflow_state")}, "modules": module_readback, "assignments": [{"id": a.get("id"), "name": a.get("name"), "points_possible": a.get("points_possible"), "published": a.get("published")} for a in assignments if a.get("name") == "Week 2 visual prototype check"], "pages": pages, "swosu_course_24298_touched": False}
+    out = ROOT / "sidecar/evidence/savnac/002G_readback.json"; out.write_text(json.dumps(readback, indent=2) + "\n")
+    print(json.dumps({"course_id": course_id, "module_count": len(module_readback), "page_count": len(pages), "assignment_count": len(readback["assignments"]), "readback": str(out)}, indent=2))
+    return 0
+
+if __name__ == "__main__": raise SystemExit(main())
