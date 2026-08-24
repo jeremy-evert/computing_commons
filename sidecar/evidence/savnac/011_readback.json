@@ -1,0 +1,36 @@
+{
+  "target": "http://192.168.122.172:3000",
+  "course": {
+    "id": 18,
+    "name": "Computing Commons \u2014 Visual Prototype (Week 2)",
+    "workflow_state": "available",
+    "default_view": "wiki"
+  },
+  "home": {
+    "page_id": 689,
+    "url": "computing-commons-home",
+    "title": "Computing Commons Home",
+    "published": true,
+    "front_page": true,
+    "href_count": 12,
+    "bad_student_hrefs": [],
+    "missing_required_routes": []
+  },
+  "teachers_table": {
+    "page_id": 690,
+    "url": "teachers-table",
+    "title": "Teacher's Table",
+    "published": false,
+    "front_page": false,
+    "href_count": 22
+  },
+  "checks": {
+    "home_published": true,
+    "home_is_front_page": true,
+    "default_view_is_wiki": true,
+    "teacher_table_unpublished": true,
+    "home_routes_ok": true,
+    "student_href_hygiene_ok": true,
+    "swosu_course_24298_touched": false
+  }
+}
