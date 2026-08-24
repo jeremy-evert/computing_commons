@@ -1,20 +1,58 @@
 # Computing Commons Canvas deployment gate
 
-## Target
+## Two Canvas boundaries
+
+Computing Commons now uses **two distinct Canvas surfaces for two distinct jobs**.
+
+### 1. Savnac — design/test range
+
+Savnac is the authorized laboratory for bounded prototype deployment **before** the full Commons is complete.
+
+A vertical slice may be pushed to Savnac when its repository source is coherent enough to inspect in a real Canvas rendering. Savnac is where we test:
+
+- visual design and Canvas HTML behavior;
+- links and navigation;
+- module/page ordering;
+- mobile/narrow behavior where observable;
+- 0-point/completion behavior;
+- synthetic/student-path review;
+- Quick Tune audits;
+- owner dogfooding before a final SWOSU deployment.
+
+Savnac is not curricular authority. Defects found there are repaired in repository truth first, then redeployed.
+
+### 2. SWOSU Canvas course 24298 — established Commons target
 
 Future complete deployment target:
 
 `https://swosu.instructure.com/courses/24298`
 
-The target should remain a test/prototype delivery surface until the repository product passes this gate.
+This target remains gated until the **complete Computing Commons repository product** passes acceptance.
 
 ## Gate principle
 
-**Build in Git. Accept in Git. Deploy to Canvas. Verify in Canvas. Dogfood after deployment.**
+**Build in Git -> prototype in Savnac -> inspect -> repair in Git -> re-prototype -> Quick Tune -> dogfood -> accept -> deploy complete Commons to SWOSU Canvas.**
 
 Canvas must not become the accidental authoring source for material that is newer or clearer in the Commons/canonical repositories.
 
-## Required repository acceptance before deployment
+## Savnac prototype loop
+
+For a bounded vertical slice such as Week 2:
+
+1. build/reconcile the source in `computing_commons`;
+2. adversarially review the source;
+3. deploy the accepted slice to Savnac;
+4. read back the rendered Canvas objects;
+5. owner visually inspects from the house/Grace path;
+6. repair source defects in Git and redeploy;
+7. once the slice looks right, run `Savnac_quick_tune` as a read-only audit lane;
+8. optionally use controlled synthetic-student testing where it adds evidence;
+9. owner dogfoods the student path, including the real Windows/local-lab experience when applicable;
+10. repair and redeploy until the slice is accepted.
+
+A Savnac prototype verdict is **not** authorization to publish the same material to SWOSU Canvas course 24298.
+
+## Required repository acceptance before complete SWOSU deployment
 
 The Commons must have:
 
@@ -32,9 +70,9 @@ The Commons must have:
 - recovery paths for students who get stuck;
 - an adversarial review verdict of `READY FOR COMPUTING COMMONS CANVAS DEPLOYMENT`.
 
-## Canvas deployment expectations
+## Complete SWOSU Canvas deployment expectations
 
-When deployment is authorized, deploy the Commons as one coherent course rather than piecemeal experiments that leave contradictory student routes.
+When complete deployment is authorized, deploy the Commons as one coherent course rather than piecemeal experiments that leave contradictory student routes.
 
 The Canvas structure should make these concepts obvious:
 
@@ -61,7 +99,7 @@ Do not assume Canvas can or should synchronize grades between the Commons and ho
 
 ## Deployment verification
 
-After deployment, perform a read-back from the student-facing Canvas course and verify:
+For both Savnac prototypes and the eventual complete SWOSU deployment, perform a read-back from the student-facing Canvas surface and verify the applicable objects:
 
 - module/page ordering;
 - links;
@@ -77,7 +115,9 @@ After deployment, perform a read-back from the student-facing Canvas course and 
 
 ## Owner dogfood gate
 
-After technical deployment verification, the owner should walk the Commons as though enrolled:
+After Savnac technical verification, the owner may walk the bounded slice as though enrolled. After complete SWOSU deployment, repeat the walk for the complete Commons.
+
+For the complete course, dogfooding should include:
 
 - begin from the front door;
 - follow the expected Level 1/shared runway;
@@ -92,7 +132,7 @@ Observed defects should be repaired in repository truth first when they are curr
 
 ## Video gate
 
-Instructional videos should be recorded from the accepted/dogfooded path, not from an unstable prototype. This reduces re-recording and prevents video instructions from freezing an obsolete navigation path.
+Instructional videos should be recorded from an accepted/dogfooded path, not from an unstable prototype. This reduces re-recording and prevents video instructions from freezing an obsolete navigation path.
 
 ## Cleanup handoff
 
