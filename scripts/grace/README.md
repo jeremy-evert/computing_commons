@@ -91,3 +91,12 @@ If the capture script says no browser is listening on port 9222, rerun `start-sa
 If Savnac shows a login page in the screenshot, sign in once in the dedicated browser profile and capture again.
 
 If port 3002 is unavailable, restore the existing Grace-to-Savnac tunnel first. These scripts intentionally do not mutate networking or create alternate access paths.
+# Owner review helpers
+
+From a clean `computing_commons` checkout on Grace, run:
+
+```powershell
+.\scripts\grace\review-week2-slides.ps1
+```
+
+The helper refuses a dirty checkout, confirms both PDFs exist, prints the current commit and paths, and opens the projected deck and instructor notes. Pull or sync the checkout before running it.

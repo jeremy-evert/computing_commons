@@ -13,11 +13,13 @@ pdflatex -interaction=nonstopmode -halt-on-error week2_local_ai_workbench.tex
 pdflatex -interaction=nonstopmode -halt-on-error week2_local_ai_workbench.tex
 ```
 
-The source uses standard TeX Live packages only and produces a 16:9 PDF. The PDF is checked into this repository as a review artifact; do not upload it to Canvas from this mission.
+The source uses standard TeX Live packages only and produces a 16:9, 25-page PDF. The PDF is checked into this repository as a review artifact; do not upload it to Canvas from this mission. The reusable visual grammar lives in `commons-week2-theme.sty`.
+
+Instructor notes are maintained in `week2_local_ai_workbench_notes.md` and compiled from `week2_local_ai_workbench_notes.tex` to a 26-page printable PDF (title page plus one section per projected slide).
 
 ## Teaching route
 
-Slides 1–5 establish the finish line, infrastructure rationale, stack, and evidence rule. Slides 6–12 orient beginners to PowerShell, Python, Git, Ollama, the exact `qwen3:8b` boundary, and Aider. Slides 13–17 model the bounded edit, diff/test separation, repeated loop, and recovery. Slides 18–21 fade the scaffold into prompt structure, learning-to-fish, Work First, and the final receipt. The last slide is a clean transition to student work.
+Slides 1–7 establish the finish line, infrastructure rationale, stack, and split evidence rule. Slides 8–15 orient beginners to PowerShell, Python, Git, Ollama, the security judgment questions, exact `qwen3:8b` boundary, and Aider. Slides 16–20 model the bounded edit, diff/test separation, repeated loop, and recovery. Slides 21–24 fade the scaffold into prompt structure, learning-to-fish, Work First, and the final receipt. The last slide is a clean transition to student work.
 
 ## Source relationships
 
