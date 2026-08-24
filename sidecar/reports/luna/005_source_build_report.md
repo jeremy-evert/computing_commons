@@ -2,6 +2,8 @@
 
 ## Scope
 
+Accepted source commit: `462899469b0a9769be2f503db0e91e0cf01fe1f5`.
+
 Expanded the Week 2 student route in the Computing Commons repository while
 preserving the accepted Kickoff page and Recitation route. The route now has
 orientation, inventory, Windows foundation, Ollama, exact model, direct

@@ -4,7 +4,7 @@
     "id": 18,
     "title": "Computing Commons \u2014 Visual Prototype (Week 2)"
   },
-  "source_commit": "4c9056ebbd9c7eedc96ea54526aabf1828901ec1",
+  "source_commit": "462899469b0a9769be2f503db0e91e0cf01fe1f5",
   "objects": [
     {
       "module_title": "00 \u2014 Start Here + Kickoff",
@@ -157,14 +157,6 @@
       "action": "update",
       "reason": "forced overwrite",
       "source_ref": "prompt-005 bounded completion"
-    },
-    {
-      "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
-      "object_title": "Week 2 \u2014 Completion evidence receipt",
-      "kind": "page",
-      "action": "delete",
-      "reason": "not in plan, prune_scope allows deleting this module's contents",
-      "source_ref": ""
     }
   ],
   "result": {
@@ -173,12 +165,12 @@
     "created_count": 0,
     "updated_count": 16,
     "skipped_count": 0,
-    "deleted_count": 1,
+    "deleted_count": 0,
     "aborted": false,
     "dry_run": false,
     "forced": true,
     "prune_scope": "module",
-    "detail": "Reconciled Computing Commons \u2014 Visual Prototype (Week 2): 0 created, 16 updated, 0 unchanged, 1 deleted.",
+    "detail": "Reconciled Computing Commons \u2014 Visual Prototype (Week 2): 0 created, 16 updated, 0 unchanged, 0 deleted.",
     "log": [
       {
         "module_title": "00 \u2014 Start Here + Kickoff",
@@ -331,14 +323,6 @@
         "action": "update",
         "reason": "forced overwrite",
         "source_ref": "prompt-005 bounded completion"
-      },
-      {
-        "module_title": "02 \u2014 Week 2: Build and Verify Local AI",
-        "object_title": "Week 2 \u2014 Completion evidence receipt",
-        "kind": "page",
-        "action": "delete",
-        "reason": "not in plan, prune_scope allows deleting this module's contents",
-        "source_ref": ""
       }
     ]
   },
