@@ -48,6 +48,10 @@ def canvas_links(body: str, course_id: int) -> str:
         "week2-toy-wins.html": root + "week-2-three-tiny-aider-wins",
         "week2-work-first.html": root + "week-2-bridge-to-work-first",
         "week2-show-it-works.html": root + "week-2-show-that-it-works",
+        "week2-shared-rhythm.html": root + "week-2-shared-rhythm",
+        "week2-ai-fluency.html": root + "monday-ai-fluency-gather-context",
+        "week2-make-it-stick.html": root + "wednesday-make-it-stick-retrieval-practice",
+        "week2-mindset.html": root + "friday-mindset-at-work",
         "recovery.md": root + "week-2-recovery-with-evidence",
         "../recitation.md": root + "recitation-slash-get-help",
         "recitation.html": root + "recitation-slash-get-help",
@@ -93,6 +97,22 @@ def main() -> int:
         ("Week 2 — Bridge to Work First", "previews/week2-work-first.html"),
     ]
     week2_pages = [page(title, canvas_links((ROOT / path).read_text(), course_id), path) for title, path in week2_routes]
+    shared_rhythm_pages = [
+        ("Week 2 — Shared Rhythm", "previews/week2-shared-rhythm.html"),
+        ("Monday — AI Fluency: Gather Context", "previews/week2-ai-fluency.html"),
+        ("Wednesday — Make It Stick: Retrieval Practice", "previews/week2-make-it-stick.html"),
+        ("Friday — Mindset at Work", "previews/week2-mindset.html"),
+    ]
+    shared_rhythm_objects = [
+        page(title, canvas_links((ROOT / path).read_text(), course_id), path)
+        for title, path in shared_rhythm_pages
+    ]
+    shared_rhythm_objects.extend([
+        DesiredObject(kind="file", title="Wednesday reading — Make It Stick", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/readings/week_02_wed_retrieval_practice.md", file_folder_path="week_2_shared_rhythm", source_ref="professional_minds/readings/week_02_wed_retrieval_practice.md"),
+        DesiredObject(kind="file", title="Wednesday slides — Make It Stick", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/presentations/beamer/week_02_wed/week02_wed.pdf", file_folder_path="week_2_shared_rhythm", source_ref="professional_minds/presentations/beamer/week_02_wed/week02_wed.pdf"),
+        DesiredObject(kind="file", title="Friday reading — Mindset at Work", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/readings/week_02_fri_mindset_at_work.md", file_folder_path="week_2_shared_rhythm", source_ref="professional_minds/readings/week_02_fri_mindset_at_work.md"),
+        DesiredObject(kind="file", title="Friday slides — Mindset at Work", source_path="/mnt/brandy_nvme/jevert/git/professional_minds/presentations/beamer/week_02_fri/week02_fri.pdf", file_folder_path="week_2_shared_rhythm", source_ref="professional_minds/presentations/beamer/week_02_fri/week02_fri.pdf"),
+    ])
     plan = DesiredCourse(course_label=TITLE, course_id=course_id, modules=[
         DesiredModule(title="00 — Start Here + Kickoff", position=1, objects=[page("Success Foundations / Semester Kickoff", kickoff_html, "previews/kickoff.html")]),
         DesiredModule(title="01 — Recitation / Get Help", position=2, objects=[page("Recitation / Get Help", recitation_md, "curriculum/recitation.md")]),
@@ -103,6 +123,7 @@ def main() -> int:
             *week2_pages,
             DesiredObject(kind="assignment", title="Week 2 — Show That It Works", body_markdown="Bring a concise evidence receipt: direct Ollama success, bounded Aider change, inspected diff, independent test, and one Work First sentence. This completion object is worth 0 points.", points_possible_override=0, grading_type="not_graded", submission_types=["online_text_entry"], source_ref="prompt-005 bounded completion"),
         ]),
+        DesiredModule(title="03 — Week 2: Shared Rhythm", position=4, objects=shared_rhythm_objects),
     ])
     result = push_course(client, plan, sandbox=True, force=True, prune_scope="module")
     update_course(client, course_id, {"course[workflow_state]": "available", "course[default_view]": "modules"})
@@ -110,7 +131,7 @@ def main() -> int:
         if live_module.get("name") in {m.title for m in plan.modules}:
             update_module(client, course_id, int(live_module["id"]), {"module[published]": "true"})
     manifest = {"target": config.api_base_url, "course": {"id": course_id, "title": TITLE}, "source_commit": os.popen(f"git -C {ROOT} rev-parse HEAD").read().strip(), "objects": [e.model_dump() for e in result.log], "result": result.model_dump(), "swosu_course_24298_touched": False}
-    out = ROOT / "sidecar/evidence/savnac/002F_deployment_manifest.json"
+    out = ROOT / "sidecar/evidence/savnac/009_deployment_manifest.json"
     out.write_text(json.dumps(manifest, indent=2) + "\n")
     print(json.dumps({"course_id": course_id, "course_title": TITLE, "created": result.created_count, "updated": result.updated_count, "skipped": result.skipped_count, "manifest": str(out)}, indent=2))
     return 0

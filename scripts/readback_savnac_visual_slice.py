@@ -17,7 +17,7 @@ def main() -> int:
     load_env(); config = read_canvas_config()
     if config.api_base_url != "http://192.168.122.172:3000":
         raise SystemExit("refusing: target is not Savnac")
-    manifest = json.loads((ROOT / "sidecar/evidence/savnac/002F_deployment_manifest.json").read_text())
+    manifest = json.loads((ROOT / "sidecar/evidence/savnac/009_deployment_manifest.json").read_text())
     course_id = manifest["course"]["id"]
     client = CanvasClient(config)
     course = get_json(client, f"/api/v1/courses/{course_id}")
@@ -41,8 +41,12 @@ def main() -> int:
         "week2_terminal_ok": True,
         "href_count": len(page_hrefs),
     }
-    readback = {"target": config.api_base_url, "course": {"id": course.get("id"), "name": course.get("name"), "workflow_state": course.get("workflow_state")}, "modules": module_readback, "assignments": [{"id": a.get("id"), "name": a.get("name"), "points_possible": a.get("points_possible"), "published": a.get("published")} for a in assignments if a.get("name") == "Week 2 — Show That It Works"], "pages": pages, "link_validation": link_validation, "swosu_course_24298_touched": False}
-    out = ROOT / "sidecar/evidence/savnac/002G_readback.json"; out.write_text(json.dumps(readback, indent=2) + "\n")
+    files = get_json(client, f"/api/v1/courses/{course_id}/files?per_page=100")
+    shared_titles = {"Wednesday reading — Make It Stick", "Wednesday slides — Make It Stick", "Friday reading — Mindset at Work", "Friday slides — Mindset at Work"}
+    shared_files = [{"id": f.get("id"), "display_name": f.get("display_name"), "url": f.get("url"), "size": f.get("size")} for f in files if f.get("display_name") in {"week_02_wed_retrieval_practice.md", "week02_wed.pdf", "week_02_fri_mindset_at_work.md", "week02_fri.pdf"}]
+    shared_items = [item for module in module_readback if module["name"] == "03 — Week 2: Shared Rhythm" for item in module["items"] if item["title"] in shared_titles]
+    readback = {"target": config.api_base_url, "course": {"id": course.get("id"), "name": course.get("name"), "workflow_state": course.get("workflow_state")}, "modules": module_readback, "assignments": [{"id": a.get("id"), "name": a.get("name"), "points_possible": a.get("points_possible"), "published": a.get("published")} for a in assignments if a.get("name") == "Week 2 — Show That It Works"], "pages": pages, "shared_rhythm_file_items": shared_items, "shared_rhythm_files": shared_files, "link_validation": link_validation, "swosu_course_24298_touched": False}
+    out = ROOT / "sidecar/evidence/savnac/009_readback.json"; out.write_text(json.dumps(readback, indent=2) + "\n")
     print(json.dumps({"course_id": course_id, "module_count": len(module_readback), "page_count": len(pages), "assignment_count": len(readback["assignments"]), "readback": str(out)}, indent=2))
     return 0
 
