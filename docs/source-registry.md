@@ -83,3 +83,7 @@ Before authoring a new canonical implementation inside `computing_commons`, audi
 ## Registry rule
 
 A source may move as the system matures. When it does, update this registry first so downstream Canvas/course integrations know which throat to choke.
+
+## Per-course migration ledgers
+
+Course-by-course Commons migration ledgers (what was already here, what was copied, provenance, and Architecture/CS1/CS2/DSCT disposition) live at `docs/migration-ledger-<course>-fall-2026.md`. The first is `docs/migration-ledger-computer-architecture-fall-2026.md` (Prompt 030/030A/030B, 2026-08-25): Weeks 4–16 AI Fluency + Professional Minds and a Professional Pathway/career-artifacts page. A future CS1/CS2/DSCT migration should check this ledger before re-copying the same weekly content — the AI Fluency Lens N / Professional Minds Wednesday/Friday content is week-numbered, not course-specific, so Architecture's harvest already covers what those courses will need.
