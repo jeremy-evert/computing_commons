@@ -25,7 +25,7 @@ Pulled 2026-08-25 via the existing approved `harbor` read path (GET-only), restr
 |---|---|---|---|---|
 | Week 2 Monday — AI Fluency: Gather Context | COMSC-3013 Computer Architecture (and shared with CS1/CS2/DSCT) | `ai_fluency@022262cf...:ai_i/monday_moments/week_02_gather_context` | module "03 — Week 2: Shared Rhythm", page `monday-ai-fluency-gather-context-2` | **ALREADY IN COMMONS — NO COPY NEEDED**. Architecture original: **PRESERVED — STUDENT ACTIVITY** (2 of 6 submitted, due 2026-08-25). |
 | Week 2 Wed/Fri Professional Minds | same | `professional_minds@af54438a...` | module "03 — Week 2: Shared Rhythm" | **ALREADY IN COMMONS — NO COPY NEEDED**. Architecture original: zero activity at this pass — see "Weeks 3–16" table below (Week 2 Wed/Fri instances are zero-activity and follow the same disposition as the other zero-activity weeks). |
-| Week 3 (all three days) | same | `ai_fluency`/`professional_minds` | module "04 — Week 3: Shared Rhythm" | **ALREADY IN COMMONS — NO COPY NEEDED**. Architecture original: zero activity — see below. |
+| Week 3 (all three days) | same | `ai_fluency`/`professional_minds` | module "04 — Week 3: Shared Rhythm" | **ALREADY IN COMMONS — NO COPY NEEDED**. Architecture original: zero activity. **Wednesday/Friday reading Pages live-deleted 2026-08-25 (Prompt 030C visible-shell pass)** — `ARCHITECTURE REMOVAL COMPLETE — COMMONS IS SOLE SURVIVING COPY`. Slide Files unlinked from the Week 3 module but not deleted (`delete_file` blocked by session safety classifier); see `computer_architecture/sidecar/reports/030_architecture_to_optional_commons_end_first_migration.md` Pass 4. |
 
 ## AI Fluency + Professional Minds, Weeks 4–16 (harvested this pass)
 
