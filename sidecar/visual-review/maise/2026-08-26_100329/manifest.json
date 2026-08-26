@@ -1,0 +1,236 @@
+[
+  {
+    "name": "00-modules",
+    "requested_url": "https://swosu.instructure.com/courses/24298/modules",
+    "rendered_title": "Course Modules: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/modules",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/00-modules.png",
+    "width": 1905,
+    "height": 7575
+  },
+  {
+    "name": "01-week2-start-here",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-start-here",
+    "rendered_title": "Week 2 — Start Here: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-start-here",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/01-week2-start-here.png",
+    "width": 1905,
+    "height": 1172
+  },
+  {
+    "name": "02-week2-build-and-verify",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-build-and-verify-your-local-ai-lab",
+    "rendered_title": "Week 2 — Build and Verify Your Local AI Lab: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-build-and-verify-your-local-ai-lab",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/02-week2-build-and-verify.png",
+    "width": 1905,
+    "height": 1370
+  },
+  {
+    "name": "03-week2-verify-the-tools",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-verify-the-tools",
+    "rendered_title": "Week 2 — Verify the tools: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-verify-the-tools",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/03-week2-verify-the-tools.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "04-week2-recovery-with-evidence",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-recovery-with-evidence",
+    "rendered_title": "Week 2 — Recovery with evidence: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-recovery-with-evidence",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/04-week2-recovery-with-evidence.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "05-week2-inventory",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-inventory-what-you-already-have",
+    "rendered_title": "Week 2 — Inventory what you already have: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-inventory-what-you-already-have",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/05-week2-inventory.png",
+    "width": 1905,
+    "height": 1161
+  },
+  {
+    "name": "06-week2-windows-foundation",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-verify-the-windows-foundation",
+    "rendered_title": "Week 2 — Verify the Windows foundation: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-verify-the-windows-foundation",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/06-week2-windows-foundation.png",
+    "width": 1905,
+    "height": 1125
+  },
+  {
+    "name": "07-week2-confirm-ollama",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-confirm-ollama",
+    "rendered_title": "Week 2 — Confirm Ollama: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-confirm-ollama",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/07-week2-confirm-ollama.png",
+    "width": 1905,
+    "height": 1125
+  },
+  {
+    "name": "08-week2-approved-model",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-confirm-the-approved-model",
+    "rendered_title": "Week 2 — Confirm the approved model: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-confirm-the-approved-model",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/08-week2-approved-model.png",
+    "width": 1905,
+    "height": 1125
+  },
+  {
+    "name": "09-week2-hello-ollama",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-say-hello-directly-to-ollama",
+    "rendered_title": "Week 2 — Say hello directly to Ollama: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-say-hello-directly-to-ollama",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/09-week2-hello-ollama.png",
+    "width": 1905,
+    "height": 1125
+  },
+  {
+    "name": "10-week2-confirm-aider",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-get-or-confirm-aider",
+    "rendered_title": "Week 2 — Get or confirm Aider: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-get-or-confirm-aider",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/10-week2-confirm-aider.png",
+    "width": 1905,
+    "height": 1125
+  },
+  {
+    "name": "11-week2-git-worktree",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-prepare-the-tiny-git-worktree",
+    "rendered_title": "Week 2 — Prepare the tiny Git worktree: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-prepare-the-tiny-git-worktree",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/11-week2-git-worktree.png",
+    "width": 1905,
+    "height": 1125
+  },
+  {
+    "name": "12-week2-hello-aider",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-say-hello-with-aider",
+    "rendered_title": "Week 2 — Say hello with Aider: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-say-hello-with-aider",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/12-week2-hello-aider.png",
+    "width": 1905,
+    "height": 1125
+  },
+  {
+    "name": "13-week2-three-aider-wins",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-three-tiny-aider-wins",
+    "rendered_title": "Week 2 — Three tiny Aider wins: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-three-tiny-aider-wins",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/13-week2-three-aider-wins.png",
+    "width": 1905,
+    "height": 1203
+  },
+  {
+    "name": "14-week2-work-first",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-bridge-to-work-first",
+    "rendered_title": "Week 2 — Bridge to Work First: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-bridge-to-work-first",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/14-week2-work-first.png",
+    "width": 1905,
+    "height": 1281
+  },
+  {
+    "name": "15-week2-show-that-it-works",
+    "requested_url": "https://swosu.instructure.com/courses/24298/pages/week-2-show-that-it-works",
+    "rendered_title": "Week 2 — Show That It Works: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/pages/week-2-show-that-it-works",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/15-week2-show-that-it-works.png",
+    "width": 1905,
+    "height": 1125
+  },
+  {
+    "name": "16-file-day1-slides-pptx",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569596",
+    "rendered_title": "local_ai_lab_day1_complete.pptx: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569596",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/16-file-day1-slides-pptx.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "17-file-day1-slides-pdf",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569597",
+    "rendered_title": "local_ai_lab_day1_complete.pdf: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569597",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/17-file-day1-slides-pdf.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "18-file-field-guide",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569598",
+    "rendered_title": "local_ai_lab_field_guide.md: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569598",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/18-file-field-guide.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "19-file-session-notes",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569599",
+    "rendered_title": "local_ai_lab_session_notes.pdf: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569599",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/19-file-session-notes.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "20-file-my-field-notes",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569603",
+    "rendered_title": "notes_my_setup_mistakes_and_fixes.md: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569603",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/20-file-my-field-notes.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "21-file-setup-script",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569604",
+    "rendered_title": "local_ai_lab_setup.ps1: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569604",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/21-file-setup-script.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "22-file-run1-log",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569605",
+    "rendered_title": "run1_log_where_it_broke.txt: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569605",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/22-file-run1-log.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "23-file-run1-report",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569606",
+    "rendered_title": "run1_report_NOT_READY.html: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569606?fd_cookie_set=1",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/23-file-run1-report.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "24-file-run2-log",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569607",
+    "rendered_title": "run2_log_fixed_and_passing.txt: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569607",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/24-file-run2-log.png",
+    "width": 1905,
+    "height": 1065
+  },
+  {
+    "name": "25-file-run2-report",
+    "requested_url": "https://swosu.instructure.com/courses/24298/files/6569608",
+    "rendered_title": "run2_report_READY.html: Computing Commons",
+    "rendered_url": "https://swosu.instructure.com/courses/24298/files/6569608?fd_cookie_set=1",
+    "file": "sidecar/visual-review/maise/2026-08-26_100329/25-file-run2-report.png",
+    "width": 1905,
+    "height": 1065
+  }
+]
