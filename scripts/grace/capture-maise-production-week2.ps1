@@ -74,7 +74,12 @@ foreach ($target in $targets) {
     $requestedUrl = [string]$target.Url
     Write-Host "Capturing $name..."
     $png = Join-Path $outputDir ($name + '.png')
-    $capture = & $captureScript -DebugPort $DebugPort -Url $requestedUrl -OutputPath $png
+    # File items render inside a cross-origin Canvadocs iframe (PPTX/PDF
+    # preview); document.readyState on the outer page goes 'complete' before
+    # that iframe finishes converting/rendering, so a plain page needs less
+    # wait than a file preview.
+    $loadWaitSeconds = if ($name -like '*-file-*') { 15 } else { 5 }
+    $capture = & $captureScript -DebugPort $DebugPort -Url $requestedUrl -OutputPath $png -LoadWaitSeconds $loadWaitSeconds
     $manifest += [pscustomobject]@{
         name = $name
         requested_url = $requestedUrl
