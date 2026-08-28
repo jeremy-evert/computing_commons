@@ -47,6 +47,11 @@ The intended student journey should present one path:
 10. make a bounded AI-assisted change;
 11. independently verify what changed and whether it works.
 
+For the Aider portion, use the dedicated student guide:
+[`week2/aider-work-first.md`](week2/aider-work-first.md). It explains the
+local-only boundary, the one-change request, the diff inspection, and the
+independent test without creating a second Local AI setup procedure.
+
 The exact student sequence should be reconciled to the accepted current `local_ai_lab_setup` package rather than rewritten from memory here.
 
 ## Evidence principle
