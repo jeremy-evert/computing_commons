@@ -1,0 +1,23 @@
+diff --git a/sidecar/experiments/aider_classroom_bite_research_020/fixture/budget.py b/sidecar/experiments/aider_classroom_bite_research_020/fixture/budget.py
+index 55d31e8..01dceab 100644
+--- a/sidecar/experiments/aider_classroom_bite_research_020/fixture/budget.py
++++ b/sidecar/experiments/aider_classroom_bite_research_020/fixture/budget.py
+@@ -2,16 +2,5 @@
+
+
+ def label_cents(cents):
+-    """Return a dollar label for a non-negative integer number of cents."""
+-    # Students begin with this obvious one-location bite.
+-    return "TODO"
+-
+-
+-def add_expense(total_cents, expense_cents):
+-    """Add one expense, rejecting negative amounts."""
+-    raise NotImplementedError
+-
+-
+-def summarize(expenses):
+-    """Return a small summary for a list of integer-cent expenses."""
+-    raise NotImplementedError
++    """Return a dollar string for a non-negative integer number of cents."""
++    return f"${cents / 100:.2f}"

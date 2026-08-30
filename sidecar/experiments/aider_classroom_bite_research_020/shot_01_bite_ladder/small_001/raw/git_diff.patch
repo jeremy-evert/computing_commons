@@ -1,0 +1,15 @@
+diff --git a/sidecar/experiments/aider_classroom_bite_research_020/fixture/budget.py b/sidecar/experiments/aider_classroom_bite_research_020/fixture/budget.py
+index 3b1d4cb..b0a8c59 100644
+--- a/sidecar/experiments/aider_classroom_bite_research_020/fixture/budget.py
++++ b/sidecar/experiments/aider_classroom_bite_research_020/fixture/budget.py
+@@ -4,7 +4,9 @@
+
+ def add_expense(total_cents, expense_cents):
+     """Add one expense, rejecting negative amounts."""
+-    raise NotImplementedError
++    if expense_cents < 0:
++        raise ValueError("Expense amount cannot be negative")
++    return total_cents + expense_cents
+
+
+ def summarize(expenses):

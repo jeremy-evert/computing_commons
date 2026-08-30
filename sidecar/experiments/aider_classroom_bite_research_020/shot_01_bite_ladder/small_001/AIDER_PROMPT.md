@@ -1,0 +1,1 @@
+Implement only `add_expense` in `sidecar/experiments/aider_classroom_bite_research_020/fixture/budget.py`. Return the sum of two integer-cent amounts and raise `ValueError` when `expense_cents` is negative. Do not edit tests or other functions. Use the smallest clear implementation and stop after this one change.

@@ -1,0 +1,9 @@
+diff --git a/sidecar/experiments/aider_classroom_bite_research_020/calibration_micro/micro_fixture.py b/sidecar/experiments/aider_classroom_bite_research_020/calibration_micro/micro_fixture.py
+index e2b204b..6417ec0 100644
+--- a/sidecar/experiments/aider_classroom_bite_research_020/calibration_micro/micro_fixture.py
++++ b/sidecar/experiments/aider_classroom_bite_research_020/calibration_micro/micro_fixture.py
+@@ -1,3 +1,3 @@
+ def label_cents(cents):
+-    """Return a dollar label for a non-negative integer number of cents."""
++    """Return a dollar string for a non-negative integer number of cents."""
+     return "${:.2f}".format(cents / 100)
