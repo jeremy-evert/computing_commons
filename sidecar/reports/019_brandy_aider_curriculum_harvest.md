@@ -99,10 +99,9 @@ Flo was not started, and no Flo keystrokes or watcher actions were sent.
 
 ## Completion state
 
-- Commit `fc6840e` is local and intentional; the harvest report is the next
-  commit.
-- Push is pending until this report is committed, then both forward commits
-  will be pushed to `origin/assistant/luna` and verified.
+- Commit `fc6840e` and the harvest report commit are local, intentional, and
+  pushed to `origin/assistant/luna`; the final remote verification is recorded
+  in the mission handoff.
 - `foreman_interface` was inspected read-only; its main branch remains
   locally behind `origin/main` and was not mutated.
 - No April SSH entry occurred; no Maise migration occurred; no credentials,
