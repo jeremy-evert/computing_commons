@@ -36,7 +36,7 @@ This mission produced the repaired control, pilot classification, reviewer judgm
 - `make check`: unavailable — `make: *** No rule to make target 'check'. Stop.`
 - Tests: `python3 -m pytest -q sidecar/experiments/aider_classroom_bite_research_021/fixture` — 3 passed; every valid attempt’s regression proof — 9/9 passed.
 - `git diff --check`: passed before commits; rerun at handoff.
-- Commits: `988a7a7` repaired fixture/control; `3d78a59` caller correction and invalid-attempt record; final evidence commit recorded below.
+- Commits: `988a7a7` repaired fixture/control; `3d78a59` caller correction and invalid-attempt record; `1d9feba` final evidence and report.
 - Push status: pending final commit/push.
 - Final status: clean after final commit/push, except any explicitly reported allocator-managed worktree metadata outside Git.
 
