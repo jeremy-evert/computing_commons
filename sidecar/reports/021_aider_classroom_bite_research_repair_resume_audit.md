@@ -30,6 +30,13 @@ The standalone `proof/baseline_regression.py` helper failed when invoked without
 - `git diff --check`: passed.
 - Remote verification: local tracking metadata confirms `anna/aider-bite-021` tracks the pushed remote branch; a fresh `git ls-remote` was blocked by the host's bad-permissions SSH config (`/etc/ssh/ssh_config.d/30-libvirt-ssh-proxy.conf`), so no new network claim is made here.
 
+## Commit and push record
+
+- `bbaa300` — controller proof-import repair.
+- `2d00f13` — this audit report.
+- Push: `origin/anna/aider-bite-021-audit-8a4525e` created successfully.
+- Final audit worktree status: clean.
+
 ## Changed files
 
 - `sidecar/experiments/aider_classroom_bite_research_021/run_shot1.py` — reproducible fixture import environment for controller proofs.
