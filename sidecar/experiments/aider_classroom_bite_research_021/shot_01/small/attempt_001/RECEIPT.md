@@ -1,0 +1,9 @@
+rung=small
+repetition=1
+baseline=988a7a7a1bc6ec51b8624129066cc9d774774029
+oracle=small_oracle.py
+oracle_sha256=03378f4405f0add2468059a97519acf49cf0f4a3efe28737a38936ea8f58d12c
+aider_exit=0
+elapsed_seconds=135.099
+final_oracle_exit=1
+regression_exit=0

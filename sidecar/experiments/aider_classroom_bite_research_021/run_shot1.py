@@ -36,7 +36,7 @@ def warm():
 def main():
     for rung, (behavior, oracle_name, task) in TASKS.items():
         for number in range(1, 4):
-            attempt = ROOT / "shot_01" / rung / ("attempt_%03d" % number)
+            attempt = ROOT / "shot_01" / rung / ("valid_%03d" % number)
             raw = attempt / "raw"
             if attempt.exists():
                 raise SystemExit("refusing to overwrite %s" % attempt)

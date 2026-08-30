@@ -1,0 +1,6 @@
+{
+  "start_epoch": 1788127894.0595741,
+  "elapsed_seconds": 134.952552318573,
+  "exit_code": 0,
+  "warm_policy": "exact-model request before each attempt"
+}

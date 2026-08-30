@@ -1,0 +1,9 @@
+rung=medium
+repetition=1
+baseline=3d78a596ef82e5f255dc591eb8882785a5a574b4
+oracle=medium_oracle.py
+oracle_sha256=29bd19adac3849c1b859f35b468071b29bbec770016629b5aaeccf55b785d3d1
+aider_exit=0
+elapsed_seconds=144.418
+final_oracle_exit=1
+regression_exit=0

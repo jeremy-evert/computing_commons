@@ -1,0 +1,9 @@
+rung=micro
+repetition=1
+baseline=3d78a596ef82e5f255dc591eb8882785a5a574b4
+oracle=micro_oracle.py
+oracle_sha256=5d06bba695725493ac28e6d5b8e7dc40a94736f24c57067a2992f4120fa21564
+aider_exit=0
+elapsed_seconds=80.525
+final_oracle_exit=0
+regression_exit=0
