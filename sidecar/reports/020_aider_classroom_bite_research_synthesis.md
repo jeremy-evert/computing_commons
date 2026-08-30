@@ -15,3 +15,16 @@ No MEDIUM/LARGE ladder data, Big-vs-Small comparison, model crossover, reviewer 
 Version the fixture with per-rung targeted independent proofs, rerun the remaining Shot 1 rungs, then design Shot 2 adaptively from the completed Shot 1 report. Do not treat this partial record as a final student artifact.
 
 Prompt: `foreman_interface/jobs/tasks/anna_brandy_aider_classroom_bite_research_020.md`
+
+## Durability and validation handoff
+
+- AGENTS.md: shared, `computing_commons/AGENTS.md`, and `foreman_interface/AGENTS.md` read; no update required.
+- `make task-check`: unavailable — `make: *** No rule to make target 'task-check'. Stop.`
+- `make check`: unavailable — `make: *** No rule to make target 'check'. Stop.`
+- Calibration oracle: `1 passed`.
+- Fixture full suite: expected red at the frozen incomplete baseline because `label_cents`, `add_expense`, and `summarize` are intentionally unfinished; this is not presented as a product test pass.
+- `git diff --check`: passed.
+- Commits: `a230e57` fixture baseline; `701379a` control fixture; `c345f4d` frozen controls/Shot 1 plan; `8c969f4` evidence and stop record.
+- Push: `origin/anna/aider-bite-020` verified at `8c969f4` using `GIT_SSH_COMMAND='ssh -F /dev/null'` because the host SSH include is unreadable.
+- Final worktree: clean; branch `anna/aider-bite-020`.
+- Next recommended prompt: rerun Mission 020 from this branch, first adding targeted independent proofs for MEDIUM/LARGE and then chambering Shot 2 only after the completed Shot 1 review.
