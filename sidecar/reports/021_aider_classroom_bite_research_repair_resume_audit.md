@@ -36,6 +36,7 @@ The standalone `proof/baseline_regression.py` helper failed when invoked without
 - `2d00f13` — this audit report.
 - Push: `origin/anna/aider-bite-021-audit-8a4525e` created successfully.
 - Final audit worktree status: clean.
+- Allocator note: the worktree was created by `grace_work_farm.py` after the required state-directory escalation, but no matching manifest file is visible under `/home/jevert/.local/state/foreman-interface/luna/worktrees` at handoff; this is recorded as a control-plane persistence limitation rather than silently inferred as present.
 
 ## Changed files
 
