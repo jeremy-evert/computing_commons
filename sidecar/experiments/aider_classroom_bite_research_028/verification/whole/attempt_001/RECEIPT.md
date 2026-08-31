@@ -1,0 +1,9 @@
+format=whole
+scored=False
+repetition=1
+status=VALID_COMPLETE
+engineering_success=False
+aider_success=False
+placeholder_hits=['path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/']
+forbidden_paths=['path/to/sidecar/experiments/aider_classroom_bite_research_028/fixture/string_module.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_028/fixture/test_string_module.py']
+elapsed_seconds=100.299

@@ -1,0 +1,46 @@
+diff --git a/sidecar/experiments/aider_classroom_bite_research_028/fixture/string_module.py b/sidecar/experiments/aider_classroom_bite_research_028/fixture/string_module.py
+index ccbb3df..f64364e 100644
+--- a/sidecar/experiments/aider_classroom_bite_research_028/fixture/string_module.py
++++ b/sidecar/experiments/aider_classroom_bite_research_028/fixture/string_module.py
+@@ -1,27 +1,17 @@
+ """Freshman-readable string module with several neighboring responsibilities."""
+ 
+ 
+-def join_words(words):
+-    return " ".join(words)
+-
+-
+-def word_count(text):
+-    return len(text.split())
+-
+-
+-def first_word(text):
+-    words = text.split()
+-    return words[0] if words else ""
+-
+-
+-def last_word(text):
+-    words = text.split()
+-    return words[-1] if words else ""
+-
+-
+-def has_word(text, word):
+-    return word in text.split()
+-
+-
+-def uppercase_words(words):
+-    return [word.upper() for word in words]
++def initials(full_name):
++    if not full_name.strip():
++        raise ValueError("Input is blank or consists only of whitespace")
++
++    parts = full_name.split()
++    initials = [part[0].upper() for part in parts]
++    return "".join(initials)
++def test_initials():
++    assert initials("John Doe") == "JD"
++    assert initials("Jane Smith") == "JS"
++    assert initials("Alice Johnson") == "AJ"
++    assert initials("Bob Brown") == "BB"
++    assert initials("Charlie White") == "CW"
++    assert initials("") == ValueError
