@@ -13,7 +13,6 @@ FIXTURE = ROOT / "fixture"
 PROOF = ROOT / "proof"
 BASELINE = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=REPO, text=True).strip()
 CONDITIONS = {
-    "worker_a_3b": "ollama_chat/qwen2.5-coder-3b-cpu:latest",
     "worker_b_7b": "ollama_chat/qwen2.5-coder-7b-cpu:latest",
 }
 TASKS = {
