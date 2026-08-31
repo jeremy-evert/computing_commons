@@ -53,9 +53,12 @@ after reproducible Aider verification is demonstrated.
 - `make check`: unavailable — `make: *** No rule to make target 'check'. Stop.`
 - Pytest fixture regression: passed (`1 passed`).
 - Runner py_compile: passed.
-- `git diff --check`: passed before commit.
+- `git diff --check`: raw captured Aider transcripts contain expected terminal
+  whitespace/control artifacts; source/docs-only diff check passed before
+  commit.
 - Payload commits: recorded in final closeout.
 - Receipt closeout does not embed its own SHA; remote tip is verified externally.
-- Final worktree status and remote tip are recorded after push.
+- Payload commit: `f6ea7762e0d7a7fb1101d86abb7eca317f0d1443` (remote verified).
+- Final worktree status after exact cache cleanup: clean.
 
 Sentinel: `AIDER DIFF GENERALIZATION NEEDS INFRASTRUCTURE REPAIR`
