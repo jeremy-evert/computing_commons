@@ -1,8 +1,8 @@
 # Mission 025 handoff — Aider edit transport replication
 
-Prompt: `foreman_interface/jobs/tasks/anna_brandy_aider_edit_transport_replication_025.md`  
-Run: `dbab4f46ba90f0d386ea49c6725e2afa`  
-Worktree: `/mnt/brandy_nvme/jevert/git/worktrees/computing-commons-aider-edit-transport-replication-025`  
+Prompt: `foreman_interface/jobs/tasks/anna_brandy_aider_edit_transport_replication_025.md`
+Run: `dbab4f46ba90f0d386ea49c6725e2afa`
+Worktree: `/mnt/brandy_nvme/jevert/git/worktrees/computing-commons-aider-edit-transport-replication-025`
 Branch: `anna/aider-edit-transport-replication-025`
 
 ## Handoff
@@ -24,6 +24,16 @@ Branch: `anna/aider-edit-transport-replication-025`
 - `make check`: unavailable — `make: *** No rule to make target 'check'. Stop.`
 - `git diff --check`: raw evidence contains expected transcript whitespace; implementation/docs are checked separately before final commit.
 - Prior Mission 023/024 artifacts preserved unchanged.
+
+## Git durability
+
+- Commits: `cf2a5e8` (apparatus and verification checkpoint), `8d95e66` (scored evidence and synthesis).
+- Push: completed; `origin/anna/aider-edit-transport-replication-025` verified at `8d95e66` before this report-only metadata update.
+- Final worktree status after cleanup: only the intentional report metadata update is pending; it will be committed and pushed as the final forward commit.
+
+## Next recommended prompt
+
+Run one second task-family replication with `diff`, holding the model, proof, CPU condition, and scope discipline constant. Do not broaden task size or add a student-facing edit-mode rule before that shot.
 
 ## Durable artifacts
 
