@@ -1,0 +1,12 @@
+format=whole
+scored=True
+repetition=1
+baseline=61c8a1aca8329f7858b9a7f86a2f55b3146a2e71
+target=aider_surface_fixture/module.py
+model=ollama_chat/qwen2.5-coder-3b-cpu:latest
+aider_exit=0
+elapsed_seconds=132.551
+engineering_success=False
+aider_success=False
+forbidden_paths=['path/to/aider_surface_fixture/module.py', '.aider.tags.cache.v4/']
+placeholder_transport=True

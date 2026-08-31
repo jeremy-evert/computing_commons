@@ -1,0 +1,2 @@
+filesystem_and_raw_placeholder=True
+hits=['path/to/', '<<<<<<< SEARCH\r\n\r\n=======\r\ndef cents_to_label(cents):\r\n    "convert cents to label"\r\n\r\n    if cents < 0:\r\n        raise ValueError("cents must be non-negative")\r\n    return f"${cents / 100:.2f}"\r\n>']

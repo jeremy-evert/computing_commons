@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/brandy_nvme/jevert/git/worktrees/computing_commons-aider-edit-transport-024/sidecar/experiments/aider_classroom_bite_research_024/../aider_classroom_bite_research_023/proof/oracle.py", line 9, in <module>
+    assert module.cents_to_label(125) == "$1.25"
+AttributeError: module 'measured_surface' has no attribute 'cents_to_label'

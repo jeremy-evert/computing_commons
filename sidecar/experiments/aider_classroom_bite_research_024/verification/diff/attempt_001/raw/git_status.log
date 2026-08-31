@@ -1,0 +1,4 @@
+ M aider_surface_fixture/module.py
+AM path/to/aider_surface_fixture/module.py
+?? .aider.tags.cache.v4/
+?? sidecar/experiments/aider_classroom_bite_research_024/

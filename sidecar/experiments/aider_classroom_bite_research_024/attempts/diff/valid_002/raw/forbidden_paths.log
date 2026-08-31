@@ -1,0 +1,1 @@
+forbidden=['path/to/aider_surface_fixture/module.py', '.aider.tags.cache.v4/']
