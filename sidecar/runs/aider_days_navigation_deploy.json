@@ -1,0 +1,57 @@
+{
+  "course_id": 24298,
+  "aider_days_module_id": 219031,
+  "week2_module_id": 218816,
+  "before_aider_days": [
+    {
+      "id": 1531147,
+      "position": 1,
+      "title": "aider_day_00_Public_Repo"
+    }
+  ],
+  "after_aider_days": [
+    {
+      "id": 1531235,
+      "position": 1,
+      "title": "Aider Days \u2014 Start Here"
+    },
+    {
+      "id": 1531147,
+      "position": 2,
+      "title": "aider_day_00_Public_Repo"
+    },
+    {
+      "id": 1531236,
+      "position": 3,
+      "title": "Aider Day 1 \u2014 Hardware Confidence & the GPU Model Showdown"
+    },
+    {
+      "id": 1531237,
+      "position": 4,
+      "title": "CS2 Week 2 \u2014 Hardware Confidence + Getting Started"
+    },
+    {
+      "id": 1531238,
+      "position": 5,
+      "title": "CS1 Week 2 Local AI (shared setup road)"
+    },
+    {
+      "id": 1531239,
+      "position": 6,
+      "title": "Week 2 \u2014 Build and Verify Local AI (canonical setup/verification road)"
+    }
+  ],
+  "before_week2_item_count": 25,
+  "after_week2_item_count": 26,
+  "created": {
+    "hub_page_url": "aider-days-start-here",
+    "hub_item_id": 1531235,
+    "repo_item_new_position": 2,
+    "showdown_item_id": 1531236,
+    "cs2_item_id": 1531237,
+    "cs1_item_id": 1531238,
+    "canonical_item_id": 1531239,
+    "week2_continue_item_id": 1531240
+  },
+  "cs1_followup": "CS1 production course 74029 has no live Week 2 Local AI module/items yet (module 'Week 2: Learning Science' carries only Learning Science content as of this run). CS1 repo source (lessons/week02-local-ai-*.md) exists but is not deployed. The CS1 door above links to the Commons shared Week 2 road instead of a guessed/staging CS1 URL. Deploying CS1's own dedicated Week 2 Local AI Canvas content to course 74029 is a separate, owner-authorized CS1 job."
+}
