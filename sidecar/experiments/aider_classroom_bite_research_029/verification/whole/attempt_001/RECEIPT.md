@@ -1,0 +1,9 @@
+format=whole
+scored=False
+repetition=1
+status=INVALID_RESET
+engineering_success=False
+aider_success=False
+placeholder_hits=[]
+forbidden_paths=[]
+elapsed_seconds=0.000

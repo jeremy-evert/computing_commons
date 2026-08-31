@@ -1,0 +1,9 @@
+format=diff
+scored=False
+repetition=2
+status=INVALID_TIMEOUT
+engineering_success=False
+aider_success=False
+placeholder_hits=[]
+forbidden_paths=[]
+elapsed_seconds=360.104

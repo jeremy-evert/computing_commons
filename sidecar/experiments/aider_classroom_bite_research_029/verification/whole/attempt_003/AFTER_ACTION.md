@@ -1,0 +1,12 @@
+format=whole
+scored=False
+repetition=3
+status=INVALID_RESET
+engineering_success=False
+aider_success=False
+placeholder_hits=[]
+forbidden_paths=[]
+elapsed_seconds=0.000
+target=sidecar/experiments/aider_classroom_bite_research_029/fixture/string_module.py
+reset_before=recorded
+reset_after=recorded

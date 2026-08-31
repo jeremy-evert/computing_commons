@@ -1,0 +1,4 @@
+AM path/to/sidecar/experiments/aider_classroom_bite_research_029/fixture/string_module.py
+AM path/to/sidecar/experiments/aider_classroom_bite_research_029/fixture/test_string_surface.py
+?? .aider.tags.cache.v4/
+?? sidecar/experiments/aider_classroom_bite_research_029/verification/

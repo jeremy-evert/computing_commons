@@ -1,0 +1,3 @@
+pid=206
+timeout; process-group terminated and reaped
+exit_code=-15
