@@ -43,6 +43,17 @@ items 1–25 (see prior module truth), plus one new item:
 |---|---|---|---|
 | 26 | 1531240 | ExternalUrl | Continue to Aider Days |
 
+## Defect found and fixed during verification
+
+Canvas creates `ExternalUrl` module items with `published: false` by
+default (`Page` items came back published from this run's create call;
+`ExternalUrl` items did not). Items 3–6 in `Aider_Days` and the new
+`Continue to Aider Days` item in module `218816` were therefore invisible
+to students immediately after the initial deploy. Found during the
+acceptance readback pass, fixed with `update_module_item` calls setting
+`module_item[published]=true` on each, confirmed by re-fetching every
+item. All items in both modules are published as of this report.
+
 ## Artifacts
 
 - Hub page: `https://swosu.instructure.com/courses/24298/pages/aider-days-start-here` — published, 1294-char body, opened and read back.
