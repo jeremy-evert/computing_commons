@@ -43,7 +43,7 @@ def main():
                 oracle_hash = hashlib.sha256((PROOF / oracle_name).read_bytes()).hexdigest()
                 baseline_oracle = run(["python3", str(PROOF / oracle_name)], env=env)
                 (raw / "baseline_oracle.log").write_text(baseline_oracle.stdout + baseline_oracle.stderr)
-                prompt = "Implement only the following behavior in the already-added file sidecar/experiments/aider_classroom_bite_research_022/fixture/budget.py. Use that exact path in your edit; do not invent a path/to/ prefix: %s\n\n%s\n" % (behavior, task)
+                prompt = "Implement only the following behavior in fixture/budget.py: %s\n\n%s\n" % (behavior, task)
                 (attempt / "AIDER_PROMPT.md").write_text(prompt)
                 (attempt / "PREDICTION.md").write_text("Expected one production file, behavior: %s; no test/proof edits; oracle should pass after implementation.\n" % behavior)
                 (attempt / "RUN_PLAN.md").write_text("Mission 022; condition=%s; rung=%s; repetition=%d; baseline=%s; model=%s; warm before timing.\n" % (condition, rung, number, BASELINE, model))
