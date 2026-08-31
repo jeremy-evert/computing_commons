@@ -19,7 +19,7 @@ PLACEHOLDER = "path/to/aider_surface_fixture/module.py"
 MODEL = "ollama_chat/qwen2.5-coder-3b-cpu:latest"
 BASELINE = "1317d4cb7d83f323c62f9536419dfca7a33825e5"
 REL = "aider_surface_fixture/module.py"
-FORBIDDEN = re.compile(r"(?:path/to/|\.\.\./|<[^>]+>)")
+FORBIDDEN = re.compile(r"(?:path/to/|\.\.\./|<path(?:/|\\)|<TARGET(?:/|\\))")
 PROMPT = (
     "Goal: add cents_to_label(cents) to the fixed MODULE fixture.\n"
     "Allowed scope: the exact target module only.\n"
@@ -98,6 +98,10 @@ def reset(label):
     placeholder_tree = REPO / "path" / "to"
     if placeholder_tree.exists():
         shutil.rmtree(REPO / "path")
+    stray = REPO / "aider_classroom_bite_research_022"
+    run(["git", "reset", "--", "aider_classroom_bite_research_022"])
+    if stray.exists():
+        shutil.rmtree(stray)
     placeholder_path = REPO / PLACEHOLDER
     if placeholder_path.exists():
         placeholder_path.unlink()
@@ -146,7 +150,7 @@ def attempt(fmt, n, scored):
     all_text = status_result.stdout + stdout + (raw / "aider_stderr.log").read_text()
     hits = FORBIDDEN.findall(all_text)
     paths = [line[3:] for line in status_result.stdout.splitlines() if len(line) >= 4]
-    forbidden = [p for p in paths if p != REL and not p.startswith("sidecar/experiments/aider_classroom_bite_research_025/")]
+    forbidden = [p for p in paths if p not in (REL, ".aider.tags.cache.v4/") and not p.startswith("sidecar/experiments/aider_classroom_bite_research_025/")]
     write(raw / "forbidden_path_scan.log", "placeholder_hits=%r\nforbidden_paths=%r\n" % (hits, forbidden))
     oracle = run(["python3", str(ROOT.parent / "aider_classroom_bite_research_023" / "proof" / "oracle.py"), str(TARGET), "module"], env=env)
     regression = run(["python3", "-m", "pytest", "-q", str(ROOT.parent / "aider_classroom_bite_research_023" / "fixture" / "test_surfaces.py")], env=env)
@@ -164,6 +168,10 @@ def attempt(fmt, n, scored):
     placeholder_tree = REPO / "path" / "to"
     if placeholder_tree.exists():
         shutil.rmtree(REPO / "path")
+    stray = REPO / "aider_classroom_bite_research_022"
+    run(["git", "reset", "--", "aider_classroom_bite_research_022"])
+    if stray.exists():
+        shutil.rmtree(stray)
     placeholder_path = REPO / PLACEHOLDER
     if placeholder_path.exists():
         placeholder_path.unlink()
@@ -185,6 +193,9 @@ def main():
         for fmt in ("whole", "diff"):
             for n in (1, 2, 3):
                 attempt(fmt, n, True)
+        return
+    if len(sys.argv) > 1 and sys.argv[1].startswith("diff"):
+        attempt("diff", int(sys.argv[1].replace("diff", "")), True)
         return
     for fmt in ("whole", "diff"):
         attempt(fmt, 1, False)

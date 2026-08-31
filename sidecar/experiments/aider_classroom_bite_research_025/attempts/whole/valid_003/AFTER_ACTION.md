@@ -1,0 +1,12 @@
+format=whole
+scored=True
+repetition=3
+status=VALID_COMPLETE
+engineering_success=False
+aider_success=False
+placeholder_hits=[]
+forbidden_paths=['aider_classroom_bite_research_022/fixture/budget.py', '.aider.tags.cache.v4/']
+elapsed_seconds=58.703
+target=aider_surface_fixture/module.py
+reset_before=recorded
+reset_after=recorded

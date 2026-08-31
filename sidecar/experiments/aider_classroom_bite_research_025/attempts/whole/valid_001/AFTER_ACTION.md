@@ -1,0 +1,12 @@
+format=whole
+scored=True
+repetition=1
+status=VALID_COMPLETE
+engineering_success=False
+aider_success=False
+placeholder_hits=['path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/']
+forbidden_paths=['path/to/sidecar/experiments/aider_classroom_bite_research_023/fixture/surfaces/module.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_023/fixture/test_surfaces.py', '.aider.tags.cache.v4/']
+elapsed_seconds=87.160
+target=aider_surface_fixture/module.py
+reset_before=recorded
+reset_after=recorded

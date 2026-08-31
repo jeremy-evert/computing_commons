@@ -1,0 +1,25 @@
+diff --git a/aider_surface_fixture/module.py b/aider_surface_fixture/module.py
+index 9e02cba..6233b9c 100644
+--- a/aider_surface_fixture/module.py
++++ b/aider_surface_fixture/module.py
+@@ -1,6 +1,10 @@
+ """Freshman-readable budget module with several neighboring responsibilities."""
+ 
+ 
++def cents_to_label(cents):
++    if cents < 0:
++        raise ValueError("cents must be non-negative")
++    return f"${cents / 100:.2f}"
+ def add_expense(total_cents, expense_cents):
+     if expense_cents < 0:
+         raise ValueError("expense must be non-negative")
+@@ -34,3 +38,9 @@ def within_limit(total_cents, limit_cents):
+ 
+ def remaining_budget(limit_cents, spent_cents):
+     return max(0, limit_cents - spent_cents)
++
++
++def cents_to_label(cents):
++    if cents < 0:
++        raise ValueError("cents must be non-negative")
++    return f"${cents / 100:.2f}"
