@@ -28,7 +28,7 @@ Branch: `anna/aider-edit-transport-replication-025`
 ## Git durability
 
 - Commits: `cf2a5e8` (apparatus and verification checkpoint), `8d95e66` (scored evidence and synthesis).
-- Push: completed; `origin/anna/aider-edit-transport-replication-025` verified at final commit `0487945`.
+- Push: completed; `origin/anna/aider-edit-transport-replication-025` verified at final commit `a120519`.
 - Final worktree status after cleanup: clean.
 
 ## Next recommended prompt
