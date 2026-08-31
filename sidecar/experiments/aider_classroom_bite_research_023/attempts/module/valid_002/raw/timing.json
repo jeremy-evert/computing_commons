@@ -1,0 +1,7 @@
+{
+  "elapsed_seconds": 143.58742117881775,
+  "exit_code": 0,
+  "model": "ollama_chat/qwen2.5-coder-3b-cpu:latest",
+  "warm_policy": "exact-model request before each attempt",
+  "pty": true
+}

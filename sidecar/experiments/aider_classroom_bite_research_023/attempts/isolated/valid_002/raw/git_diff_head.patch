@@ -1,0 +1,14 @@
+diff --git a/aider_surface_fixture/isolated.py b/aider_surface_fixture/isolated.py
+index fdfa70a..de4bbea 100644
+--- a/aider_surface_fixture/isolated.py
++++ b/aider_surface_fixture/isolated.py
+@@ -1 +1,9 @@
+ """One-responsibility surface: intentionally no neighboring helpers."""
++
++from decimal import Decimal
++
++def cents_to_label(cents):
++    if cents < 0:
++        raise ValueError("Negative cents are not allowed.")
++    
++    return f"${Decimal(cents / 100):.2f}"

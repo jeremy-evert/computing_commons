@@ -1,0 +1,16 @@
+diff --git a/aider_surface_fixture/isolated.py b/aider_surface_fixture/isolated.py
+index fdfa70a..6f9b102 100644
+--- a/aider_surface_fixture/isolated.py
++++ b/aider_surface_fixture/isolated.py
+@@ -1 +1,11 @@
+ """One-responsibility surface: intentionally no neighboring helpers."""
++
++def cents_to_label(cents):
++    if cents < 0:
++        raise ValueError("Negative cents are not allowed.")
++    
++    dollars = cents // 100
++    cents_remaining = cents % 100
++    
++    label = f"${dollars}.{cents_remaining:02d}"
++    return label

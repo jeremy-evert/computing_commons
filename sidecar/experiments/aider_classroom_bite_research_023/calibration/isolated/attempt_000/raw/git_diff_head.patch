@@ -1,0 +1,11 @@
+diff --git a/sidecar/experiments/aider_classroom_bite_research_023/fixture/surfaces/isolated.py b/sidecar/experiments/aider_classroom_bite_research_023/fixture/surfaces/isolated.py
+index 2443df6..e7292f9 100644
+--- a/sidecar/experiments/aider_classroom_bite_research_023/fixture/surfaces/isolated.py
++++ b/sidecar/experiments/aider_classroom_bite_research_023/fixture/surfaces/isolated.py
+@@ -1,2 +1,6 @@
+ """One-responsibility surface: intentionally no neighboring helpers."""
+ 
++from decimal import Decimal
++
++def cents_to_label(cents):
++    return f"${Decimal(cents).quantize(Decimal('0.01'), rounding=Decimal.ROUND_HALF_UP)}"

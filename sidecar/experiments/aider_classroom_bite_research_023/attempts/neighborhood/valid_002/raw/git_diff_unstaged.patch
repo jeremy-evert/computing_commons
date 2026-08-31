@@ -1,0 +1,17 @@
+diff --git a/aider_surface_fixture/neighborhood.py b/aider_surface_fixture/neighborhood.py
+index 3ec9406..570a76f 100644
+--- a/aider_surface_fixture/neighborhood.py
++++ b/aider_surface_fixture/neighborhood.py
+@@ -1,6 +1,12 @@
+ """Small neighborhood surface with unrelated but readable helpers."""
+ 
+ 
++def cents_to_label(cents):
++    if cents < 0:
++        raise ValueError("cents must be non-negative")
++    return f"${cents / 100:.2f}"
++
++
+ def add_expense(total_cents, expense_cents):
+     if expense_cents < 0:
+         raise ValueError("expense must be non-negative")

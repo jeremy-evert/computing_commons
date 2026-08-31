@@ -1,0 +1,12 @@
+condition=module
+repetition=0
+baseline=ddc49d4bd29fbc147ef1d7e8f85fb72b9299b1be
+target=aider_surface_fixture/module.py
+model=ollama_chat/qwen2.5-coder-3b-cpu:latest
+oracle_sha256=2ed82404fd278ca31091576d9028b38a83faba6b2e418c2ae2f1414e9917316a
+aider_exit=124
+elapsed_seconds=73.474
+engineering_success=False
+aider_success=False
+forbidden_paths=['aider_surface_fixture/isolated.py', 'aider_surface_fixture/neighborhood.py']
+placeholder_transport=False

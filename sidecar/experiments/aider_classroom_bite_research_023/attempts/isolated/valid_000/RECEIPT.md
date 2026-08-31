@@ -1,0 +1,12 @@
+condition=isolated
+repetition=0
+baseline=8cad49439a7afabf8cbc7e04864f6a4869c454eb
+target=aider_surface_fixture/isolated.py
+model=ollama_chat/qwen2.5-coder-3b-cpu:latest
+oracle_sha256=2ed82404fd278ca31091576d9028b38a83faba6b2e418c2ae2f1414e9917316a
+aider_exit=0
+elapsed_seconds=63.341
+engineering_success=True
+aider_success=True
+forbidden_paths=[]
+placeholder_transport=False

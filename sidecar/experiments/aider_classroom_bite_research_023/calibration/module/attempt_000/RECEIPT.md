@@ -1,0 +1,12 @@
+condition=module
+repetition=0
+baseline=6a4954dc49e66b7c34e1257eeddaf967aba2c467
+target=sidecar/experiments/aider_classroom_bite_research_023/fixture/surfaces/module.py
+model=ollama_chat/qwen2.5-coder-3b-cpu:latest
+oracle_sha256=2ed82404fd278ca31091576d9028b38a83faba6b2e418c2ae2f1414e9917316a
+aider_exit=124
+elapsed_seconds=76.420
+engineering_success=False
+aider_success=False
+forbidden_paths=['path/to/sidecar/experiments/aider_classroom_bite_research_023/fixture/surfaces/module.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_023/fixture/surfaces/neighborhood.py', '.aider.chat.history.md', '.aider.tags.cache.v4/']
+placeholder_transport=True
