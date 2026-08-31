@@ -21,6 +21,7 @@ MODEL = "ollama_chat/qwen2.5-coder-3b-cpu:latest"
 BASELINE = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=REPO, text=True).strip()
 PLACEHOLDER = re.compile(r"(?:path/to/|\.\.\./|<[^>]+>)")
 CALIBRATION = "--calibration" in sys.argv or "--recalibration" in sys.argv
+VERIFY = "--verification" in sys.argv
 
 
 def run(cmd, env=None, timeout=300):
@@ -69,9 +70,10 @@ def pty_aider(prompt, target, env, timeout=420):
 def main():
     fixture = ROOT / "fixture"
     env = dict(os.environ, PYTHONPATH=str(fixture), AIDER_CACHE_DIR="/tmp/aider-mission-023-cache")
-    for condition, target in TARGETS.items():
-        for number in ([0] if CALIBRATION else range(1, 4)):
-            calibration_dir = "calibration2" if "--recalibration" in sys.argv else "calibration"
+    conditions = {"isolated": TARGETS["isolated"]} if VERIFY else TARGETS
+    for condition, target in conditions.items():
+        for number in ([0] if CALIBRATION or VERIFY else range(1, 4)):
+            calibration_dir = "calibration3" if VERIFY else ("calibration2" if "--recalibration" in sys.argv else "calibration")
             attempt = ROOT / (calibration_dir if CALIBRATION else "attempts") / condition / ("attempt_%03d" % number if CALIBRATION else "valid_%03d" % number)
             raw = attempt / "raw"
             if attempt.exists():
