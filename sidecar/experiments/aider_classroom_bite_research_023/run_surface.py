@@ -13,14 +13,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parents[2]
 TARGETS = {
-    "isolated": ROOT / "fixture/surfaces/isolated.py",
-    "neighborhood": ROOT / "fixture/surfaces/neighborhood.py",
-    "module": ROOT / "fixture/surfaces/module.py",
+    "isolated": REPO / "aider_surface_fixture/isolated.py",
+    "neighborhood": REPO / "aider_surface_fixture/neighborhood.py",
+    "module": REPO / "aider_surface_fixture/module.py",
 }
 MODEL = "ollama_chat/qwen2.5-coder-3b-cpu:latest"
 BASELINE = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=REPO, text=True).strip()
 PLACEHOLDER = re.compile(r"(?:path/to/|\.\.\./|<[^>]+>)")
-CALIBRATION = "--calibration" in sys.argv
+CALIBRATION = "--calibration" in sys.argv or "--recalibration" in sys.argv
 
 
 def run(cmd, env=None, timeout=300):
@@ -32,7 +32,9 @@ def pty_aider(prompt, target, env, timeout=420):
     started = time.time()
     process = subprocess.Popen(
         ["aider", "--model", MODEL, "--edit-format", "whole", "--no-auto-commits", "--no-gitignore",
-         "--no-show-model-warnings", "--yes-always", "--message-file", str(prompt), str(target.relative_to(REPO))],
+         "--no-show-model-warnings", "--yes-always", "--chat-history-file", "/tmp/aider-mission-023-chat.md",
+         "--input-history-file", "/tmp/aider-mission-023-input.history", "--llm-history-file", "/tmp/aider-mission-023-llm.history",
+         "--message-file", str(prompt), str(target.relative_to(REPO))],
         cwd=REPO, env=env, stdin=subprocess.DEVNULL, stdout=slave, stderr=subprocess.PIPE,
         close_fds=True,
     )
@@ -63,7 +65,8 @@ def main():
     env = dict(os.environ, PYTHONPATH=str(fixture), AIDER_CACHE_DIR="/tmp/aider-mission-023-cache")
     for condition, target in TARGETS.items():
         for number in ([0] if CALIBRATION else range(1, 4)):
-            attempt = ROOT / ("calibration" if CALIBRATION else "attempts") / condition / ("attempt_%03d" % number if CALIBRATION else "valid_%03d" % number)
+            calibration_dir = "calibration2" if "--recalibration" in sys.argv else "calibration"
+            attempt = ROOT / (calibration_dir if CALIBRATION else "attempts") / condition / ("attempt_%03d" % number if CALIBRATION else "valid_%03d" % number)
             raw = attempt / "raw"
             if attempt.exists():
                 raise SystemExit("refusing to overwrite %s" % attempt)
@@ -74,7 +77,7 @@ def main():
             baseline = run(["python3", "-m", "pytest", "-q", str(fixture / "test_surfaces.py")], env=env)
             (raw / "baseline_proof.log").write_text(baseline.stdout + baseline.stderr)
             oracle_hash = hashlib.sha256((ROOT / "proof/oracle.py").read_bytes()).hexdigest()
-            prompt = ("Goal: Add cents_to_label(cents), returning a dollar string with exactly two decimals.\n"
+            prompt = ("Goal: Add cents_to_label(cents). For a non-negative integer number of cents, return a dollar string with exactly two decimals; for example, 125 -> '$1.25' and 0 -> '$0.00'. Reject negative cents with ValueError.\n"
                       "Allowed scope: %s only.\nDo not change tests, proofs, or unrelated behavior.\n"
                       "Proof: the controller will run the independent oracle and the regression suite.\n" % rel)
             (attempt / "AIDER_PROMPT.md").write_text(prompt)
@@ -96,7 +99,8 @@ def main():
             (raw / "regression_proof.log").write_text(regression.stdout + regression.stderr)
             status_text = status.stdout + stdout + stderr
             paths = re.findall(r"(?:^|\n)[MADRCU?! ]{1,3}\s+(.+)", status.stdout)
-            forbidden = [p for p in paths if not p.startswith(str(rel)) and not p.startswith("sidecar/experiments/aider_classroom_bite_research_023/")]
+            setup_paths = (".aider.chat.history.md", ".aider.input.history", ".aider.tags.cache.v4/", ".aider.llm.history")
+            forbidden = [p for p in paths if not p.startswith(str(rel)) and not p.startswith("sidecar/experiments/aider_classroom_bite_research_023/") and not p.startswith(setup_paths)]
             placeholder = bool(PLACEHOLDER.search(status_text))
             head_diff = run(["git", "diff", "HEAD", "--", str(rel)]).stdout
             engineering = baseline.returncode == 0 and oracle.returncode == 0 and regression.returncode == 0 and bool(head_diff)
