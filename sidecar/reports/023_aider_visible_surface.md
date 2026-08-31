@@ -15,3 +15,14 @@ Conclusion: **SMALL JOB + SMALL WORKSPACE** is supported as a machine-side provi
 
 Required artifact: `sidecar/experiments/aider_classroom_bite_research_023/TEACHING_DECISION.md`.
 
+## Handoff contract
+
+- AGENTS.md: read; no update required.
+- Tests: `python3 -m pytest -q sidecar/experiments/aider_classroom_bite_research_023/fixture` — 1 passed.
+- `git diff --check` — passed.
+- `make task-check` — unavailable: `make: *** No rule to make target 'task-check'. Stop.`
+- `make check` — unavailable: `make: *** No rule to make target 'check'. Stop.`
+- Commits: `8ca04d9` apparatus; `b9597b0` path/setup repair; `ddc49d4` malformed artifact cleanup; `42fd70b` PTY reap repair; `e523440` tracked baselines; `8cad494` verification mode; `4e80986` evidence-path repair; `b105b3b` scored evidence and synthesis.
+- Push: completed to `origin/anna/aider-visible-surface-023`; final remote tip verified.
+- Final `git status --short`: clean.
+- Next recommended prompt: test exactly one variable—edit transport—on the fixed MODULE surface while holding the 3B worker, semantic bite, proof, and visible workspace constant.
