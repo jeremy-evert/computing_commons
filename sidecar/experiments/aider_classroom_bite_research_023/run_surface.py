@@ -55,9 +55,15 @@ def pty_aider(prompt, target, env, timeout=420):
             output.extend(os.read(master, 65536))
         except OSError:
             break
+    if process.poll() is None:
+        try:
+            process.wait(timeout=30)
+        except subprocess.TimeoutExpired:
+            process.kill()
+            process.wait()
     stderr = process.stderr.read().decode(errors="replace")
     os.close(master)
-    return process.returncode if process.returncode is not None else 124, output.decode(errors="replace"), stderr, time.time() - started
+    return process.returncode, output.decode(errors="replace"), stderr, time.time() - started
 
 
 def main():
