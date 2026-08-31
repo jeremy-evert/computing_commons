@@ -1,0 +1,9 @@
+format=whole
+scored=False
+repetition=6
+status=VALID_COMPLETE
+engineering_success=False
+aider_success=False
+placeholder_hits=['path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/']
+forbidden_paths=['path/to/sidecar/experiments/aider_classroom_bite_research_023/fixture/budget.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_023/fixture/test_budget.py', '.aider.tags.cache.v4/']
+elapsed_seconds=108.350

@@ -1,0 +1,14 @@
+diff --git a/aider_surface_fixture/module.py b/aider_surface_fixture/module.py
+index 9e02cba..fb8268c 100644
+--- a/aider_surface_fixture/module.py
++++ b/aider_surface_fixture/module.py
+@@ -34,3 +34,9 @@ def within_limit(total_cents, limit_cents):
+ 
+ def remaining_budget(limit_cents, spent_cents):
+     return max(0, limit_cents - spent_cents)
++
++
++def cents_to_label(cents):
++    if cents < 0:
++        raise ValueError("cents must be non-negative")
++    return f"${cents / 100:.2f}"

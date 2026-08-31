@@ -1,0 +1,9 @@
+format=whole
+scored=False
+repetition=3
+status=VALID_COMPLETE
+engineering_success=True
+aider_success=False
+placeholder_hits=[]
+forbidden_paths=['.aider.tags.cache.v4/']
+elapsed_seconds=82.945

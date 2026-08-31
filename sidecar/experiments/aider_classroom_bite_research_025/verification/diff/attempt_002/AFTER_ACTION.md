@@ -1,0 +1,12 @@
+format=diff
+scored=False
+repetition=2
+status=INVALID_RESET
+engineering_success=False
+aider_success=False
+placeholder_hits=[]
+forbidden_paths=[]
+elapsed_seconds=0.000
+target=aider_surface_fixture/module.py
+reset_before=recorded
+reset_after=recorded

@@ -1,0 +1,12 @@
+format=whole
+scored=False
+repetition=4
+status=VALID_COMPLETE
+engineering_success=False
+aider_success=False
+placeholder_hits=['path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/', 'path/to/']
+forbidden_paths=['path/to/sidecar/experiments/aider_classroom_bite_research_023/fixture/module.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_023/fixture/test_module.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_023/proof/baseline_regression.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_023/proof/micro_oracle.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_023/run_surface.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_024/fixture/module.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_024/fixture/test_module.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_024/proof/baseline_regression.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_024/proof/micro_oracle.py', 'path/to/sidecar/experiments/aider_classroom_bite_research_024/run_transport.py', '.aider.tags.cache.v4/']
+elapsed_seconds=197.716
+target=aider_surface_fixture/module.py
+reset_before=recorded
+reset_after=recorded
