@@ -28,8 +28,8 @@ Branch: `anna/aider-edit-transport-replication-025`
 ## Git durability
 
 - Commits: `cf2a5e8` (apparatus and verification checkpoint), `8d95e66` (scored evidence and synthesis).
-- Push: completed; `origin/anna/aider-edit-transport-replication-025` verified at `8d95e66` before this report-only metadata update.
-- Final worktree status after cleanup: only the intentional report metadata update is pending; it will be committed and pushed as the final forward commit.
+- Push: completed; `origin/anna/aider-edit-transport-replication-025` verified at final commit `0487945`.
+- Final worktree status after cleanup: clean.
 
 ## Next recommended prompt
 
