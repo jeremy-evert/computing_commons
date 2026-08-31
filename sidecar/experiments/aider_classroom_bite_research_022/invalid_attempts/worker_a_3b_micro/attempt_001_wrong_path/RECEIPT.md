@@ -1,0 +1,11 @@
+condition=worker_a_3b
+rung=micro
+repetition=1
+baseline=5467fb5fe34df5aefd264d9c1594d8062f8cba47
+model=ollama_chat/qwen2.5-coder-3b-cpu:latest
+oracle=micro_oracle.py
+oracle_sha256=5d06bba695725493ac28e6d5b8e7dc40a94736f24c57067a2992f4120fa21564
+aider_exit=0
+elapsed_seconds=77.317
+final_oracle_exit=1
+regression_exit=0
