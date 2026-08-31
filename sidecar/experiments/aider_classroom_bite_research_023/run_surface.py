@@ -74,7 +74,7 @@ def main():
     for condition, target in conditions.items():
         for number in ([0] if CALIBRATION or VERIFY else range(1, 4)):
             calibration_dir = "calibration3" if VERIFY else ("calibration2" if "--recalibration" in sys.argv else "calibration")
-            attempt = ROOT / (calibration_dir if CALIBRATION else "attempts") / condition / ("attempt_%03d" % number if CALIBRATION else "valid_%03d" % number)
+            attempt = ROOT / (calibration_dir if CALIBRATION or VERIFY else "attempts") / condition / ("attempt_%03d" % number if CALIBRATION or VERIFY else "valid_%03d" % number)
             raw = attempt / "raw"
             if attempt.exists():
                 raise SystemExit("refusing to overwrite %s" % attempt)
