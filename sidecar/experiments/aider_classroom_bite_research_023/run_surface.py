@@ -20,6 +20,7 @@ TARGETS = {
 MODEL = "ollama_chat/qwen2.5-coder-3b-cpu:latest"
 BASELINE = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=REPO, text=True).strip()
 PLACEHOLDER = re.compile(r"(?:path/to/|\.\.\./|<[^>]+>)")
+CALIBRATION = "--calibration" in sys.argv
 
 
 def run(cmd, env=None, timeout=300):
@@ -61,8 +62,8 @@ def main():
     fixture = ROOT / "fixture"
     env = dict(os.environ, PYTHONPATH=str(fixture), AIDER_CACHE_DIR="/tmp/aider-mission-023-cache")
     for condition, target in TARGETS.items():
-        for number in range(1, 4):
-            attempt = ROOT / "attempts" / condition / ("valid_%03d" % number)
+        for number in ([0] if CALIBRATION else range(1, 4)):
+            attempt = ROOT / ("calibration" if CALIBRATION else "attempts") / condition / ("attempt_%03d" % number if CALIBRATION else "valid_%03d" % number)
             raw = attempt / "raw"
             if attempt.exists():
                 raise SystemExit("refusing to overwrite %s" % attempt)
