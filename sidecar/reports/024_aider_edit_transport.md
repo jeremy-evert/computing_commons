@@ -21,9 +21,12 @@ The apparatus had two repair findings: a fixed path-expression bookkeeping bug, 
 - `git diff --check`: working-tree check passed for implementation state; full staged check reports whitespace in preserved raw patch payloads, which are immutable evidence.
 - `make task-check`: unavailable — `make: *** No rule to make target 'task-check'. Stop.`
 - `make check`: unavailable — `make: *** No rule to make target 'check'. Stop.`
-- Commit/push: pending.
-- Final status: pending.
+- Commit: `a502d8ac529edabc7920de1db7e288e36444b737` (evidence and report); this follow-up report update will be committed separately.
+- Push: completed; `origin/anna/aider-edit-transport-024` verified at the final commit.
+- Final status before this report-only update: clean except the transient `.aider.tags.cache.v4/`, which was removed; final status follows the report commit.
 
 ## Decision
 
 Transport did not yet rescue Module under the strict Aider-success definition. Keep “small job + small workspace” as the only supported machine-side teaching rule. Do not put a specific edit mode on the student card. One next variable: repaired replication of the same whole-versus-diff Module comparison.
+
+Next recommended prompt: repair the PTY/caller and deterministic-reset apparatus, then replicate this same Module whole-versus-diff comparison with no semantic, model, surface, or proof changes.
