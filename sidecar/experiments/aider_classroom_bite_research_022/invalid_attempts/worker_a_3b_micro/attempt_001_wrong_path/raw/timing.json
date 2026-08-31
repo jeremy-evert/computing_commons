@@ -1,0 +1,7 @@
+{
+  "start_epoch": 1788136016.0374875,
+  "elapsed_seconds": 77.31678080558777,
+  "exit_code": 0,
+  "model": "ollama_chat/qwen2.5-coder-3b-cpu:latest",
+  "warm_policy": "exact-model request before each attempt"
+}

@@ -1,0 +1,11 @@
+condition=worker_b_7b
+rung=small
+repetition=2
+baseline=1e4f0f4b125122a11d4b0fdfc9c29765cb13f973
+model=ollama_chat/qwen2.5-coder-7b-cpu:latest
+oracle=small_oracle.py
+oracle_sha256=03378f4405f0add2468059a97519acf49cf0f4a3efe28737a38936ea8f58d12c
+aider_exit=0
+elapsed_seconds=150.146
+final_oracle_exit=1
+regression_exit=0

@@ -1,0 +1,15 @@
+diff --git a/sidecar/experiments/aider_classroom_bite_research_022/fixture/budget.py b/sidecar/experiments/aider_classroom_bite_research_022/fixture/budget.py
+index edd2202..24438aa 100644
+--- a/sidecar/experiments/aider_classroom_bite_research_022/fixture/budget.py
++++ b/sidecar/experiments/aider_classroom_bite_research_022/fixture/budget.py
+@@ -24,3 +24,10 @@ def summarize(expenses):
+         "total_cents": total,
+         "average_cents": total // len(values) if values else 0,
+     }
++
++
++def cents_to_label(cents):
++    """Format a non-negative integer number of cents as dollars with exactly two decimals."""
++    if cents < 0:
++        raise ValueError("cents must be non-negative")
++    return "${}.{:02d}".format(cents // 100, cents % 100)
