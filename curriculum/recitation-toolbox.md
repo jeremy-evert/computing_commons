@@ -4,9 +4,9 @@ After the initial shared runway, the Computing Commons should behave like a reus
 
 Home courses call the recitation they need when they need it.
 
-## Candidate stations
+## Stations
 
-### Containers and repeatable environments
+### [Containers and repeatable environments](containers-and-repeatable-environments.md) — LIVE
 
 Question: **Can another environment reproduce what I just did?**
 
@@ -17,6 +17,12 @@ Shared outcomes:
 - understand files/mounts practically;
 - capture evidence about what environment ran the task;
 - use containers for repeatability, not vocabulary trivia.
+
+Canonical shared module, deck, and pinned/published container image are
+live; Architecture and DSCT link back to it rather than forking their own
+copy. See [`containers-and-repeatable-environments.md`](containers-and-repeatable-environments.md).
+
+## Candidate stations
 
 ### Documentation and LaTeX
 

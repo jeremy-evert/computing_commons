@@ -39,4 +39,5 @@ The Commons should not become a second authoring home when a strong canonical so
 - [`ai-fluency.md`](ai-fluency.md)
 - [`professional-minds.md`](professional-minds.md)
 - [`recitation-toolbox.md`](recitation-toolbox.md)
+- [`containers-and-repeatable-environments.md`](containers-and-repeatable-environments.md)
 - [`farkle-machine-learning-finale.md`](farkle-machine-learning-finale.md)
