@@ -75,32 +75,55 @@ source text (reading / digest / world-bible topic)
 - **QC pass** — checks the script doesn't drift from the source (no invented claims, no exposed
   student data if the source was a lecture digest), and that tone lands. This is the fast/cheap
   gate that keeps the "publish sooner" policy safe.
-- **Voice synthesis → Maise, XTTS-v2.** GPU job, not CPU — Maise's RTX 2080 Super (8GB VRAM) is
-  the only GPU in this fleet suited to it. Time-per-episode is unmeasured; expect roughly 1-3x
-  realtime for a two-voice XTTS-v2 render (i.e. ballpark 10-25 min for a 9-minute episode) — get a
-  real number from the first render and correct this doc.
+- **Voice synthesis → GPU, XTTS-v2.** Runs on **brandy** (Tesla T4, 16GB), not Maise: Maise
+  reaches the cluster through a mgmt jump service that mangles long-lived streams, so the NRP
+  script/QC jobs have to be driven from brandy anyway, and keeping synthesis on the same host
+  avoids a cross-machine handoff. Maise's RTX 2080 Super can be a second synth node once its
+  network path is fixed. **Measured on the first real render (Week 3 Fri pilot):** ~0.38x
+  realtime — an 8-minute episode rendered in ~3 minutes (30 turns, model load included).
+  Two-voice full episodes are cheap; batching the back-catalog is a few GPU-minutes each.
 - **April stays out of this entirely.** No NRP job, no TTS render, ever runs on April. April's
   job is: take the finished script + audio and wire it into Canvas the same additive/preflight/
   readback way the lecture-distillation pipeline already does.
 
 ## Reference: the pilot
 
-`professional_minds/presentations/podcast_pilot/week03_fri_resilience_and_risk_competence.md` —
-first full script, generated inline (not via NRP) as a proof of concept from
-`professional_minds/readings/week_03_fri_resilience_and_risk_competence.md`. Use it as the shape
-template for the NRP prompt: two named voices, question/answer rhythm, a concrete example beat,
-a closing reflection prompt, production notes at the bottom.
+Hand-written shape template:
+`professional_minds/presentations/podcast_pilot/week03_fri_resilience_and_risk_competence.md`
+— two named voices, question/answer rhythm, a concrete example beat, a closing reflection prompt,
+production notes at the bottom.
 
-## Open items for the Maise/Flo session
+**First episode built by the real pipeline (2026-09-02):**
+`professional_minds/presentations/podcasts/week03_fri/` — script + `.mp3` + QC verdict +
+`episode.meta.json`, tracked in `professional_minds/presentations/podcasts/INDEX.md`. Merged to
+`main`, ready for April to link from the Week 3 Canvas module.
 
-- Stand up the actual NRP job (model choice, batch shape, one script per topic file found in the
-  three source tracks above).
-- Pick and wire up the QC pass (which model, what it's allowed to change vs. just flag).
-- Install/configure XTTS-v2 on Maise, pick two consistent voice profiles (reused across all
-  episodes for continuity), render the pilot script as the first real timing/quality test.
-- Decide episode cadence: Professional Minds already has a Wed+Fri weekly reading; decide whether
-  both get episodes or just Friday initially. World Bible cadence is one per course per week where
-  a lecture actually used the framing that week.
-- Once a real render exists, correct the timing estimate in this doc and decide the publish path
-  (where the audio file lives, how it's linked from each course's Canvas module — likely the same
-  additive-item pattern as the recording/slides/notes items already in use).
+- Generation: `gpt-oss` via NRP eLLM, 2-stage (beat outline → script), ~22s, verdict PASS.
+- QC: `gemma4-12b` via NRP eLLM (independent model), ~4s. Rubric is parser-aware — it judges only
+  the `**DANA:**` / `**MARCUS:**` turns, since the synth strips all other scaffolding.
+- Synthesis: XTTS-v2 on brandy's T4, voices **Rosemary Okafor** (Dana) / **Viktor Menelaos**
+  (Marcus) — built-in speakers, a pilot pick. 8:00, rendered in ~3 min.
+- Next voice pass: clone real narrator voices (an instructor + a second reader) — see
+  `professional_minds/presentations/podcasts/voices/narration_reference_script.md`. F5-TTS is also
+  installed on brandy for a model comparison.
+
+## eLLM access (learned building the pilot)
+
+- `https://ellm.nrp-nautilus.io/v1` — `/chat/completions` **only answers from inside an NRP pod**
+  (403 from any workstation); `/models` is open. So generation + QC run as NRP Jobs, never as
+  local HTTP.
+- Those jobs are driven from **brandy** (public IP). From Maise they fail: `kubectl logs`/`wait`
+  route through node kubelets on port 10250, which Maise's mgmt-jump egress can't hold open.
+- Non-GPU pods, token from the in-cluster Secret `nrp-llm-token`. Launcher:
+  `nrp_k8s_launcher/scripts/nrp_launch_job.py` (needed a TTL/`kubectl wait` robustness fix —
+  branch `fix/ttl-and-wait-hang`).
+
+## Open items
+
+- Decide episode cadence: Professional Minds has a Wed+Fri weekly reading — both, or Friday only
+  to start? World Bible cadence is one per course per week where a lecture used the framing.
+- Batch the remaining Professional Minds readings once cadence is set (one NRP job per reading).
+- Wire CS1/CS2 lecture-digest and World Bible tracks in.
+- Lock final voices (cloned) and, if F5-TTS wins the comparison, switch the synth engine.
+- April: link the Week 3 Fri `.mp3` from its Canvas module (additive item, same pattern as
+  recording/slides/notes), then repeat per episode as they land in `INDEX.md`.
