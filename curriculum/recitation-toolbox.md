@@ -36,6 +36,13 @@ Shared outcomes:
 - commands/results/assumptions/captions/evidence;
 - documentation as part of the work.
 
+First concrete material: [`../fun_with_LaTeX/STUDENT_GUIDE.md`](../fun_with_LaTeX/STUDENT_GUIDE.md)
+— stand up a tiny LaTeX project, compile `.tex` → `.pdf` on your own machine,
+put both under Git, get to a one-command build. Recorded walkthrough +
+companion deck in [`../fun_with_LaTeX/`](../fun_with_LaTeX/). Canvas delivery
+tracked by the `foreman_interface` mission
+`computing_commons_fun_with_latex_canvas_load`.
+
 ### Work First
 
 Question: **Can I organize work so tools help without taking control?**
