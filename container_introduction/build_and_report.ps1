@@ -31,8 +31,15 @@ function Invoke-Captured {
     Add-Raw ""
     Add-Raw ("===== {0} =====" -f $Label)
     try {
-        $output = & $Command 2>&1 | ForEach-Object { $_.ToString() }
-        $exit = $LASTEXITCODE
+        $savedPreference = $ErrorActionPreference
+        $ErrorActionPreference = 'Continue'
+        try {
+            $output = & $Command 2>&1 | ForEach-Object { $_.ToString() }
+            $exit = $LASTEXITCODE
+        }
+        finally {
+            $ErrorActionPreference = $savedPreference
+        }
         if ($null -eq $exit) { $exit = 0 }
         foreach ($line in $output) { Add-Raw $line }
         Add-Raw ("[exit code: {0}]" -f $exit)
@@ -110,14 +117,19 @@ try {
     $makefilePath = Join-Path $ProjectRoot 'Makefile'
     if (Test-Path -LiteralPath $makefilePath) {
         $makeText = [System.IO.File]::ReadAllText($makefilePath)
-        $oldPdfRecipe = "pdf:`n`t" + 'mkdir -p $(BUILD)' + "`n`t" + 'latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=$(BUILD) $(MAIN).tex'
-        $newPdfRecipe = "pdf:`n`t" + 'powershell -NoProfile -ExecutionPolicy Bypass -File .\build_and_report.ps1 -SkipGit'
-        if ($makeText.Contains($oldPdfRecipe)) {
-            $makeText = $makeText.Replace($oldPdfRecipe, $newPdfRecipe)
-            Write-Utf8NoBom $makefilePath $makeText
+        $pattern = '(?ms)^pdf:\r?\n\tmkdir -p \$\(BUILD\)\r?\n\tlatexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=\$\(BUILD\) \$\(MAIN\)\.tex'
+        $replacement = "pdf:`r`n`tpowershell -NoProfile -ExecutionPolicy Bypass -File .\build_and_report.ps1 -SkipGit"
+        $patched = [regex]::Replace($makeText, $pattern, $replacement, 1)
+        if ($patched -ne $makeText) {
+            Write-Utf8NoBom $makefilePath $patched
             $script:Fixes.Add('Patched only the Makefile pdf recipe so make calls this Windows-safe build script.')
             Add-Raw '[repair] Makefile pdf recipe patched.'
         }
+    }
+
+    if (Test-Path -LiteralPath $pdfPath) {
+        Remove-Item -LiteralPath $pdfPath -Force
+        Add-Raw '[repair] Removed the pre-existing PDF so this run cannot report a stale artifact as success.'
     }
 
     $commonArgs = @(
@@ -199,12 +211,12 @@ if (-not $SkipGit) {
         $repoRoot = ($repoRootResult.Output | Select-Object -First 1).Trim()
 
         Set-Location $repoRoot
-        $relativeScript = (Resolve-Path -LiteralPath $PSCommandPath -Relative).TrimStart('.', '\\', '/')
-        $relativeReport = (Resolve-Path -LiteralPath $reportPath -Relative).TrimStart('.', '\\', '/')
-        $relativeLatest = (Resolve-Path -LiteralPath $latestReportPath -Relative).TrimStart('.', '\\', '/')
+        $relativeScript = (Resolve-Path -LiteralPath $PSCommandPath -Relative).TrimStart([char[]]@('.', [char]92, '/'))
+        $relativeReport = (Resolve-Path -LiteralPath $reportPath -Relative).TrimStart([char[]]@('.', [char]92, '/'))
+        $relativeLatest = (Resolve-Path -LiteralPath $latestReportPath -Relative).TrimStart([char[]]@('.', [char]92, '/'))
         $pathsToAdd = @($relativeScript, $relativeReport, $relativeLatest)
         if (Test-Path (Join-Path $ProjectRoot 'Makefile')) {
-            $relativeMakefile = (Resolve-Path -LiteralPath (Join-Path $ProjectRoot 'Makefile') -Relative).TrimStart('.', '\\', '/')
+            $relativeMakefile = (Resolve-Path -LiteralPath (Join-Path $ProjectRoot 'Makefile') -Relative).TrimStart([char[]]@('.', [char]92, '/'))
             $pathsToAdd += $relativeMakefile
         }
 

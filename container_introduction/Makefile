@@ -7,8 +7,7 @@ BUILD := build
 all: pdf
 
 pdf:
-	mkdir -p $(BUILD)
-	latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=$(BUILD) $(MAIN).tex
+	powershell -NoProfile -ExecutionPolicy Bypass -File .\build_and_report.ps1 -SkipGit
 
 watch:
 	latexmk -pdf -pvc -interaction=nonstopmode -outdir=$(BUILD) $(MAIN).tex
