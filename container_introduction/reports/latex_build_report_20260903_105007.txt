@@ -1,0 +1,21 @@
+LaTeX build and repair report
+Started: 2026-09-03T10:50:07.5957207-05:00
+Computer: SWOSU-62673
+PowerShell: 5.1.26100.8875
+Project root: C:\Users\evertj\git\computing_commons\container_introduction
+Main source: C:\Users\evertj\git\computing_commons\container_introduction\main.tex
+pdflatex path: C:\Program Files\MiKTeX\miktex\bin\x64\pdflatex.exe
+
+===== pdflatex --version =====
+[exception: pdflatex: major issue: So far, no MiKTeX administrator has checked for updates.]
+[build exception] pdflatex: major issue: So far, no MiKTeX administrator has checked for updates.
+
+===== SUMMARY =====
+Result: FAIL
+Finished: 2026-09-03T10:50:08.1157079-05:00
+Duration seconds: 0.52
+PDF exists: True
+PDF path: C:\Users\evertj\git\computing_commons\container_introduction\build\main.pdf
+Problems found: 0
+Repairs made: 0
+Warnings observed: 0
