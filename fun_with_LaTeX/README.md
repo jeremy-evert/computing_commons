@@ -47,5 +47,5 @@ pdflatex -interaction=nonstopmode -halt-on-error -file-line-error fun_with_latex
 | Student guide | drafted, in review |
 | Companion deck | authored, compiled (15 slides, 16:9) |
 | Recorded walkthrough | recorded; hosted on SWOSU SharePoint; linked above |
-| Canvas delivery | pending — Flo mission `computing_commons_fun_with_latex_canvas_load` in `foreman_interface` |
-| Cross-course announcement | drafted in the Flo mission; awaiting Jeremy's course list + approval |
+| Canvas delivery | owner-authorized 2026-09-03; queued for Flo on april (`jobs/flo/april.yaml`, mission `computing_commons_fun_with_latex_canvas_load`) — one module in course 24298 |
+| Cross-course announcement | authorized; posts to CS1 74029, CS2 74031, Computer Architecture 75249, DSCT 74035 after the module readback |
