@@ -1,0 +1,40 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{microtype}
+
+\definecolor{codebg}{HTML}{F5F7FA}
+\definecolor{codeframe}{HTML}{CBD5E1}
+\definecolor{codegreen}{HTML}{166534}
+\definecolor{codeblue}{HTML}{1D4ED8}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=codeblue,
+  urlcolor=codeblue,
+  pdftitle={Getting Started with Containers},
+  pdfauthor={Jeremy Evert}
+}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{codebg},
+  frame=single,
+  rulecolor=\color{codeframe},
+  breaklines=true,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  keywordstyle=\color{codeblue}\bfseries,
+  commentstyle=\color{codegreen}
+}
+
+\newcommand{\term}[1]{\textbf{#1}}
+\newcommand{\checkpoint}[1]{\par\medskip\noindent\textbf{Checkpoint:} #1\par\medskip}

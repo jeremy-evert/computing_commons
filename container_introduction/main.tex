@@ -1,0 +1,32 @@
+\documentclass[11pt,oneside]{book}
+
+\input{preamble}
+
+\title{Getting Started with Containers}
+\author{Jeremy Evert}
+\date{\today}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter
+\include{chapters/01-what-is-a-container}
+\include{chapters/02-why-containers-exist}
+\include{chapters/03-prove-podman-works}
+\include{chapters/04-run-your-first-container}
+\include{chapters/05-read-a-containerfile}
+\include{chapters/06-build-an-image}
+\include{chapters/07-container-lifecycle}
+\include{chapters/08-storage-and-networking}
+\include{chapters/09-troubleshooting}
+\include{chapters/10-next-steps}
+
+\backmatter
+\chapter*{Command Reference}
+\addcontentsline{toc}{chapter}{Command Reference}
+Keep a concise, tested command reference here as the document develops.
+
+\end{document}
