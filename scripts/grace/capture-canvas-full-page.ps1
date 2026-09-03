@@ -65,7 +65,7 @@ $listUrl = "http://127.0.0.1:$DebugPort/json/list"
 try {
     $targets = @(Invoke-RestMethod -Uri $listUrl -TimeoutSec 3)
 } catch {
-    throw "No capture browser found on port $DebugPort. Run scripts/grace/start-savnac-capture-browser.ps1 first."
+    throw "No capture browser found on port $DebugPort. Launch Chrome/Edge with --remote-debugging-port=$DebugPort and a dedicated profile first, then sign in and navigate to the page you want to capture."
 }
 
 # Normalize a nested top-level array if Invoke-RestMethod returns one as a
