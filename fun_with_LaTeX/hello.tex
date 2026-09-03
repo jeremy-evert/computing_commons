@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+
+\title{Hello, LaTeX!}
+\author{Jeremy Evert}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{A familiar face}
+
+Hello, world! 
+This document was created and compiled from PowerShell.
+But you can also compile this from anywhere that has a good TeX compiler.
+VS Code can do it.
+And MikTeX also has some tools to build this.
+
+\section{The Build Pipeline}
+
+The file \texttt{hello.tex} is plain-text source code. The file
+\texttt{hello.pdf} is the compiled durable artifact.
+
+\begin{itemize}
+    \item Git can track meaningful changes to the source.
+    \item LaTeX controls document structure and typesetting.
+    \item The PDF can be rebuilt from the command line.
+\end{itemize}
+
+\section{A Tiny Bit of Mathematics}
+
+\[
+    a^2 + b^2 = c^2
+\]
+
+\end{document}
