@@ -240,16 +240,15 @@ gone.
 \begin{exampleblock}{The working \texttt{Makefile} -- four functional lines}
 \begin{verbatim}
 .PHONY: all
-
 all:
 	pdflatex -interaction=nonstopmode -halt-on-error \
 	         -file-line-error hello.tex
 	powershell.exe -NoProfile -Command \
-	  "Start-Process -FilePath (Resolve-Path 'hello.pdf')"
+	  "Start-Process (Resolve-Path 'hello.pdf')"
 \end{verbatim}
 \end{exampleblock}
-No \texttt{latexmk}, no Perl, no cleanup target, no dependency graph.
-(Recipe lines start with a real \textbf{tab}.)
+No \texttt{latexmk}, no Perl, no cleanup target, no dependency graph. Recipe
+lines start with a real \textbf{tab}.
 \begin{block}{The rule}
 Start with the command that works. Automate \emph{that}. Add complexity only
 when the project proves it needs it.
