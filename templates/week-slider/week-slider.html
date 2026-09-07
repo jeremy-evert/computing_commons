@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weeks 1–16 slider demo</title>
+  <link rel="stylesheet" href="week-slider.css">
+</head>
+<body>
+  <main>
+    <h1>Weeks 1–16</h1>
+    <div id="week-slider-demo"></div>
+  </main>
+  <script src="week-slider.js"></script>
+  <script>
+    // This is the browser-openable demo copy of week-data.example.json.
+    var sampleWeekData = {
+      week1_start_date: '2026-08-17',
+      weeks: Array.from({ length: 16 }, function (_, index) {
+        var week = index + 1;
+        return { week: week, title: 'Example material for Week ' + week, url: '#week-' + week };
+      })
+    };
+    WeekSlider.mount(document.getElementById('week-slider-demo'), sampleWeekData);
+  </script>
+</body>
+</html>

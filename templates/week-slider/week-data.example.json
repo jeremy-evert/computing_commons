@@ -1,0 +1,21 @@
+{
+  "week1_start_date": "2026-08-17",
+  "weeks": [
+    { "week": 1, "title": "Orientation and course map", "url": "#week-1" },
+    { "week": 2, "title": "Core concepts", "url": "#week-2" },
+    { "week": 3, "title": "Practice and feedback", "url": "#week-3" },
+    { "week": 4, "title": "Readiness and reflection", "url": "#week-4" },
+    { "week": 5, "title": "Working with examples", "url": "#week-5" },
+    { "week": 6, "title": "Model building", "url": "#week-6" },
+    { "week": 7, "title": "Midterm workshop", "url": "#week-7" },
+    { "week": 8, "title": "Midterm synthesis", "url": "#week-8" },
+    { "week": 9, "title": "New tools and methods", "url": "#week-9" },
+    { "week": 10, "title": "Applied problem solving", "url": "#week-10" },
+    { "week": 11, "title": "Peer review", "url": "#week-11" },
+    { "week": 12, "title": "Evidence and communication", "url": "#week-12" },
+    { "week": 13, "title": "Integration", "url": "#week-13" },
+    { "week": 14, "title": "Capstone preparation", "url": "#week-14" },
+    { "week": 15, "title": "Capstone studio", "url": "#week-15" },
+    { "week": 16, "title": "Closure and next steps", "url": "#week-16" }
+  ]
+}
