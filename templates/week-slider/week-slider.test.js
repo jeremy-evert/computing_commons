@@ -6,6 +6,8 @@ const local = (value) => new Date(value + '-05:00');
 
 assert.equal(computeWeekNumber(data, local('2026-08-10T12:00:00')), 1, 'before Week 1 clamps to Week 1');
 assert.equal(computeWeekNumber(data, local('2026-09-16T12:00:00')), 5, 'Wednesday remains in Week 5');
-assert.equal(computeWeekNumber(data, local('2026-09-18T00:00:00')), 6, 'Friday 00:00 advances to Week 6');
+assert.equal(computeWeekNumber(data, local('2026-09-18T00:00:00')), 5, 'Friday 00:00 stays in Week 5 (Friday is still the outgoing week)');
+assert.equal(computeWeekNumber(data, local('2026-09-18T23:59:59')), 5, 'Friday 23:59:59 is still Week 5');
+assert.equal(computeWeekNumber(data, local('2026-09-19T00:00:00')), 6, 'Saturday 00:00 advances to Week 6 (the new week begins Saturday)');
 assert.equal(computeWeekNumber(data, local('2026-12-31T12:00:00')), 16, 'after Week 16 clamps to Week 16');
-console.log('week-slider tests: 4 passed');
+console.log('week-slider tests: 6 passed');

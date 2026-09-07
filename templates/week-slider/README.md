@@ -13,7 +13,7 @@ This self-contained component renders a keyboard-operable Weeks 1–16 selector.
 }
 ```
 
-`weeks` must contain exactly 16 ordered entries, each with `week`, `title`, and `url`. `week1_start_date` uses the Monday convention: it is the local Monday on which Week 1 starts. The component clamps earlier dates to Week 1. The first Friday at local 00:00 advances to Week 2; each following Friday at local 00:00 advances one more week, through Week 16. This matches the settled Friday rollover rule while keeping the course's Week 1 date unambiguous.
+`weeks` must contain exactly 16 ordered entries, each with `week`, `title`, and `url`. `week1_start_date` uses the Monday convention: it is the local Monday on which Week 1 starts. The component clamps earlier dates to Week 1. Friday is still the outgoing week; the number advances at local 00:00 on Saturday, matching the settled rule "auto-advancing at 00:00 local on Friday (the new week begins Saturday)" — so the first Saturday after the Week 1 Monday advances to Week 2, and each following Saturday at local 00:00 advances one more week, through Week 16.
 
 ## Include it on a course page
 

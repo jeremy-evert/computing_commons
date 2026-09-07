@@ -16,13 +16,16 @@
     return new Date(parts[0], parts[1] - 1, parts[2]);
   }
 
-  // The documented convention is Monday. The first Friday after that Monday
-  // is the first Friday rollover; every later rollover is seven days apart.
+  // The documented convention is Monday. The settled rule is "auto-advancing
+  // at 00:00 local on Friday (the new week begins Saturday)": Friday itself
+  // stays the outgoing week, and the number advances at the Friday->Saturday
+  // boundary. The first such boundary after the Monday start is the
+  // following Saturday; every later boundary is seven days apart.
   function computeWeekNumber(data, now) {
     var start = parseStartDate(data.week1_start_date);
     var elapsedDays = Math.floor((dateOnly(now) - dateOnly(start)) / 86400000);
     if (elapsedDays < 0) return 1;
-    var week = Math.floor((elapsedDays - 4) / 7) + 2;
+    var week = Math.floor((elapsedDays - 5) / 7) + 2;
     return Math.max(1, Math.min(16, week));
   }
 
@@ -37,12 +40,12 @@
     });
   }
 
-  function nextFriday(now) {
+  function nextSaturday(now) {
     var result = new Date(now.getTime());
     result.setHours(0, 0, 0, 0);
-    var daysUntilFriday = (5 - result.getDay() + 7) % 7;
-    if (daysUntilFriday === 0) daysUntilFriday = 7;
-    result.setDate(result.getDate() + daysUntilFriday);
+    var daysUntilSaturday = (6 - result.getDay() + 7) % 7;
+    if (daysUntilSaturday === 0) daysUntilSaturday = 7;
+    result.setDate(result.getDate() + daysUntilSaturday);
     return result;
   }
 
@@ -73,7 +76,7 @@
     function refreshCurrent() { selected = computeWeekNumber(data, getNow()); draw(); schedule(); }
     function schedule() {
       if (timer) clearTimeout(timer);
-      timer = setTimeout(refreshCurrent, Math.max(0, nextFriday(getNow()).getTime() - getNow().getTime()));
+      timer = setTimeout(refreshCurrent, Math.max(0, nextSaturday(getNow()).getTime() - getNow().getTime()));
     }
     function escapeHtml(value) { return String(value).replace(/[&<>"']/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]; }); }
     function escapeAttribute(value) { return escapeHtml(value); }
