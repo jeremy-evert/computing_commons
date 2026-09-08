@@ -1,0 +1,62 @@
+% DSCT Week 4 Decision Gate — reasoning write-up template
+% Compile with the Week 3 pinned container:
+%   podman run --rm -v "$PWD":/work -w /work \
+%     ghcr.io/jeremy-evert/dsct-week3-latex:latest \
+%     latexmk -pdf decision-gate-template.tex
+% (or any local LaTeX: pdflatex / latexmk / tectonic)
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem*{claim}{Claim}
+\newtheorem*{counterexample}{Counterexample}
+
+\title{Week 4 Decision Gate: \emph{King Octopus and the servants}}
+\author{Jeremy Evert}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Sources}
+The definitions I rely on (implication; ``always lies''/``always tells the
+truth''; divisibility; \dots) and the exact problem statement I chose.
+
+\section*{Rules / Assumptions}
+What the key terms mean here: \emph{valid}, \emph{follows}, ``for every
+integer'', a servant has exactly one of $6,7,8$ legs, \dots
+
+\section*{Work}
+% Translate the claim into precise form, then reason.
+\begin{claim}
+State the claim precisely.
+\end{claim}
+
+\begin{proof}
+Steps, each justified by a definition or a prior step. Or, if the claim is
+false:
+\end{proof}
+
+\begin{counterexample}
+An object in the claim's domain that satisfies the hypothesis and violates
+the conclusion. Show the values.
+\end{counterexample}
+
+\section*{Check Your Answer}
+Either verify \emph{every} proof step against a definition, or verify the
+counterexample really satisfies the hypothesis and violates the conclusion.
+For an argument-validity problem, exhibit premises that are all true while
+the conclusion is false (or argue that is impossible).
+
+\section*{One-Sentence Summary}
+Exactly what you established --- and, where it matters, distinguish
+``the conclusion happens to be true'' from ``the argument is valid.''
+
+\section*{Strongest disagreement}
+The best objection a sharp, skeptical reader would raise, stated honestly,
+and whether it survives.
+
+\end{document}
