@@ -162,6 +162,8 @@ Write-Section '1. REQUIRED COURSE SURFACE: ARCHPROBE'
 $archprobe = Get-Command archprobe -ErrorAction SilentlyContinue
 if ($null -eq $archprobe) {
     Write-Receipt 'archprobe was not found in the current PATH.'
+    Write-Receipt ("Install the course-owned command once with: pwsh -NoProfile -File `"{0}`"" -f (Join-Path $PSScriptRoot 'Install-ArchProbe.ps1'))
+    Write-Receipt 'Then open a new PowerShell window and rerun this handoff.'
     Write-Receipt 'The Windows-native fallback evidence will still be collected below.'
 }
 else {
