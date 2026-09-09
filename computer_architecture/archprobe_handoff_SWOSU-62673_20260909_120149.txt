@@ -1,0 +1,77 @@
+VISIBLE ARCHPROBE HANDOFF
+Generated: 2026-09-09 12:01:49 -05:00
+Computer:  SWOSU-62673
+User:      evertj
+PowerShell: 7.6.6
+Working directory: C:\Users\evertj\git\computing_commons\computer_architecture
+Report path: C:\Users\evertj\git\computing_commons\computer_architecture\archprobe_handoff_SWOSU-62673_20260909_120149.txt
+
+========================================================================
+1. REQUIRED COURSE SURFACE: ARCHPROBE
+========================================================================
+archprobe was not found in the current PATH.
+The Windows-native fallback evidence will still be collected below.
+
+========================================================================
+2. WINDOWS-NATIVE FALLBACK EVIDENCE
+========================================================================
+
+>>> Memory: Get-CimInstance Win32_OperatingSystem and Win32_ComputerSystem
+
+InstalledRAMGiB : 31.95
+FreeRAMGiB      : 18.1
+UsedRAMGiB      : 13.85
+UsedPercent     : 43.4
+[EXIT: success]
+
+>>> CPU topology: Get-CimInstance Win32_Processor
+
+CPUModels         : Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+PhysicalPackages  : 1
+PhysicalCores     : 6
+LogicalProcessors : 12
+[EXIT: success]
+
+>>> Busiest process during a 3-second sample
+
+ProcessName   PID CPUSeconds
+-----------   --- ----------
+msedge      13260       0.89
+firefox     17384       0.42
+Notepad     14224       0.36
+msedge      14188       0.20
+pwsh        21320       0.17
+msedge      13904       0.17
+explorer     2952       0.14
+msedge      25924       0.12
+audiodg      3932       0.11
+msedge      23980       0.11
+[EXIT: success]
+
+>>> Uptime: Win32_OperatingSystem.LastBootUpTime
+
+LastBootTime : 9/8/2026 10:59:14 AM
+Days         : 1
+Hours        : 1
+Minutes      : 2
+TotalHours   : 25.04
+[EXIT: success]
+
+========================================================================
+3. GIT AND GITHUB HANDOFF ATTEMPT
+========================================================================
+Git command: C:\Program Files\Git\cmd\git.exe
+Repository root: C:\Users\evertj\git\computing_commons
+Repository-relative report: computer_architecture/archprobe_handoff_SWOSU-62673_20260909_120149.txt
+
+>>> git remote -v
+origin	git@github.com:jeremy-evert/computing_commons.git (fetch)
+origin	git@github.com:jeremy-evert/computing_commons.git (push)
+[EXIT: success]
+
+>>> git add -- computer_architecture/archprobe_handoff_SWOSU-62673_20260909_120149.txt
+[Command completed with no visible output.]
+[EXIT: success]
+Commit message: Add architecture probe handoff for SWOSU-62673 at 20260909_120149
+
+>>> git commit (report only)
