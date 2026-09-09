@@ -1,0 +1,3017 @@
+KING OCTOPUS BRUTE-FORCE SEARCH
+========================================================================
+
+Rules:
+  * Each servant has 6, 7, or 8 legs.
+  * A seven-legged servant always lies.
+  * A six-legged or eight-legged servant always tells the truth.
+  * The four claimed totals are 28, 27, 26, and 25.
+
+Assignments checked: 81
+
+------------------------------------------------------------------------
+OPTION 01: legs = (6, 6, 6, 6)
+Actual total: 24
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 24.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 24.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 24.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 24.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 02: legs = (6, 6, 6, 7)
+Actual total: 25
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 25.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+------------------------------------------------------------------------
+OPTION 03: legs = (6, 6, 6, 8)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 04: legs = (6, 6, 7, 6)
+Actual total: 25
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 25.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 05: legs = (6, 6, 7, 7)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 06: legs = (6, 6, 7, 8)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 07: legs = (6, 6, 8, 6)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 08: legs = (6, 6, 8, 7)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 09: legs = (6, 6, 8, 8)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 10: legs = (6, 7, 6, 6)
+Actual total: 25
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 25.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 11: legs = (6, 7, 6, 7)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 12: legs = (6, 7, 6, 8)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 13: legs = (6, 7, 7, 6)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 14: legs = (6, 7, 7, 7)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 15: legs = (6, 7, 7, 8)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 16: legs = (6, 7, 8, 6)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 17: legs = (6, 7, 8, 7)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 18: legs = (6, 7, 8, 8)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 19: legs = (6, 8, 6, 6)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 20: legs = (6, 8, 6, 7)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 21: legs = (6, 8, 6, 8)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 22: legs = (6, 8, 7, 6)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 23: legs = (6, 8, 7, 7)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 24: legs = (6, 8, 7, 8)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 25: legs = (6, 8, 8, 6)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 26: legs = (6, 8, 8, 7)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 27: legs = (6, 8, 8, 8)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 6 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 28: legs = (7, 6, 6, 6)
+Actual total: 25
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 25.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 25.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 29: legs = (7, 6, 6, 7)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 30: legs = (7, 6, 6, 8)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 31: legs = (7, 6, 7, 6)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 32: legs = (7, 6, 7, 7)
+Actual total: 27
+Overall result: WORKS
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 33: legs = (7, 6, 7, 8)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 34: legs = (7, 6, 8, 6)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 35: legs = (7, 6, 8, 7)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 36: legs = (7, 6, 8, 8)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 37: legs = (7, 7, 6, 6)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 38: legs = (7, 7, 6, 7)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 39: legs = (7, 7, 6, 8)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 40: legs = (7, 7, 7, 6)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 41: legs = (7, 7, 7, 7)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 42: legs = (7, 7, 7, 8)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 43: legs = (7, 7, 8, 6)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 44: legs = (7, 7, 8, 7)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 45: legs = (7, 7, 8, 8)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 46: legs = (7, 8, 6, 6)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 47: legs = (7, 8, 6, 7)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 48: legs = (7, 8, 6, 8)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 49: legs = (7, 8, 7, 6)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 50: legs = (7, 8, 7, 7)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 51: legs = (7, 8, 7, 8)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 52: legs = (7, 8, 8, 6)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 53: legs = (7, 8, 8, 7)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 54: legs = (7, 8, 8, 8)
+Actual total: 31
+Overall result: DOES NOT WORK
+
+  Servant 1: 7 legs
+    Claims that the total is 28.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 55: legs = (8, 6, 6, 6)
+Actual total: 26
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 26.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 26.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 56: legs = (8, 6, 6, 7)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 57: legs = (8, 6, 6, 8)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 58: legs = (8, 6, 7, 6)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 59: legs = (8, 6, 7, 7)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 60: legs = (8, 6, 7, 8)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 61: legs = (8, 6, 8, 6)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 62: legs = (8, 6, 8, 7)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 63: legs = (8, 6, 8, 8)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 6 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 64: legs = (8, 7, 6, 6)
+Actual total: 27
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 27.
+    Statement is actually: TRUE
+    Statement must be: FALSE
+    Result: FAIL
+    Explanation: A seven-legged servant must lie, but this servant's statement is true.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 27.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 65: legs = (8, 7, 6, 7)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 66: legs = (8, 7, 6, 8)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 67: legs = (8, 7, 7, 6)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 68: legs = (8, 7, 7, 7)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 69: legs = (8, 7, 7, 8)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 70: legs = (8, 7, 8, 6)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 71: legs = (8, 7, 8, 7)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 72: legs = (8, 7, 8, 8)
+Actual total: 31
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 7 legs
+    Claims that the total is 27.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 73: legs = (8, 8, 6, 6)
+Actual total: 28
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 28.
+    Statement is actually: TRUE
+    Statement must be: TRUE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 28.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 74: legs = (8, 8, 6, 7)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 75: legs = (8, 8, 6, 8)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 6 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 76: legs = (8, 8, 7, 6)
+Actual total: 29
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 29.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 77: legs = (8, 8, 7, 7)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 78: legs = (8, 8, 7, 8)
+Actual total: 31
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 7 legs
+    Claims that the total is 26.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 79: legs = (8, 8, 8, 6)
+Actual total: 30
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 6 legs
+    Claims that the total is 25.
+    The actual total is 30.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+------------------------------------------------------------------------
+OPTION 80: legs = (8, 8, 8, 7)
+Actual total: 31
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 7 legs
+    Claims that the total is 25.
+    The actual total is 31.
+    Statement is actually: FALSE
+    Statement must be: FALSE
+    Result: PASS
+    Explanation: The statement's truth value agrees with the rule for this servant's leg count.
+
+------------------------------------------------------------------------
+OPTION 81: legs = (8, 8, 8, 8)
+Actual total: 32
+Overall result: DOES NOT WORK
+
+  Servant 1: 8 legs
+    Claims that the total is 28.
+    The actual total is 32.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 2: 8 legs
+    Claims that the total is 27.
+    The actual total is 32.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 3: 8 legs
+    Claims that the total is 26.
+    The actual total is 32.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+  Servant 4: 8 legs
+    Claims that the total is 25.
+    The actual total is 32.
+    Statement is actually: FALSE
+    Statement must be: TRUE
+    Result: FAIL
+    Explanation: A six-legged or eight-legged servant must tell the truth, but this servant's statement is false.
+
+========================================================================
+FINAL RESULTS
+========================================================================
+Assignments checked: 81
+Solutions found: 1
+
+Solution legs: (7, 6, 7, 7)
+Total legs: 27
+Truthful servant(s): 2
