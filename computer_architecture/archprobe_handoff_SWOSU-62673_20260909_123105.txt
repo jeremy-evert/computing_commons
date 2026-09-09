@@ -1,0 +1,123 @@
+VISIBLE ARCHPROBE HANDOFF - REVISED SCRIPT
+Generated:         2026-09-09 12:31:05 -05:00
+Computer:          SWOSU-62673
+User:              evertj
+PowerShell:        7.6.6
+Script:            C:\Users\evertj\git\computing_commons\computer_architecture\visible_archprobe_handoff_revised.ps1
+Working directory: C:\Users\evertj\git\computing_commons\computer_architecture
+Report path:       C:\Users\evertj\git\computing_commons\computer_architecture\archprobe_handoff_SWOSU-62673_20260909_123105.txt
+
+========================================================================
+0. STUDENT PREDICTION FILE
+========================================================================
+Prediction source: C:\Users\evertj\git\computing_commons\computer_architecture\morgan_windows_desktop_observations.txt
+
+Before you run anything, write down what you currently believe about your own computer: 
+
+how much free RAM it has
+I think morgan is a 32 GB RAM box and I assume that Windows and it's friends are eating 3 GB of RAM.
+
+
+, how many CPU cores
+Morgan has an older i7 with maybe 12 cores?
+
+, which process is busiest right now
+
+Chrome or edge running microsoft meetings
+
+, and how long it's been running since boot
+
+a week
+
+. Predict first — that's the point.
+
+Then find the one command that actually checks each belief:
+
+========================================================================
+1. REQUIRED COURSE SURFACE: ARCHPROBE
+========================================================================
+Resolved command: C:\Users\evertj\git\computing_commons\computer_architecture\tools\archprobe.ps1
+
+>>> archprobe
+
+ComputerName      : SWOSU-62673
+OperatingSystem   : Microsoft Windows 11 Enterprise
+OSArchitecture    : 64-bit
+InstalledRAMGiB   : 31.95
+FreeRAMGiB        : 18.68
+UsedRAMGiB        : 13.27
+CPUModels         : Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+PhysicalPackages  : 1
+PhysicalCores     : 6
+LogicalProcessors : 12
+LastBootTime      : 9/8/2026 10:59:14 AM
+UptimeHours       : 25.53
+[EXIT: success]
+
+========================================================================
+2. WINDOWS-NATIVE FALLBACK EVIDENCE
+========================================================================
+
+>>> Memory: Win32_OperatingSystem and Win32_ComputerSystem
+
+InstalledRAMGiB : 31.95
+FreeRAMGiB      : 18.68
+UsedRAMGiB      : 13.27
+UsedPercent     : 41.5
+[EXIT: success]
+
+>>> CPU topology: Win32_Processor
+
+CPUModels         : Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+PhysicalPackages  : 1
+PhysicalCores     : 6
+LogicalProcessors : 12
+[EXIT: success]
+
+Interpretation note: physical cores and logical processors are intentionally reported separately.
+A prediction of "12 cores" may actually describe 6 physical cores and 12 logical processors.
+
+>>> Busiest processes during a 3-second sample
+
+ProcessName   PID CPUSeconds
+-----------   --- ----------
+msedge       6596       4.53
+firefox     17044       0.84
+msedge      14188       0.36
+firefox     17384       0.19
+msedge      13904       0.16
+pwsh        21320       0.05
+firefox      5032       0.05
+msedge      14196       0.03
+msedge      26828       0.02
+ms-teams     5836       0.02
+[EXIT: success]
+
+>>> Uptime: Win32_OperatingSystem.LastBootUpTime
+
+LastBootTime : 9/8/2026 10:59:14 AM
+Days         : 1
+Hours        : 1
+Minutes      : 31
+TotalHours   : 25.53
+[EXIT: success]
+
+========================================================================
+3. GIT AND GITHUB HANDOFF ATTEMPT
+========================================================================
+Git command: C:\Program Files\Git\cmd\git.exe
+Repository root:             C:\Users\evertj\git\computing_commons
+Repository-relative report:  computer_architecture/archprobe_handoff_SWOSU-62673_20260909_123105.txt
+Planned commit message:       Add revised architecture probe handoff for SWOSU-62673 at 20260909_123105
+
+>>> git remote -v
+origin	git@github.com:jeremy-evert/computing_commons.git (fetch)
+origin	git@github.com:jeremy-evert/computing_commons.git (push)
+[EXIT: success]
+
+>>> git add -- computer_architecture/archprobe_handoff_SWOSU-62673_20260909_123105.txt (first of two deliberate adds)
+[Command completed with no visible output.]
+[EXIT: success]
+
+Pre-commit Git evidence is complete.
+The second add will stage the report exactly as it exists at this checkpoint.
