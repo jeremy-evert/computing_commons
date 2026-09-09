@@ -75,3 +75,15 @@ origin	git@github.com:jeremy-evert/computing_commons.git (push)
 Commit message: Add architecture probe handoff for SWOSU-62673 at 20260909_120149
 
 >>> git commit (report only)
+[main c525903] Add architecture probe handoff for SWOSU-62673 at 20260909_120149
+ 1 file changed, 77 insertions(+)
+ create mode 100644 computer_architecture/archprobe_handoff_SWOSU-62673_20260909_120149.txt
+[EXIT: success]
+Git push skipped because -SkipGitPush was supplied.
+
+========================================================================
+4. VISIBLE HANDOFF SUMMARY
+========================================================================
+Report retained at: C:\Users\evertj\git\computing_commons\computer_architecture\archprobe_handoff_SWOSU-62673_20260909_120149.txt
+Open the report, compare the evidence with the prediction file, and score each prediction.
+If Git or GitHub failed, the exact failure is preserved above for troubleshooting.
