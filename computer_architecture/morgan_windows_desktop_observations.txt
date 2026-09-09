@@ -1,0 +1,20 @@
+Before you run anything, write down what you currently believe about your own computer: 
+
+how much free RAM it has
+I think morgan is a 32 GB RAM box and I assume that Windows and it's friends are eating 3 GB of RAM.
+
+
+, how many CPU cores
+Morgan has an older i7 with maybe 12 cores?
+
+, which process is busiest right now
+
+Chrome or edge running microsoft meetings
+
+, and how long it's been running since boot
+
+a week
+
+. Predict first — that's the point.
+
+Then find the one command that actually checks each belief:

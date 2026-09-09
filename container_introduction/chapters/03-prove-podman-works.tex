@@ -1,14 +1,236 @@
 \chapter{Prove Podman Works}
 \label{chap:prove-podman-works}
 
-Before building anything, ask the computer what it knows.
+Before building anything, establish the current world state.
+
+A common mistake is to begin changing a system before understanding how it is configured. When something later breaks, there is no reliable record of what changed.
+
+This chapter has a simple goal:
+
+\begin{quote}
+Ask the computer what it knows before asking it to do work.
+\end{quote}
+
+\section{Learning goals}
+
+\begin{itemize}
+  \item Verify that Podman is installed.
+  \item Observe how Podman is configured.
+  \item Distinguish between the client and container host.
+  \item Collect evidence before making changes.
+  \item Create durable troubleshooting artifacts.
+\end{itemize}
+
+\section{Observe before changing}
+
+For this chapter we run a series of discovery commands.
 
 \begin{lstlisting}[language=bash]
 podman --version
+
+podman machine list
+
+podman system connection list
+
+wsl -l -v
+
+podman info
+
+podman images
+
+podman ps -a
+
+podman system df
+\end{lstlisting}
+
+Do not worry about understanding every field.
+
+Instead, focus on the types of questions each command helps answer.
+
+\section{Why collect evidence?}
+
+The following process works surprisingly well:
+
+\begin{enumerate}
+  \item Observe.
+  \item Record.
+  \item Interpret.
+  \item Change one thing.
+  \item Observe again.
+\end{enumerate}
+
+Many troubleshooting sessions become confusing because multiple changes are made before any evidence is collected.
+
+A written record allows us to compare the system before and after a modification.
+
+\section{Observations from a real workstation}
+
+The following observations were collected from an actual course workstation using the evidence collection script included in this repository.
+
+\subsection{Podman is installed}
+
+The command:
+
+\begin{lstlisting}[language=bash]
+podman --version
+\end{lstlisting}
+
+reported:
+
+\begin{lstlisting}
+podman version 6.1.0
+\end{lstlisting}
+
+This confirms that the Podman client is installed and can execute successfully.
+
+\subsection{A Podman machine exists}
+
+The command:
+
+\begin{lstlisting}[language=bash]
+podman machine list
+\end{lstlisting}
+
+reported a machine named:
+
+\begin{lstlisting}
+podman-machine-default
+\end{lstlisting}
+
+running under WSL.
+
+This tells us that containers are not running directly inside Windows. A Linux environment is responsible for hosting containers.
+
+\subsection{Windows and Linux cooperate}
+
+The command:
+
+\begin{lstlisting}[language=bash]
 podman info
 \end{lstlisting}
 
-\section{What evidence should we keep?}
-% TODO: Explain what successful output looks like and what to record.
+reported information from both Windows and Linux.
 
-\checkpoint{Save the command output before changing the system. Failures are data.}
+Important observations included:
+
+\begin{itemize}
+  \item Windows acts as the client.
+  \item Linux acts as the container host.
+  \item WSL2 provides the underlying platform.
+\end{itemize}
+
+This is a useful reminder that the command prompt you see is not necessarily the operating system executing the container workload.
+
+\subsection{Images already exist}
+
+The workstation already contained several container images including:
+
+\begin{itemize}
+  \item Alpine
+  \item BusyBox
+  \item Debian
+\end{itemize}
+
+An image is not a running program.
+
+An image is a template used to create containers.
+
+We will build our own images later in this text.
+
+\subsection{No containers were running}
+
+The command:
+
+\begin{lstlisting}[language=bash]
+podman ps -a
+\end{lstlisting}
+
+returned no containers.
+
+This is an important observation.
+
+The machine contains images, but no active workloads.
+
+Images and containers are different concepts and should not be confused.
+
+\subsection{Storage is already being used}
+
+The command:
+
+\begin{lstlisting}[language=bash]
+podman system df
+\end{lstlisting}
+
+reported storage usage associated with container images.
+
+Even when containers are not running, images still occupy disk space.
+
+Containers, images, networks, and volumes are all resources that consume storage and should be managed intentionally.
+
+\section{A useful failure}
+
+During the investigation, several Podman commands initially failed.
+
+The cause was simple:
+
+\begin{itemize}
+  \item Podman was installed.
+  \item The Podman machine existed.
+  \item The Podman machine was not running.
+\end{itemize}
+
+After collecting evidence, the machine was started and the investigation continued.
+
+This experience reinforces an important habit:
+
+\begin{quote}
+Failures are data.
+\end{quote}
+
+An error message is evidence.
+
+Record it before attempting a fix.
+
+Many troubleshooting breakthroughs come from carefully reading the initial failure rather than immediately searching for a workaround.
+
+\section{Keeping durable artifacts}
+
+This repository contains the script:
+
+\begin{lstlisting}[language=bash]
+scripts/collect-podman-evidence.ps1
+\end{lstlisting}
+
+The script records:
+
+\begin{itemize}
+  \item Podman version information.
+  \item Podman machine status.
+  \item Connection information.
+  \item WSL status.
+  \item Container images.
+  \item Existing containers.
+  \item Storage utilization.
+\end{itemize}
+
+The output is written to the \texttt{reports} directory.
+
+Treat these reports as evidence.
+
+They help answer the question:
+
+\begin{quote}
+What did the system look like before we changed it?
+\end{quote}
+
+\section{What we learned}
+
+By the end of this chapter we have not built a single container.
+
+That is intentional.
+
+Before creating anything, we learned how to establish the current state of the environment, collect evidence, and create durable records.
+
+Those habits will be useful long after the specific Podman commands are forgotten.
+
+\checkpoint{Save command output before making changes. Establish the world state first.}
