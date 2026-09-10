@@ -22,6 +22,25 @@ Canonical shared module, deck, and pinned/published container image are
 live; Architecture and DSCT link back to it rather than forking their own
 copy. See [`containers-and-repeatable-environments.md`](containers-and-repeatable-environments.md).
 
+### [Git / source-code management](git-source-management.md) — BUILDING / FALL 2026 SOFT LAUNCH
+
+Question: **Can I let humans and AI change a project quickly without losing control of what changed, why it changed, or how to recover?**
+
+Shared outcomes:
+
+- repository/worktree/state;
+- Git before GitHub;
+- status/diff/history before acting;
+- useful commits;
+- practical branching and pull requests;
+- bounded AI-assisted changes;
+- independent verification before commit;
+- safe recovery;
+- secrets and repository hygiene;
+- compact evidence receipts.
+
+The canonical shared module now lives in [`../git_and_github/`](../git_and_github/). DSCT is the first Fall 2026 home-course wrapper and should link back rather than fork the generic Git instruction.
+
 ## Candidate stations
 
 ### Documentation and LaTeX
@@ -70,20 +89,6 @@ Shared outcomes:
 - begin with inspection rather than broad administration.
 
 Computer Architecture is the strongest deeper technical lens for this station.
-
-### Git / source-code management
-
-Question: **Can I change something without being afraid of losing yesterday?**
-
-Shared outcomes:
-
-- repository/worktree/state;
-- status/diff before acting;
-- useful commits;
-- history;
-- practical branching;
-- bounded recovery;
-- Git before GitHub.
 
 ## Source audit rule
 
