@@ -1,0 +1,42 @@
+apiVersion: batch/v1
+kind: Job
+
+metadata:
+  # Replace with a lowercase DNS-safe version of your GitHub username.
+  name: REPLACE_WITH_GITHUB_USERNAME-hello
+  # Replace with the exact namespace supplied by your instructor.
+  namespace: REPLACE_WITH_COURSE_NAMESPACE
+
+spec:
+  # Give Kubernetes permission to clean up this completed Job later.
+  ttlSecondsAfterFinished: 300
+
+  # This is a finite learning workload. It should not run forever.
+  activeDeadlineSeconds: 120
+
+  template:
+    spec:
+      restartPolicy: Never
+
+      containers:
+        - name: hello
+          image: busybox:1.36
+
+          command:
+            - sh
+            - -c
+            - |
+              echo "Hello from the National Research Platform!"
+              echo "Student: REPLACE_WITH_GITHUB_USERNAME"
+              echo "Container hostname: $(hostname)"
+              echo "Kernel information:"
+              uname -a
+
+          # Deliberately tiny CPU-only resources for a first success.
+          resources:
+            requests:
+              cpu: "10m"
+              memory: "16Mi"
+            limits:
+              cpu: "50m"
+              memory: "32Mi"
