@@ -36,6 +36,39 @@ Primary ownership: **COMMON**.
 
 Home-course role: apply the working lab to a small disciplinary task rather than reteaching setup.
 
+### National Research Platform remote-computing runway
+
+Core question: **Can my software leave my laptop and become a remote workload that another computing environment can understand, schedule, run, observe, and verify?**
+
+Primary ownership: **COMMON** for the shared student pathway. NRP itself remains authoritative for live service-specific instructions and policy.
+
+Start at [`../national_research_platform/README.md`](../national_research_platform/README.md).
+
+Minimum shared outcomes:
+
+- authenticate safely through the approved identity path;
+- distinguish authentication from authorization;
+- work in an explicit course namespace;
+- run one finite CPU-only Job;
+- recover logs and status as evidence;
+- clean up exactly what the student created and verify cleanup;
+- understand Job → Pod → container → program at a practical level;
+- connect remote execution to containers and reproducibility;
+- reason about CPU/memory requests before requesting specialized hardware;
+- connect Git provenance to remote experiment evidence;
+- understand hosted LLM APIs as a separate service/credential boundary;
+- treat failures as data rather than random-change triggers.
+
+Natural progression:
+
+- **Level 1 / CS1:** identity, namespace, first Job, evidence, cleanup.
+- **Level 2 / CS2:** containers, repeatable workloads, Git provenance, resource reasoning, stronger verification, hosted-service boundaries.
+- **Level 3 / DSCT:** experiment design, assumptions, comparison, uncertainty, interpretation, limitations.
+- **Computer Architecture:** CPU/memory/runtime inspection, performance, scheduling, architecture differences, accelerators.
+- **Later SE/ML:** automation, collaboration, deployment, model/data provenance, GPU-backed experiments, evaluation.
+
+Home-course role: apply the shared remote-computing capability to disciplinary questions rather than reteaching login, `kubectl`, cleanup, and receipt habits from zero.
+
 ## Recitation toolbox
 
 ### Containers and repeatable environments
@@ -49,6 +82,8 @@ Minimum shared outcomes:
 - understand files/mounts at a practical level;
 - capture evidence about what environment actually ran the task;
 - use containers for repeatability rather than as vocabulary trivia.
+
+The NRP curriculum provides a natural remote application of this capability after the local/container foundation is ready.
 
 ### LaTeX and evidence-oriented documentation
 
@@ -142,6 +177,8 @@ The Commons should preserve a common late-semester experience built around Farkl
 The finale should be one shared phenomenon with course-specific lenses, not six duplicated assignments.
 
 Computer Architecture has especially strong fit for the profiling/performance/CPU-GPU portion, while Machine Learning provides the deepest model lens and DSCT provides probability/reasoning foundations.
+
+NRP can become one of the execution environments for this shared finale when a remote/reproducible or accelerator-backed run adds genuine learning value rather than complexity for its own sake.
 
 ## Ownership rule
 
