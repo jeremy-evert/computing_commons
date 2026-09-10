@@ -64,6 +64,7 @@ The Commons is expected to stitch together:
 - Professional Minds;
 - Build and Verify Your Local AI Lab;
 - containers and reproducible environments;
+- **National Research Platform remote-computing curriculum** — start at [`national_research_platform/README.md`](national_research_platform/README.md);
 - LaTeX and evidence-oriented documentation;
 - Work First;
 - Linux command-line inspection and profiling;
@@ -73,6 +74,17 @@ The Commons is expected to stitch together:
 - the shared Farkle + Machine Learning finale.
 
 Course-specific applications remain in course repositories. The Commons may teach Git once, while CS1 uses Git to protect a Python project, Architecture uses it to preserve investigation evidence, and Software Engineering uses it as part of collaborative engineering work.
+
+## National Research Platform runway
+
+The NRP curriculum gives students a shared path from first authenticated remote access to reproducible, evidence-rich workloads. It currently includes identity/namespace access, a first finite Kubernetes Job, evidence and cleanup, containers, resource reasoning, Git-backed remote workloads, hosted LLM services, GPU/accelerator concepts, and a remote experiment capstone.
+
+Start here:
+
+- [`national_research_platform/getting_started.md`](national_research_platform/getting_started.md)
+- [`national_research_platform/curriculum/README.md`](national_research_platform/curriculum/README.md)
+
+The student-facing pathway stays in the public Commons. Current NRP service details should remain grounded in the official NRP documentation rather than private instructor/operator repositories.
 
 ## Fall 2026 posture
 
