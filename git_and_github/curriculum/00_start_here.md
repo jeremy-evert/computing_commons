@@ -130,6 +130,50 @@ But we are going to learn **Git before GitHub**.
 
 If you understand the local repository, GitHub becomes much easier to reason about.
 
+## Meet the practice lab
+
+For this station we will use one tiny public repository:
+
+**Git Safety Belt Lab**  
+https://github.com/jeremy-evert/git-safety-belt-lab
+
+The code is intentionally simple. The interesting object is the **history around the code**.
+
+For now, do **not** fork it, clone it, or edit it.
+
+Just open the repository in GitHub and inspect what already exists.
+
+Look at the commit history. You should see this story:
+
+```text
+Initialize Git Safety Belt Lab
+        ↓
+Add tiny trail mix calculator
+        ↓
+Add verification tests
+        ↓
+Document the verification workflow
+```
+
+Notice that those are not four random save points.
+
+Each commit represents a meaningful change in what the project contains or can do.
+
+Also look at the current files:
+
+```text
+README.md
+trail_mix.py
+tests/test_trail_mix.py
+VERIFY.md
+```
+
+You do not need to understand every line yet.
+
+At this point, simply notice that the repository has both a **current state** and a **history of how it got there**.
+
+That distinction is going to matter all week.
+
 ## Your job this week
 
 You are not expected to become a Git wizard.
@@ -187,6 +231,10 @@ You should be able to explain these two statements in your own words:
 > **AI can accelerate a change without proving the change is good.**
 
 > **Git can preserve and expose a change without proving the change is correct.**
+
+And after looking at the lab repository, you should be able to answer:
+
+> **What is the difference between the repository's current state and the story told by its commit history?**
 
 If those ideas make sense, you are ready for the next stop:
 
