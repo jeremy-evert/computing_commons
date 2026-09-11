@@ -21,6 +21,14 @@ It is designed for Canvas delivery in short videos and bounded hands-on activiti
 11 — Where This Goes Next in Computer Science
 ```
 
+### Integrated Fall 2026 student lab
+
+The September 11 CS2 teaching run produced a tested guided pathway that spans several of the smaller Canvas slices above:
+
+[`02_ai_git_safety_belt_lab.md`](02_ai_git_safety_belt_lab.md)
+
+Use that integrated lab for the Fall 2026 soft launch while the smaller 02–10 Canvas pages are being split and polished. It preserves the real classroom evidence around Git identity, baseline verification, branches, bounded AI work, Aider authority, `.gitignore`, scope creep, diff inspection, tests, recovery, and receipts.
+
 The week should feel like one repeating loop rather than eleven unrelated pages:
 
 ```text
