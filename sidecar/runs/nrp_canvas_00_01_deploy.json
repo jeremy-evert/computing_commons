@@ -1,0 +1,24 @@
+{
+  "course_id": 24298,
+  "module_id": 219432,
+  "module_name": "National Research Platform \u2014 Your First Remote Workload",
+  "page_00": {
+    "url": "00-start-here-what-are-we-about-to-do",
+    "page_id": 456301,
+    "title": "00 \u2014 Start Here: What Are We About to Do?"
+  },
+  "page_01": {
+    "url": "01-your-laptop-is-not-the-whole-computer",
+    "page_id": 456302,
+    "title": "01 \u2014 Your Laptop Is Not the Whole Computer"
+  },
+  "module_item_00": {
+    "id": 1534998,
+    "position": 1
+  },
+  "module_item_01": {
+    "id": 1534999,
+    "position": 2
+  },
+  "readme_url_used": "https://github.com/jeremy-evert/computing_commons/blob/main/national_research_platform/README.md"
+}
