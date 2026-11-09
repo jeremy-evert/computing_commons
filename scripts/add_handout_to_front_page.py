@@ -7,7 +7,7 @@ Pass --apply to write. Target-locked (course id AND name verified), takes a
 before-backup of the front page body, idempotent (marker + existing-file
 reuse), and reads back page + file URL.
 
-Usage: add_handout_to_front_page.py [--apply]
+Usage: add_handout_to_front_page.py [--handout=ai-decision-lab|field-guide] [--apply]
 """
 import difflib, hashlib, sys, time
 from pathlib import Path
@@ -19,11 +19,25 @@ from harbor.config import load_env, read_canvas_config
 
 COURSE_ID, COURSE_NAME = 24298, "Computing Commons"
 REPO = Path(__file__).resolve().parent.parent
-PDF = REPO / "handouts" / "AI_Decision_Lab_Student_Handout.pdf"
 FOLDER = "handouts"
-MARKER = 'data-handout="ai-decision-lab"'
-LINK_TEXT = "AI Decision Lab (handout, 4 pages)"
-CONTEXT = "In-class handout: use AI as a sparring partner to choose between inheritance and composition for a room-reservation program."
+# key -> (pdf, link text, context line, key of the handout this one goes under or None)
+HANDOUTS = {
+    "ai-decision-lab": ("AI_Decision_Lab_Student_Handout.pdf",
+        "AI Decision Lab (handout, 4 pages)",
+        "In-class handout: use AI as a sparring partner to choose between inheritance and composition for a room-reservation program.", None),
+    "field-guide": ("Deciding_with_AI_Student_Field_Guide_v1.0.2.pdf",
+        "Deciding with AI: Student Field Guide (v1.0.2, 8 pages)",
+        "A guide to using an AI assistant as a sparring partner on a real decision, with prompts to copy and a decision worksheet.", "ai-decision-lab"),
+}
+KEY = "ai-decision-lab"
+for a in sys.argv[1:]:
+    if a.startswith("--handout="):
+        KEY = a.split("=", 1)[1]
+if KEY not in HANDOUTS:
+    sys.exit(f"unknown handout {KEY}")
+_pdf, LINK_TEXT, CONTEXT, AFTER = HANDOUTS[KEY]
+PDF = REPO / "handouts" / _pdf
+MARKER = f'data-handout="{KEY}"'
 BACKUP_DIR = REPO / "sidecar" / "runs" / "front_page_backups"
 
 
@@ -51,11 +65,18 @@ def main():
     if i < 0:
         die("this-week section not found")
     j = body.find("</section>", i)
-    # insert after the day-cards grid: the last </div> before </section>
-    k = body.rfind("</div>", i, j)
-    if k < 0:
-        die("cards grid end not found")
-    k += len("</div>")
+    if AFTER:
+        # insert directly after the preceding handout's paragraph
+        a = body.find(f'data-handout="{AFTER}"', i, j)
+        if a < 0:
+            die(f"preceding handout {AFTER} not on page")
+        k = body.find("</p>", a) + len("</p>")
+    else:
+        # insert after the day-cards grid: the last </div> before </section>
+        k = body.rfind("</div>", i, j)
+        if k < 0:
+            die("cards grid end not found")
+        k += len("</div>")
 
     size = PDF.stat().st_size
     existing = [f for f in api.list_course_files(c, COURSE_ID, search_term=PDF.name)
@@ -77,7 +98,7 @@ def main():
         print("DRY RUN: nothing written to Canvas. (file would be uploaded to Files/handouts)"); return
 
     BACKUP_DIR.mkdir(parents=True, exist_ok=True)
-    bp = BACKUP_DIR / f"computing-commons-home_before_{time.strftime('%Y%m%dT%H%M%S')}.html"
+    bp = BACKUP_DIR / f"computing-commons-home_before_{KEY}_{time.strftime('%Y%m%dT%H%M%S')}.html"
     bp.write_text(body, encoding="utf-8"); print("backup:", bp)
     st, _ = api.update_page(c, COURSE_ID, slug, {"wiki_page[body]": new})
     print("update_page", st)
@@ -86,7 +107,7 @@ def main():
         die("readback: link not found on live page")
     # remove the new block from live and compare to the backup: nothing else changed
     import re
-    stripped = re.sub(r'\n    <p data-handout="ai-decision-lab".*?</p>', "", live, count=1, flags=re.S)
+    stripped = re.sub(r'\n    <p ' + re.escape(MARKER) + r'.*?</p>', "", live, count=1, flags=re.S)
     print("rest of page unchanged vs backup:", stripped == body)
     meta = c.get(f"/api/v1/files/{f['id']}").json()
     print("file readback:", meta.get("display_name"), meta.get("size"), "locked=", meta.get("locked"), "hidden=", meta.get("hidden"))
