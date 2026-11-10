@@ -28,7 +28,12 @@ HANDOUTS = {
     "field-guide": ("Deciding_with_AI_Student_Field_Guide_v1.0.2.pdf",
         "Deciding with AI: Student Field Guide (v1.0.2, 8 pages)",
         "A guide to using an AI assistant as a sparring partner on a real decision, with prompts to copy and a decision worksheet.", "ai-decision-lab"),
+    # v1.0.3 REPLACES the v1.0.2 paragraph in place (old file stays in Canvas Files)
+    "field-guide-v103": ("Deciding_with_AI_Student_Field_Guide_v1.0.3.pdf",
+        "Deciding with AI: Student Field Guide (v1.0.3, 4 pages)",
+        "A guide to using an AI assistant as a sparring partner on a real decision, with rules of thumb, prompts to copy, and practice problems.", "field-guide"),
 }
+REPLACES = {"field-guide-v103": "field-guide"}
 KEY = "ai-decision-lab"
 for a in sys.argv[1:]:
     if a.startswith("--handout="):
@@ -65,7 +70,15 @@ def main():
     if i < 0:
         die("this-week section not found")
     j = body.find("</section>", i)
-    if AFTER:
+    if KEY in REPLACES:
+        old = REPLACES[KEY]
+        a = body.find(f'data-handout="{old}"', i, j)
+        if a < 0:
+            die(f"paragraph to replace ({old}) not on page")
+        ps = body.rfind("\n    <p ", 0, a)
+        k = body.find("</p>", a) + len("</p>")
+        body_new_cut = (ps, k)
+    elif AFTER:
         # insert directly after the preceding handout's paragraph
         a = body.find(f'data-handout="{AFTER}"', i, j)
         if a < 0:
@@ -91,7 +104,10 @@ def main():
     # student-facing URL: course-scoped file link (no download token)
     file_url = (f"https://swosu.instructure.com/courses/{COURSE_ID}/files/{f['id']}?wrap=1"
                 if f else f"https://swosu.instructure.com/courses/{COURSE_ID}/files/<NEW_FILE_ID>?wrap=1")
-    new = body[:k] + block(file_url) + body[k:]
+    if KEY in REPLACES:
+        new = body[:body_new_cut[0]] + block(file_url) + body[body_new_cut[1]:]
+    else:
+        new = body[:k] + block(file_url) + body[k:]
     diff = "".join(difflib.unified_diff(body.splitlines(True), new.splitlines(True), "front_page.before", "front_page.after", n=1))
     print(diff or "(no diff)")
     if not apply:
@@ -107,7 +123,14 @@ def main():
         die("readback: link not found on live page")
     # remove the new block from live and compare to the backup: nothing else changed
     import re
-    stripped = re.sub(r'\n    <p ' + re.escape(MARKER) + r'.*?</p>', "", live, count=1, flags=re.S)
+    if KEY in REPLACES:
+        ok = (f'data-handout="{REPLACES[KEY]}"' not in live and 'data-handout="ai-decision-lab"' in live
+              and live.count("data-handout=") == body.count("data-handout="))
+        print("old paragraph gone, AI Decision Lab intact, same paragraph count:", ok)
+        if not ok: die("readback mismatch")
+        stripped = body
+    else:
+      stripped = re.sub(r'\n    <p ' + re.escape(MARKER) + r'.*?</p>', "", live, count=1, flags=re.S)
     print("rest of page unchanged vs backup:", stripped == body)
     meta = c.get(f"/api/v1/files/{f['id']}").json()
     print("file readback:", meta.get("display_name"), meta.get("size"), "locked=", meta.get("locked"), "hidden=", meta.get("hidden"))
