@@ -32,8 +32,12 @@ HANDOUTS = {
     "field-guide-v103": ("Deciding_with_AI_Student_Field_Guide_v1.0.3.pdf",
         "Deciding with AI: Student Field Guide (v1.0.3, 4 pages)",
         "A guide to using an AI assistant as a sparring partner on a real decision, with rules of thumb, prompts to copy, and practice problems.", "field-guide"),
+    # v1.0.4 REPLACES the v1.0.3 paragraph in place
+    "field-guide-v104": ("Deciding_with_AI_Student_Field_Guide_v1.0.4.pdf",
+        "Deciding with AI: Student Field Guide (v1.0.4, 4 pages)",
+        "A guide to using an AI assistant as a tool: rules of thumb, prompts to copy, prompts that make it teach you, and when to ask a person instead.", "field-guide-v103"),
 }
-REPLACES = {"field-guide-v103": "field-guide"}
+REPLACES = {"field-guide-v103": "field-guide", "field-guide-v104": "field-guide-v103"}
 KEY = "ai-decision-lab"
 for a in sys.argv[1:]:
     if a.startswith("--handout="):
